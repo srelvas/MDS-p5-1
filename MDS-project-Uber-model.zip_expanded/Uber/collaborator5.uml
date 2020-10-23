@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TlGBEA2TEeujq4q3EywG0A" name="collaborator5">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_2KfgEA2ZEeujq4q3EywG0A" name="Activity1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_4eRgkA2ZEeujq4q3EywG0A" name="Activity2"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_DIx7cA2aEeujq4q3EywG0A" name="Interaction3"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="StateMachine4">
+    <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1"/>
+  </packagedElement>
+</uml:Package>
