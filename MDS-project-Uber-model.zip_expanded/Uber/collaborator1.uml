@@ -1,9 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CTL0YA2TEeujq4q3EywG0A" name="collaborator1">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CTL0YA2TEeujq4q3EywG0A" name="collaborator1">
   <packagedElement xmi:type="uml:Activity" xmi:id="_lyDO0A2VEeujq4q3EywG0A" name="Activity1"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_th4oUA2VEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_tqLzQA2WEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_AE3BoBcVEeuKtZIUcs3eaQ" name="Uber Eats">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CAPwQBcVEeuKtZIUcs3eaQ" name="Registar"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_D5SVgBcVEeuKtZIUcs3eaQ" name="Login"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_NJPd8BcVEeuKtZIUcs3eaQ" name="Cancelar pedido"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QrLToBcVEeuKtZIUcs3eaQ" name="Fazer pedido"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XiiNABcVEeuKtZIUcs3eaQ" name="Classificar entregador"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YqyOgBcVEeuKtZIUcs3eaQ" name="Classificar restaurante"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ptkaEBcVEeuKtZIUcs3eaQ" name="Receber pedido na aplicação"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rMG0oBcVEeuKtZIUcs3eaQ" name="Registar veículo"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_duTWQBcWEeuKtZIUcs3eaQ" name="Escolher localização"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kkyF4BcWEeuKtZIUcs3eaQ" name="Fazer Logout"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mg3YEBcWEeuKtZIUcs3eaQ" name="Adicionar favoritos"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIT1IBcXEeuKtZIUcs3eaQ" name="Adicionar voucher"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QC7ggBcYEeuKtZIUcs3eaQ" name="Adicionar forma de pagamento"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tnd8cBcYEeuKtZIUcs3eaQ" name="Recebe um pedido"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wghNMBcYEeuKtZIUcs3eaQ" name="Entrega o pedido"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_y9xSwBcYEeuKtZIUcs3eaQ" name="Prepara o pedido"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_P8ZlQBcZEeuKtZIUcs3eaQ" name="Fazer upload do menu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jT6zkBcZEeuKtZIUcs3eaQ" name="Regista restaurante"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_SSKl8BcdEeuKtZIUcs3eaQ" name="Logout"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UpRAMBcdEeuKtZIUcs3eaQ" name="Recolher pedido"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2TOZYBcdEeuKtZIUcs3eaQ" name="Aceitar viagem"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4Mnj8BcdEeuKtZIUcs3eaQ" name="Classificar o passageiro"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EFQwcBcfEeuKtZIUcs3eaQ" name="Registar veiculo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_KkJrABcVEeuKtZIUcs3eaQ" name="Cliente registado"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eFu0QBcVEeuKtZIUcs3eaQ" memberEnd="_eFwCYhcVEeuKtZIUcs3eaQ _eFwCYxcVEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eFwCYBcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eFwCYRcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eFwCYhcVEeuKtZIUcs3eaQ" name="cancelar pedido" type="_NJPd8BcVEeuKtZIUcs3eaQ" association="_eFu0QBcVEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eFwCYxcVEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_eFu0QBcVEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fIZyMBcVEeuKtZIUcs3eaQ" memberEnd="_fIbAUBcVEeuKtZIUcs3eaQ _fIbAURcVEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fIaZQBcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fIaZQRcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fIbAUBcVEeuKtZIUcs3eaQ" name="fazer pedido" type="_QrLToBcVEeuKtZIUcs3eaQ" association="_fIZyMBcVEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fIbAURcVEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_fIZyMBcVEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gbJzgBcVEeuKtZIUcs3eaQ" memberEnd="_gbKakBcVEeuKtZIUcs3eaQ _gbKakRcVEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gbJzgRcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gbJzghcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gbKakBcVEeuKtZIUcs3eaQ" name="classificar entregador" type="_XiiNABcVEeuKtZIUcs3eaQ" association="_gbJzgBcVEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gbKakRcVEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_gbJzgBcVEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jz87UBcVEeuKtZIUcs3eaQ" memberEnd="_jz-JcBcVEeuKtZIUcs3eaQ _jz-JcRcVEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jz9iYBcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jz9iYRcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jz-JcBcVEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_jz87UBcVEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jz-JcRcVEeuKtZIUcs3eaQ" name="classificar restaurante" type="_YqyOgBcVEeuKtZIUcs3eaQ" association="_jz87UBcVEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_oHNgQBcVEeuKtZIUcs3eaQ" name="Entregador"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tkb98BcVEeuKtZIUcs3eaQ" memberEnd="_tkclAhcVEeuKtZIUcs3eaQ _tkdzIBcVEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tkclABcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tkclARcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tkclAhcVEeuKtZIUcs3eaQ" name="receber pedido" type="_ptkaEBcVEeuKtZIUcs3eaQ" association="_tkb98BcVEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tkdzIBcVEeuKtZIUcs3eaQ" name="entregador" type="_oHNgQBcVEeuKtZIUcs3eaQ" association="_tkb98BcVEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uVFXwBcVEeuKtZIUcs3eaQ" memberEnd="_uVGl4BcVEeuKtZIUcs3eaQ _uVGl4RcVEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uVF-0BcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uVF-0RcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uVGl4BcVEeuKtZIUcs3eaQ" name="registar veículo" type="_rMG0oBcVEeuKtZIUcs3eaQ" association="_uVFXwBcVEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uVGl4RcVEeuKtZIUcs3eaQ" name="entregador" type="_oHNgQBcVEeuKtZIUcs3eaQ" association="_uVFXwBcVEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rV2KABcWEeuKtZIUcs3eaQ" memberEnd="_rV2xEhcWEeuKtZIUcs3eaQ _rV2xExcWEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rV2xEBcWEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rV2xERcWEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rV2xEhcWEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_rV2KABcWEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rV2xExcWEeuKtZIUcs3eaQ" name="escolher localização" type="_duTWQBcWEeuKtZIUcs3eaQ" association="_rV2KABcWEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tAsiQBcWEeuKtZIUcs3eaQ" memberEnd="_tAtJUhcWEeuKtZIUcs3eaQ _tAtJUxcWEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tAtJUBcWEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tAtJURcWEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tAtJUhcWEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_tAsiQBcWEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tAtJUxcWEeuKtZIUcs3eaQ" name="adicionar favoritos" type="_mg3YEBcWEeuKtZIUcs3eaQ" association="_tAsiQBcWEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UIF0gBcXEeuKtZIUcs3eaQ" memberEnd="_UIGbkhcXEeuKtZIUcs3eaQ _UIHCoBcXEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UIGbkBcXEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UIGbkRcXEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UIGbkhcXEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_UIF0gBcXEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UIHCoBcXEeuKtZIUcs3eaQ" name="fazer logout" type="_kkyF4BcWEeuKtZIUcs3eaQ" association="_UIF0gBcXEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wsBIABcXEeuKtZIUcs3eaQ" memberEnd="_wsBvEhcXEeuKtZIUcs3eaQ _wsBvExcXEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wsBvEBcXEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wsBvERcXEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wsBvEhcXEeuKtZIUcs3eaQ" name="adicionar voucher" type="_uIT1IBcXEeuKtZIUcs3eaQ" association="_wsBIABcXEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wsBvExcXEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_wsBIABcXEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SGvyYBcYEeuKtZIUcs3eaQ" memberEnd="_SGwZcRcYEeuKtZIUcs3eaQ _SGwZchcYEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SGvyYRcYEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SGwZcBcYEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SGwZcRcYEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_SGvyYBcYEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SGwZchcYEeuKtZIUcs3eaQ" name="adicionar forma de pagamento" type="_QC7ggBcYEeuKtZIUcs3eaQ" association="_SGvyYBcYEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_rmwo8BcYEeuKtZIUcs3eaQ" name="Restaurante"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0AwZwBcYEeuKtZIUcs3eaQ" memberEnd="_0AxA0hcYEeuKtZIUcs3eaQ _0AxA0xcYEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0AxA0BcYEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0AxA0RcYEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0AxA0hcYEeuKtZIUcs3eaQ" name="recebe um pedido" type="_tnd8cBcYEeuKtZIUcs3eaQ" association="_0AwZwBcYEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0AxA0xcYEeuKtZIUcs3eaQ" name="restaurante" type="_rmwo8BcYEeuKtZIUcs3eaQ" association="_0AwZwBcYEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0ZiGIBcYEeuKtZIUcs3eaQ" memberEnd="_0ZitMhcYEeuKtZIUcs3eaQ _0ZitMxcYEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0ZitMBcYEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0ZitMRcYEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0ZitMhcYEeuKtZIUcs3eaQ" name="prepara o pedido" type="_y9xSwBcYEeuKtZIUcs3eaQ" association="_0ZiGIBcYEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0ZitMxcYEeuKtZIUcs3eaQ" name="restaurante" type="_lI8bgBcZEeuKtZIUcs3eaQ" association="_0ZiGIBcYEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0uBIYBcYEeuKtZIUcs3eaQ" memberEnd="_0uBvchcYEeuKtZIUcs3eaQ _0uBvcxcYEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0uBvcBcYEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0uBvcRcYEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0uBvchcYEeuKtZIUcs3eaQ" name="entrega o pedido" type="_wghNMBcYEeuKtZIUcs3eaQ" association="_0uBIYBcYEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0uBvcxcYEeuKtZIUcs3eaQ" name="restaurante" type="_rmwo8BcYEeuKtZIUcs3eaQ" association="_0uBIYBcYEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_BEmqkBcZEeuKtZIUcs3eaQ" name="Utilizador"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BsZDUBcZEeuKtZIUcs3eaQ" memberEnd="_BsZqYhcZEeuKtZIUcs3eaQ _BsZqYxcZEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BsZqYBcZEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BsZqYRcZEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BsZqYhcZEeuKtZIUcs3eaQ" name="utilizador" type="_BEmqkBcZEeuKtZIUcs3eaQ" association="_BsZDUBcZEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BsZqYxcZEeuKtZIUcs3eaQ" name="registar" type="_CAPwQBcVEeuKtZIUcs3eaQ" association="_BsZDUBcZEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CI1uwBcZEeuKtZIUcs3eaQ" memberEnd="_CI2V0hcZEeuKtZIUcs3eaQ _CI2V0xcZEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CI2V0BcZEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CI2V0RcZEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CI2V0hcZEeuKtZIUcs3eaQ" name="login" type="_D5SVgBcVEeuKtZIUcs3eaQ" association="_CI1uwBcZEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CI2V0xcZEeuKtZIUcs3eaQ" name="utilizador" type="_BEmqkBcZEeuKtZIUcs3eaQ" association="_CI1uwBcZEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RcA94BcZEeuKtZIUcs3eaQ" memberEnd="_RcCMARcZEeuKtZIUcs3eaQ _RcCMAhcZEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RcBk8BcZEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RcCMABcZEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RcCMARcZEeuKtZIUcs3eaQ" name="fazer upload do menu" type="_P8ZlQBcZEeuKtZIUcs3eaQ" association="_RcA94BcZEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RcCMAhcZEeuKtZIUcs3eaQ" name="restaurante" type="_rmwo8BcYEeuKtZIUcs3eaQ" association="_RcA94BcZEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lI8bgBcZEeuKtZIUcs3eaQ" memberEnd="_lI9CkhcZEeuKtZIUcs3eaQ _lI9CkxcZEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lI9CkBcZEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lI9CkRcZEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lI9CkhcZEeuKtZIUcs3eaQ" name="regista restaurante" type="_jT6zkBcZEeuKtZIUcs3eaQ" association="_lI8bgBcZEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lI9CkxcZEeuKtZIUcs3eaQ" name="restaurante" type="_rmwo8BcYEeuKtZIUcs3eaQ" association="_lI8bgBcZEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aGZXQBcdEeuKtZIUcs3eaQ" memberEnd="_aGZ-URcdEeuKtZIUcs3eaQ _aGZ-UhcdEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aGZXQRcdEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aGZ-UBcdEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aGZ-URcdEeuKtZIUcs3eaQ" name="entregador" type="_oHNgQBcVEeuKtZIUcs3eaQ" association="_aGZXQBcdEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aGZ-UhcdEeuKtZIUcs3eaQ" name="logout" type="_SSKl8BcdEeuKtZIUcs3eaQ" association="_aGZXQBcdEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bVyikBcdEeuKtZIUcs3eaQ" memberEnd="_bVzJohcdEeuKtZIUcs3eaQ _bVzwsBcdEeuKtZIUcs3eaQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bVzJoBcdEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bVzJoRcdEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bVzJohcdEeuKtZIUcs3eaQ" name="entregador" type="_oHNgQBcVEeuKtZIUcs3eaQ" association="_bVyikBcdEeuKtZIUcs3eaQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bVzwsBcdEeuKtZIUcs3eaQ" name="recolher pedido" type="_UpRAMBcdEeuKtZIUcs3eaQ" association="_bVyikBcdEeuKtZIUcs3eaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_hiWygBcdEeuKtZIUcs3eaQ" name="Condutor"/>
 </uml:Package>
