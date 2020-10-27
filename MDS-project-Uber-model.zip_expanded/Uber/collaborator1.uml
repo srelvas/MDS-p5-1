@@ -9,30 +9,25 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_AE3BoBcVEeuKtZIUcs3eaQ" name="Uber ">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_CAPwQBcVEeuKtZIUcs3eaQ" name="Registar">
       <ownedComment xmi:type="uml:Comment" xmi:id="_9VJKYBiFEeuWqaScJSrh6w">
-        <body>pilapila</body>
+        <body>Descrição: O utilizador regista-se na app.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_D5SVgBcVEeuKtZIUcs3eaQ" name="Login">
       <ownedComment xmi:type="uml:Comment" xmi:id="_la8H8BhtEeuYrbs0zz3Jbw">
-        <body>Pré-condições: Ser registado</body>
+        <body>Pré-condições: Ser registado&#xD;
+Descrição: O utilizador efetua login na app;</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_NJPd8BcVEeuKtZIUcs3eaQ" name="Cancelar viagem">
       <ownedComment xmi:type="uml:Comment" xmi:id="_kMsYIBfpEeuDJ_XcQwXMqQ">
-        <body>Nome: Cancelar viagem&#xD;
+        <body>Nome: Cancelar viagem uber&#xD;
 ID: UCcancelTripPassenger&#xD;
 Descrição: A viagem pedida é cancelada.&#xD;
 Atores:&#xD;
     Primário: Cliente Uber&#xD;
     Secundário: Nenhum&#xD;
 Pré-condições: &#xD;
-    1. Cliente está registado.&#xD;
-    2. Cliente efetuou o login.&#xD;
-    3. Cliente adicionou forma de pagamento.&#xD;
-    4. Cliente escolheu localização.&#xD;
-    5. Cliente pediu viagem.&#xD;
-    6. Cliente tem uma viagem em curso.&#xD;
-    7. Cliente não está perto do destino final.&#xD;
+    1. Cliente pediu viagem.&#xD;
 Cenário Principal:&#xD;
     1. O UC começa quando o cliente carrega no botão de &quot;Cancelar viagem&quot;.&#xD;
 2. Se o cliente escolher a opção &quot;Não&quot; quando questionado se a decisão é final:&#xD;
@@ -104,25 +99,103 @@ Condições após o cenário:&#xD;
     <packagedElement xmi:type="uml:UseCase" xmi:id="_YqyOgBcVEeuKtZIUcs3eaQ" name="Classificar restaurante"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ptkaEBcVEeuKtZIUcs3eaQ" name="Receber pedido na aplicação"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_rMG0oBcVEeuKtZIUcs3eaQ" name="Registar veículo"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_duTWQBcWEeuKtZIUcs3eaQ" name="Escolher localização"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_kkyF4BcWEeuKtZIUcs3eaQ" name="Fazer Logout">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_mq_akBhtEeuYrbs0zz3Jbw">
-        <body></body>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_duTWQBcWEeuKtZIUcs3eaQ" name="Escolher localização">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_hYP6UBiIEeuWqaScJSrh6w">
+        <body>Descrição: O cliente escolhe onde o colaborador da uber o deve encontrar.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_mg3YEBcWEeuKtZIUcs3eaQ" name="Adicionar favoritos"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIT1IBcXEeuKtZIUcs3eaQ" name="Adicionar voucher"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_QC7ggBcYEeuKtZIUcs3eaQ" name="Adicionar forma de pagamento"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kkyF4BcWEeuKtZIUcs3eaQ" name="Fazer Logout">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mq_akBhtEeuYrbs0zz3Jbw">
+        <body>Descrição: O cliente termina a sessão.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mg3YEBcWEeuKtZIUcs3eaQ" name="Adicionar favoritos">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_PbCt4BiIEeuWqaScJSrh6w">
+        <body>Descrição: O cliente adiciona locais para a aplicação memorisar.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIT1IBcXEeuKtZIUcs3eaQ" name="Adicionar voucher">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_lBeq0BiIEeuWqaScJSrh6w">
+        <body>Descrição: O cliente adiciona um voucher de descontos.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QC7ggBcYEeuKtZIUcs3eaQ" name="Adicionar forma de pagamento">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_D4AvkBiIEeuWqaScJSrh6w">
+        <body>Descrição: O cliente adiciona uma opção de pagamento (paypal, VISA, etc).</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_tnd8cBcYEeuKtZIUcs3eaQ" name="Recebe um pedido"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_P8ZlQBcZEeuKtZIUcs3eaQ" name="Fazer upload do menu"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_jT6zkBcZEeuKtZIUcs3eaQ" name="Regista restaurante"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_SSKl8BcdEeuKtZIUcs3eaQ" name="Logout"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_2TOZYBcdEeuKtZIUcs3eaQ" name="Aceitar viagem"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_4Mnj8BcdEeuKtZIUcs3eaQ" name="Classificar o passageiro"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_EFQwcBcfEeuKtZIUcs3eaQ" name="Registar veiculo"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_SJrOgBewEeuOUfJj5huGoQ" name="Cancelar viagem"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_YMPN4BewEeuOUfJj5huGoQ" name="Recusar viagem"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_fWenABewEeuOUfJj5huGoQ" name="Recolher dinheiro"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2TOZYBcdEeuKtZIUcs3eaQ" name="Aceitar viagem">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_qvHbsBiLEeuWqaScJSrh6w">
+        <body>Descrição: O condutor aceita uma viagem de um cliente.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4Mnj8BcdEeuKtZIUcs3eaQ" name="Classificar o passageiro">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_thzbMBiKEeuWqaScJSrh6w">
+        <body>Nome: Classificar o passageiro&#xD;
+ID: UCRatePassenger&#xD;
+Descrição: Condutor classifica passageiro após a boleia&#xD;
+Atores: &#xD;
+    Primária: Condutor&#xD;
+    Secundário: Passageiro&#xD;
+Pré-condições: Condutor deve ter apanhado o passageiro no ponto de partida e tê-lo levado ao seu destino;&#xD;
+Cenário Principal: &#xD;
+    1. UC começa quando o condutor acaba de levar o passageiro ao seu destino;&#xD;
+    2. Aplicação pede uma classificação para o passageiro ;&#xD;
+        2.1. Condutor classifica o passageiro entre 1 a 5 estrelas;&#xD;
+Pós-condições: Passageiro fica com uma classificação nova entre 1 a 5,  que será adicionada à média de classificação do passageiro, esta pode ser vista pelo passageiro;&#xD;
+Cenário Alternativo: nenhum</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EFQwcBcfEeuKtZIUcs3eaQ" name="Registar veiculo">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_t4zwgBiLEeuWqaScJSrh6w">
+        <body>Descrição: O condutor regista os dados do veículo no sistema.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_SJrOgBewEeuOUfJj5huGoQ" name="Cancelar viagem">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_vSNMYBiLEeuWqaScJSrh6w">
+        <body>Descrição: Depois de aceitar uma viagem o condutor cancela-a.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YMPN4BewEeuOUfJj5huGoQ" name="Recusar viagem">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_5WTukBiLEeuWqaScJSrh6w">
+        <body>Descrição: O condutor rejeita uma viagem possivel de um cliente.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fWenABewEeuOUfJj5huGoQ" name="Recolher dinheiro">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_uT60oBiKEeuWqaScJSrh6w">
+        <body>Nome: Recolher dinheiro&#xD;
+ID: UCRetrieveMoney&#xD;
+Descrição: Condutor recolhe o dinheiro acumulado na sua conta Uber das viagens que fez;&#xD;
+Atores: &#xD;
+    Primário: Condutor&#xD;
+    Secundário: Nenhum&#xD;
+Pré-condições: Condutor deve ter feito pelo menos uma viagem com passageiro até ao destino;&#xD;
+Cenário Principal: &#xD;
+    1. UC começa quando o condutor decide selecionar a opção de levantar o dinheiro depositado na sua conta Uber;&#xD;
+    2. O dinheiro depositado na conta Uber é transferido para a conta bancária do condutor;&#xD;
+&#xD;
+Pós-condições: Dinheiro transferido para conta bancária é adicionado ao saldo total da conta do condutor;&#xD;
+Cenário alternativo:&#xD;
+&#xD;
+    Nome: Recolher dinheiro&#xD;
+    ID: UCRetrieveMoney&#xD;
+    Descrição: Condutor tenta recolher o dinheiro acumulado na sua conta Uber das viagens que fez sem uma conta bancária associada;&#xD;
+    Atores: &#xD;
+        Primário: Condutor&#xD;
+        Secundário: Nenhum&#xD;
+    Pré-condições: Condutor deve ter feito pelo menos uma viagem com passageiro até ao destino;&#xD;
+    Cenário Principal: &#xD;
+        1. UC começa quando o condutor decide selecionar a opção de levantar o dinheiro depositado na sua conta Uber sem ter conta bancária associada;&#xD;
+        2. Carregar no botão sem ter conta bancária associada à app&#xD;
+            2.1. Conta bancária (credenciais) é pedida;&#xD;
+            2.2. Se introduzidas volta-se ao passo 2 do cenário principal;&#xD;
+    Pós-condições: Dinheiro transferido para conta bancária é adicionado ao saldo total da conta do condutor.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_e4c8UBeyEeuOUfJj5huGoQ" name="Classificar instalação"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_94POQBeyEeuOUfJj5huGoQ" name="Pedir orçamento"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_HwqE4BezEeuOUfJj5huGoQ" name="Escolher data de recolha"/>
@@ -138,10 +211,7 @@ Atores:&#xD;
     Primário: Transportadora&#xD;
     Secundário: Nenhum&#xD;
 Pré-condições: &#xD;
-    1. Já vai ser deixada mercadoria num local perto de onde se podem visualizar recargas.&#xD;
-    2. Há recargas disponiveis na zona.&#xD;
-    3. Conta da transportadora está registada.&#xD;
-    4. Conta da transportadora efetuou o login.&#xD;
+    1. Acabou de ser reservada uma carga.&#xD;
 Cenário Principal:&#xD;
     1. O UC começa quando é acabada a marcação de uma entrega.&#xD;
     2. O sistema verifica se existe carga disponível na zona de descarga.&#xD;
@@ -183,13 +253,55 @@ Condições após o cenário:&#xD;
     <packagedElement xmi:type="uml:UseCase" xmi:id="_dhru8Be4EeuOUfJj5huGoQ" name="Ler código QR"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_h7OiEBe4EeuOUfJj5huGoQ" name="Terminar viagem"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_wPpp8Be4EeuOUfJj5huGoQ" name="Reservar veículo"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_axTckBe5EeuOUfJj5huGoQ" name="Juntar-se a uma frota"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_cNrCABe7EeuOUfJj5huGoQ" name="Classificar viagem"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_axTckBe5EeuOUfJj5huGoQ" name="Juntar-se a uma frota">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_od3x0BiLEeuWqaScJSrh6w">
+        <body>Descrição: O condutor procura e escolhe uma frota para servir.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cNrCABe7EeuOUfJj5huGoQ" name="Classificar viagem">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_e95s4BiKEeuWqaScJSrh6w">
+        <body>Name: Classificar condutor&#xD;
+ID: UCRateRide&#xD;
+Brief description: Depois de efetuar uma viagem o cliente da Uber classifica o condutor&#xD;
+Primary actors: Cliente Uber&#xD;
+Secondary actors: Condutor&#xD;
+&#xD;
+Pre-conditions: &#xD;
+	A viagem terminou&#xD;
+	Cliente está registado&#xD;
+	Cliente fez login&#xD;
+&#xD;
+Main flow:&#xD;
+	1. O Use case começa quando uma viagem termina ou quando é selecionada uma viagem no histórico e o cliente uber seleciona a opção de classificar esta viagem.&#xD;
+	2. O sistema verifica se a viagem já foi classificada.&#xD;
+	3. O cliente uber insere uma classificação entre 1 e 5. &#xD;
+	4. O cliente uber confirma a classificação.&#xD;
+Alternative flows: &#xD;
+	Viagem já foi classificada&#xD;
+	Cancelar&#xD;
+Post-conditions: A viagem tem uma classificação entre 1 e 5 que pode ser observada pelo cliente uber e pelo condutor que realizou esta viagem, adicionando-se à média do condutor.&#xD;
+&#xD;
+Alternative flow: Classificar viagem:Cancelar&#xD;
+ID: UCcancelRateRide&#xD;
+Descrição: O cliente uber cancela a classificação da viagem&#xD;
+Preconditions: Nenhuma&#xD;
+Primary actors: Cliente uber&#xD;
+Secondary actors: Nenhum&#xD;
+Alternative flow: &#xD;
+	1.  O cenário alternativa começa a qualquer altura.&#xD;
+	2. O cliente cancela a classificação da viagem&#xD;
+Post-conditions: A classifcação da viagem não é realizada.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_-t0cUBe7EeuOUfJj5huGoQ" name="Ver classificação de instalação"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_N1wr0Be8EeuOUfJj5huGoQ" name="Ver histórico de entregas"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_avae0Be8EeuOUfJj5huGoQ" name="Ver localização de veículos"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_2RxAkBe8EeuOUfJj5huGoQ" name="Ver localização de condutores"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_fW5f8Be_EeuOUfJj5huGoQ" name="Ver Histórico"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fW5f8Be_EeuOUfJj5huGoQ" name="Ver Histórico">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_8w6xEBiHEeuWqaScJSrh6w">
+        <body>Descrição: O cliente com sessão iniciada visualiza o histórico de ações.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="__uQW4BfBEeuOUfJj5huGoQ" name="Escolher restaurante"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_V-LgQBfDEeuOUfJj5huGoQ" name="Ver lista de pedidos"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_nGZTgBfFEeuOUfJj5huGoQ" name="Criar expedição">
@@ -206,14 +318,8 @@ Atores:&#xD;
     Primário: Cliente Uber&#xD;
     Secundário: Nenhum&#xD;
 Pré-condições: &#xD;
-    1. Cliente está registado.&#xD;
-    2. Cliente efetuou o login.&#xD;
-    3. Cliente adicionou forma de pagamento.&#xD;
-    4. Cliente escolheu localização.&#xD;
-    5. Cliente pediu viagem.&#xD;
-    6. Cliente tem uma viagem em curso.&#xD;
-    7. Cliente não está perto do destino final.&#xD;
-    8. O cliente cancelou 2 ou mais viagens nos ultimos 30 minutos.&#xD;
+    1. A viagem foi cancelada.&#xD;
+    2. O cliente cancelou 2 ou mais viagens nos ultimos 30 minutos.&#xD;
 Cenário Principal:&#xD;
     1. O UC começa quando o cliente cancela uma viagem pela segunda vez ou mais nos ultimos 30 minutos.&#xD;
     2. Um valor é debitado da conta do cliente.&#xD;
@@ -399,13 +505,6 @@ Condições após o cenário:&#xD;
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_rV2xEhcWEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_rV2KABcWEeuKtZIUcs3eaQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_rV2xExcWEeuKtZIUcs3eaQ" name="escolher localização" type="_duTWQBcWEeuKtZIUcs3eaQ" association="_rV2KABcWEeuKtZIUcs3eaQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_tAsiQBcWEeuKtZIUcs3eaQ" memberEnd="_tAtJUhcWEeuKtZIUcs3eaQ _tAtJUxcWEeuKtZIUcs3eaQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tAtJUBcWEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tAtJURcWEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_tAtJUhcWEeuKtZIUcs3eaQ" name="cliente registado" type="_KkJrABcVEeuKtZIUcs3eaQ" association="_tAsiQBcWEeuKtZIUcs3eaQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_tAtJUxcWEeuKtZIUcs3eaQ" name="adicionar favoritos" type="_mg3YEBcWEeuKtZIUcs3eaQ" association="_tAsiQBcWEeuKtZIUcs3eaQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_UIF0gBcXEeuKtZIUcs3eaQ" memberEnd="_UIGbkhcXEeuKtZIUcs3eaQ _UIHCoBcXEeuKtZIUcs3eaQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UIGbkBcXEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
@@ -706,5 +805,12 @@ Condições após o cenário:&#xD;
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_v1KMoBiEEeuC55-avhxFAg" name="terminar viagem" type="_tuZ7gBiEEeuC55-avhxFAg" association="_v1HJUBiEEeuC55-avhxFAg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_v1KMoRiEEeuC55-avhxFAg" name="condutor" type="_hiWygBcdEeuKtZIUcs3eaQ" association="_v1HJUBiEEeuC55-avhxFAg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WByYYBiIEeuWqaScJSrh6w" memberEnd="_WCNPIBiIEeuWqaScJSrh6w _WCQ5gBiIEeuWqaScJSrh6w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WCHvkBiIEeuWqaScJSrh6w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WCKL0BiIEeuWqaScJSrh6w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WCNPIBiIEeuWqaScJSrh6w" name="cliente uber" type="_YzeMABe7EeuOUfJj5huGoQ" association="_WByYYBiIEeuWqaScJSrh6w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WCQ5gBiIEeuWqaScJSrh6w" name="adicionar favoritos" type="_mg3YEBcWEeuKtZIUcs3eaQ" association="_WByYYBiIEeuWqaScJSrh6w"/>
   </packagedElement>
 </uml:Package>
