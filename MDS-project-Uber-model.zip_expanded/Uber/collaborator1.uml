@@ -133,23 +133,6 @@ Condições após o cenário:&#xD;
         <body>Descrição: O condutor aceita uma viagem de um cliente.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_4Mnj8BcdEeuKtZIUcs3eaQ" name="Classificar o passageiro">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_thzbMBiKEeuWqaScJSrh6w">
-        <body>Nome: Classificar o passageiro&#xD;
-ID: UCRatePassenger&#xD;
-Descrição: Condutor classifica passageiro após a boleia&#xD;
-Atores: &#xD;
-    Primária: Condutor&#xD;
-    Secundário: Passageiro&#xD;
-Pré-condições: Condutor deve ter apanhado o passageiro no ponto de partida e tê-lo levado ao seu destino;&#xD;
-Cenário Principal: &#xD;
-    1. UC começa quando o condutor acaba de levar o passageiro ao seu destino;&#xD;
-    2. Aplicação pede uma classificação para o passageiro ;&#xD;
-        2.1. Condutor classifica o passageiro entre 1 a 5 estrelas;&#xD;
-Pós-condições: Passageiro fica com uma classificação nova entre 1 a 5,  que será adicionada à média de classificação do passageiro, esta pode ser vista pelo passageiro;&#xD;
-Cenário Alternativo: nenhum</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_EFQwcBcfEeuKtZIUcs3eaQ" name="Registar veiculo">
       <ownedComment xmi:type="uml:Comment" xmi:id="_t4zwgBiLEeuWqaScJSrh6w">
         <body>Descrição: O condutor regista os dados do veículo no sistema.</body>
@@ -197,9 +180,6 @@ Cenário alternativo:&#xD;
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_e4c8UBeyEeuOUfJj5huGoQ" name="Classificar instalação"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_94POQBeyEeuOUfJj5huGoQ" name="Pedir orçamento"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_HwqE4BezEeuOUfJj5huGoQ" name="Escolher data de recolha"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_LS2ZQBezEeuOUfJj5huGoQ" name="Escolher data de entrega"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_P79SYBezEeuOUfJj5huGoQ" name="Entregar mercadoria"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_e-EKMBe0EeuOUfJj5huGoQ" name="Reservar carga"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_LHzU8Be1EeuOUfJj5huGoQ" name="Pré-visualizar recargas">
@@ -304,11 +284,7 @@ Post-conditions: A classifcação da viagem não é realizada.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="__uQW4BfBEeuOUfJj5huGoQ" name="Escolher restaurante"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_V-LgQBfDEeuOUfJj5huGoQ" name="Ver lista de pedidos"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_nGZTgBfFEeuOUfJj5huGoQ" name="Criar expedição">
-      <include xmi:type="uml:Include" xmi:id="_0bmaEBfFEeuOUfJj5huGoQ" addition="_94POQBeyEeuOUfJj5huGoQ"/>
-      <include xmi:type="uml:Include" xmi:id="_1PofEBfFEeuOUfJj5huGoQ" addition="_HwqE4BezEeuOUfJj5huGoQ"/>
-      <include xmi:type="uml:Include" xmi:id="_2AAzIBfFEeuOUfJj5huGoQ" addition="_LS2ZQBezEeuOUfJj5huGoQ"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nGZTgBfFEeuOUfJj5huGoQ" name="Criar expedição"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_o9Ju4BfHEeuOUfJj5huGoQ" name="Pagar multa">
       <ownedComment xmi:type="uml:Comment" xmi:id="_OZi4EBftEeuDJ_XcQwXMqQ">
         <body>Nome: Pagar multa&#xD;
@@ -383,6 +359,7 @@ Condições após o cenário:&#xD;
     (?)</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_DBk6EBfIEeuOUfJj5huGoQ" extendedCase="_zLX2YBfHEeuOUfJj5huGoQ" extensionLocation="_DBk6ERfIEeuOUfJj5huGoQ"/>
+      <include xmi:type="uml:Include" xmi:id="_JUNuABiSEeuc3rY7_8B_1g" addition="_KCelMBhxEeuYrbs0zz3Jbw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ZZM30BfSEeuOUfJj5huGoQ" name="Fazer pedido ">
       <ownedComment xmi:type="uml:Comment" xmi:id="_Wug_gBhcEeuYrbs0zz3Jbw">
@@ -422,32 +399,38 @@ Condições após o cenário:&#xD;
 Cenário Alternativo:&#xD;
 1. Cancelar pedido&#xD;
 2. Entregador pode recusar ou cancelar a entrega&#xD;
-3. &#xD;
 &#xD;
-ID: UC&#xD;
-Descrição: O cliente seleciona uma localização fora da área de entrega do restaurante pedido&#xD;
+&#xD;
+ID: UC_clienteCancelaPedido&#xD;
+Descrição: O cliente cancela o pedido&#xD;
 Atores:&#xD;
 	Primário: Cliente Uber&#xD;
 	Secundário: Nenhum&#xD;
-Precondições: none&#xD;
+Precondições: O cliente pediu cancelamento do pedido&#xD;
 Cenário Alternativo:&#xD;
-	1. O cenário alternativo começa quando o cliente seleciona uma localização fora da área de entrega do restaurante pedido&#xD;
-	2. É mostrado uma mensagem a indicar que o cliente terá que selecionar ou uma nova localização de entrega ou outro restaurante&#xD;
-	3. &#xD;
+	1. O cenário alternativo começa quando o cliente cancela o pedido&#xD;
+	2. O sistema pergunta ao cliente o motivo de este ter cancelado a viagem&#xD;
+	3. O cliente confirma o cancelamento&#xD;
 &#xD;
 Condições após o cenário:&#xD;
-	1. A viagem continua.&#xD;
+	1. A viagem é cancelada&#xD;
 	&#xD;
-	&#xD;
- &#xD;
+&#xD;
+ID: UC_entregadorCancelaEntrega&#xD;
+Descrição: Entregador pode cancelar a entrega&#xD;
+Atores:&#xD;
+	Primário: Cliente Uber&#xD;
+	Secundário: Entregador&#xD;
+Precondições: Entregador aceitou a entrega&#xD;
+Cenário Alternativo:&#xD;
+	1. O entregador cancela a entrega e o sistema avisa o cliente do sucedido&#xD;
+	2. O sistema procura um novo entregador disponivel para a entrega do cliente&#xD;
+		2.1 Se o sistema encontrar então muda logo de entregador e mostra ao cliente as informações do novo entregador&#xD;
+		2.2 Se o sistema não encontrar entregador disponivel então o sistema avisa o cliente e pede que este espere algum tempo para pedir novamente a comida&#xD;
+&#xD;
 Condições após o cenário:&#xD;
-	1. &#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
+	1. A entrega muda de entregador mas ainda está a decorrer ou não há entregador disponível e a entrega é cancelada e o cliente reembolsado&#xD;
+	&#xD;
 &#xD;
 &#xD;
 &#xD;
@@ -472,18 +455,9 @@ Condições após o cenário:&#xD;
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_ObKnQBhyEeuYrbs0zz3Jbw" extendedCase="_Pw9AYBhwEeuYrbs0zz3Jbw" extensionLocation="_ObTKIBhyEeuYrbs0zz3Jbw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_tuZ7gBiEEeuC55-avhxFAg" name="Terminar viagem">
-      <include xmi:type="uml:Include" xmi:id="_w5xrUBiEEeuC55-avhxFAg" addition="_4Mnj8BcdEeuKtZIUcs3eaQ"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tuZ7gBiEEeuC55-avhxFAg" name="Terminar viagem"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_KkJrABcVEeuKtZIUcs3eaQ" name="Cliente com sessão iniciada"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_eFu0QBcVEeuKtZIUcs3eaQ" memberEnd="_eFwCYhcVEeuKtZIUcs3eaQ _eFwCYxcVEeuKtZIUcs3eaQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eFwCYBcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eFwCYRcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_eFwCYhcVEeuKtZIUcs3eaQ" name="cancelar pedido" type="_NJPd8BcVEeuKtZIUcs3eaQ" association="_eFu0QBcVEeuKtZIUcs3eaQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_eFwCYxcVEeuKtZIUcs3eaQ" name="cliente registado" type="_YzeMABe7EeuOUfJj5huGoQ" association="_eFu0QBcVEeuKtZIUcs3eaQ"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_fIZyMBcVEeuKtZIUcs3eaQ" memberEnd="_fIbAUBcVEeuKtZIUcs3eaQ _fIbAURcVEeuKtZIUcs3eaQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fIaZQBcVEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fIaZQRcVEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
@@ -659,7 +633,7 @@ Condições após o cenário:&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_gJq6UBe3EeuOUfJj5huGoQ" name="remetente" type="_5o78QBeyEeuOUfJj5huGoQ" association="_gJqTQBe3EeuOUfJj5huGoQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_gJq6URe3EeuOUfJj5huGoQ" name="seguir carga" type="_c_sRoBe3EeuOUfJj5huGoQ" association="_gJqTQBe3EeuOUfJj5huGoQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_Q7C-kBe4EeuOUfJj5huGoQ" name="Cliente Uber Scoot"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Q7C-kBe4EeuOUfJj5huGoQ" name="Cliente Uber Scoot &amp; Bike"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_hOA2wBe4EeuOUfJj5huGoQ" memberEnd="_hOBd0he4EeuOUfJj5huGoQ _hOBd0xe4EeuOUfJj5huGoQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hOBd0Be4EeuOUfJj5huGoQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hOBd0Re4EeuOUfJj5huGoQ" key="nature" value="UML_Nature"/>
@@ -812,5 +786,19 @@ Condições após o cenário:&#xD;
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WCNPIBiIEeuWqaScJSrh6w" name="cliente uber" type="_YzeMABe7EeuOUfJj5huGoQ" association="_WByYYBiIEeuWqaScJSrh6w"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WCQ5gBiIEeuWqaScJSrh6w" name="adicionar favoritos" type="_mg3YEBcWEeuKtZIUcs3eaQ" association="_WByYYBiIEeuWqaScJSrh6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xixHgBiQEeuc3rY7_8B_1g" memberEnd="_xixukhiQEeuc3rY7_8B_1g _xixukxiQEeuc3rY7_8B_1g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xixukBiQEeuc3rY7_8B_1g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xixukRiQEeuc3rY7_8B_1g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xixukhiQEeuc3rY7_8B_1g" name="cliente uber" type="_YzeMABe7EeuOUfJj5huGoQ" association="_xixHgBiQEeuc3rY7_8B_1g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xixukxiQEeuc3rY7_8B_1g" name="cancelar viagem" type="_NJPd8BcVEeuKtZIUcs3eaQ" association="_xixHgBiQEeuc3rY7_8B_1g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4YsoEBiREeuc3rY7_8B_1g" memberEnd="_4YudQhiREeuc3rY7_8B_1g _4YvEUBiREeuc3rY7_8B_1g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YudQBiREeuc3rY7_8B_1g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YudQRiREeuc3rY7_8B_1g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4YudQhiREeuc3rY7_8B_1g" name="condutor" type="_hiWygBcdEeuKtZIUcs3eaQ" association="_4YsoEBiREeuc3rY7_8B_1g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4YvEUBiREeuc3rY7_8B_1g" name="classificar viagem" type="_cNrCABe7EeuOUfJj5huGoQ" association="_4YsoEBiREeuc3rY7_8B_1g"/>
   </packagedElement>
 </uml:Package>
