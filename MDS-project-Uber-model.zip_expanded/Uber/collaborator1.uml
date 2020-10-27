@@ -7,7 +7,11 @@
     <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_AE3BoBcVEeuKtZIUcs3eaQ" name="Uber ">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_CAPwQBcVEeuKtZIUcs3eaQ" name="Registar"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CAPwQBcVEeuKtZIUcs3eaQ" name="Registar">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9VJKYBiFEeuWqaScJSrh6w">
+        <body>pilapila</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_D5SVgBcVEeuKtZIUcs3eaQ" name="Login">
       <ownedComment xmi:type="uml:Comment" xmi:id="_la8H8BhtEeuYrbs0zz3Jbw">
         <body>Pré-condições: Ser registado</body>
