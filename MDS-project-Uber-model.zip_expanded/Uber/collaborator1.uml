@@ -17,31 +17,31 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_kMsYIBfpEeuDJ_XcQwXMqQ">
         <body>Nome: Cancelar viagem uber&#xD;
 ID: UCcancelTripPassenger&#xD;
-Descrição: A viagem pedida é cancelada.&#xD;
+Descrição: A viagem atualmente em curso é cancelada.&#xD;
 Atores:&#xD;
-    Primário: Cliente Uber&#xD;
-    Secundário: Nenhum&#xD;
+	Primário: Cliente Uber&#xD;
+	Secundário: Nenhum&#xD;
 Pré-condições: &#xD;
-    1. Cliente está registado.&#xD;
-    2. Cliente efetuou o login.&#xD;
-    3. Cliente adicionou forma de pagamento.&#xD;
-    4. Cliente escolheu localização.&#xD;
-    5. Cliente pediu viagem.&#xD;
-    6. Cliente tem uma viagem em curso.&#xD;
-    7. Cliente não está perto do destino final.&#xD;
+	1. Cliente está registado.&#xD;
+	2. Cliente efetuou o login.&#xD;
+	3. Cliente adicionou forma de pagamento.&#xD;
+	4. Cliente escolheu localização.&#xD;
+	5. Cliente pediu viagem.&#xD;
+	6. Cliente tem uma viagem em curso.&#xD;
+	7. Cliente não está perto do destino final.&#xD;
 Cenário Principal:&#xD;
-    1. O UC começa quando o cliente carrega no botão de &quot;Cancelar viagem&quot;.&#xD;
+	1. O UC começa quando o cliente carrega no botão de &quot;Cancelar viagem&quot;.&#xD;
 2. Se o cliente escolher a opção &quot;Não&quot; quando questionado se a decisão é final:&#xD;
-    2.1. A viagem continua normalmente.&#xD;
+	2.1. A viagem continua normalmente.&#xD;
 3. Se o cliente confirmar que quer cancelar a viagem:&#xD;
-    3.1. O processo de cancelamente é iniciado.&#xD;
+	3.1. O processo de cancelamente é iniciado.&#xD;
 Ponto de extensão: Pagar multa&#xD;
-    4. Aparece um ecrã que pergunta ao cliente porque a viagem foi cancelada.&#xD;
-    5. O cliente justifica o cancelamente selecionando a opção.&#xD;
-    6. A viagem é cancelada e o UC termina.&#xD;
+	4. Aparece um ecrã que pergunta ao cliente porque a viagem foi cancelada.&#xD;
+	5. O cliente justifica o cancelamente selecionando a opção.&#xD;
+	6. A viagem é cancelada e o UC termina.&#xD;
 &#xD;
 Condições após o cenário:&#xD;
-    1. A viagem já não está a decorrer.&#xD;
+	1. A viagem já não está a decorrer.&#xD;
 &#xD;
 &#xD;
 Cenário Alternativo:&#xD;
@@ -49,15 +49,17 @@ Cenário Alternativo:&#xD;
 ID: UCcancelTripPassengerLate&#xD;
 Descrição: O cliente está perto do destino e já não pode cancelar a viagem.&#xD;
 Atores:&#xD;
-    Primário: Cliente Uber&#xD;
-    Secundário: Nenhum&#xD;
+	Primário: Cliente Uber&#xD;
+	Secundário: Nenhum&#xD;
 Precondições: &#xD;
-    1. O cliente está demasiado perto do destino para cancelar.&#xD;
+	1. O cliente está demasiado perto do destino para cancelar.&#xD;
 Cenário Alternativo:&#xD;
-    1. A opção para cancelar é escondida do cliente e a viagem já não pode ser cancelada.&#xD;
+	1. A opção para cancelar é escondida do cliente e a viagem já não pode ser cancelada.&#xD;
 &#xD;
 Condições após o cenário:&#xD;
-    1. A viagem continua.</body>
+	1. A viagem continua.&#xD;
+	&#xD;
+	</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_V9QWYBfHEeuOUfJj5huGoQ" name="Caso 2ª cancelamento em menos de 30min"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_vXyQABfHEeuOUfJj5huGoQ" name="ExtensionPoint2"/>
@@ -131,46 +133,48 @@ Condições após o cenário:&#xD;
 ID: UCpreviewReload&#xD;
 Descrição: A transportadora visualiza mercadorias que podem ser trazidas na viagem de volta (ou outra viagem), perto de onde vai ser deixada a carga original.&#xD;
 Atores:&#xD;
-    Primário: Transportadora&#xD;
-    Secundário: Nenhum&#xD;
+	Primário: Transportadora&#xD;
+	Secundário: Nenhum&#xD;
 Pré-condições: &#xD;
-    1. Já vai ser deixada mercadoria num local perto de onde se podem visualizar recargas.&#xD;
-    2. Há recargas disponiveis na zona.&#xD;
-    3. Conta da transportadora está registada.&#xD;
-    4. Conta da transportadora efetuou o login.&#xD;
+	1. Já vai ser deixada mercadoria num local perto de onde se podem visualizar recargas.&#xD;
+	2. Há recargas disponiveis na zona.&#xD;
+	3. Conta da transportadora está registada.&#xD;
+	4. Conta da transportadora efetuou o login.&#xD;
 Cenário Principal:&#xD;
-    1. O UC começa quando é acabada a marcação de uma entrega.&#xD;
-    2. O sistema verifica se existe carga disponível na zona de descarga.&#xD;
-    3. A transportadora visualiza a carga perto da zona de descarga.&#xD;
-    4. A transportadora escolhe uma carga para reservar.&#xD;
-    5. A carga é selecionada.&#xD;
+	1. O UC começa quando é acabada a marcação de uma entrega.&#xD;
+	2. O sistema verifica se existe carga disponível na zona de descarga.&#xD;
+	3. A transportadora visualiza a carga perto da zona de descarga.&#xD;
+	4. A transportadora escolhe uma carga para reservar.&#xD;
+	5. A carga é selecionada.&#xD;
 6. Se a transportadora cancelar:&#xD;
-    6.1. Retorna ao passo 3.&#xD;
-7. Se a transportadora confirmar a carga:&#xD;
-    7.1 . A transportadora confirma a carga.&#xD;
-    8. O sistema reserva a carga.&#xD;
-    9. A secção de previsualização é fechada e a UC termina.&#xD;
+	6.1. Retorna ao passo 3.&#xD;
+7. Se a transportadora confirmar a carga:		&#xD;
+	7.1 . A transportadora confirma a carga.&#xD;
+	8. O sistema reserva a carga.&#xD;
+	9. A secção de previsualização é fechada e a UC termina.&#xD;
 &#xD;
 &#xD;
 Condições após o cenário:&#xD;
-    1. A recarga selecionada pela transportadora é reservada.&#xD;
+	1. A recarga selecionada pela transportadora é reservada.&#xD;
 &#xD;
 Cenário Alternativo:&#xD;
 &#xD;
 ID: UCpreviewReloadNoMatches&#xD;
 Descrição: O ecrã de pré-visualização de recargas não aparece pois não existem recargas por perto.&#xD;
 Atores:&#xD;
-    Primário: Transportadora&#xD;
-    Secundário: Nenhum&#xD;
+	Primário: Transportadora&#xD;
+	Secundário: Nenhum&#xD;
 Precondições: &#xD;
-    1. Não foram encontradas recargas perto da zona de descarga.&#xD;
+	1. Não foram encontradas recargas perto da zona de descarga.&#xD;
 Cenário Alternativo:&#xD;
-    1. O cenário começa após o passo 2 do Cenário Principal.&#xD;
-    2. Uma mensagem confirma a carga inicial e indica que não são necessárias recargas por perto.&#xD;
-    3. O ecrã de pré-visualização de recargas não aparece.&#xD;
+	1. O cenário começa após o passo 2 do Cenário Principal.&#xD;
+	2. Uma mensagem confirma a carga inicial e indica que não são necessárias recargas por perto.&#xD;
+	3. O ecrã de pré-visualização de recargas não aparece.&#xD;
 &#xD;
 Condições após o cenário:&#xD;
-    1. O ecrã de pré-visualização de recargas não aparece.</body>
+	1. O ecrã de pré-visualização de recargas não aparece.&#xD;
+	&#xD;
+	</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_p_2KsBe2EeuOUfJj5huGoQ" name="Ver detalhes da carga"/>
@@ -180,7 +184,7 @@ Condições após o cenário:&#xD;
     <packagedElement xmi:type="uml:UseCase" xmi:id="_h7OiEBe4EeuOUfJj5huGoQ" name="Terminar viagem"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_wPpp8Be4EeuOUfJj5huGoQ" name="Reservar veículo"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_axTckBe5EeuOUfJj5huGoQ" name="Juntar-se a uma frota"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_cNrCABe7EeuOUfJj5huGoQ" name="Classificar viagem"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cNrCABe7EeuOUfJj5huGoQ" name="Classificar condutor"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_-t0cUBe7EeuOUfJj5huGoQ" name="Ver classificação de instalação"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_N1wr0Be8EeuOUfJj5huGoQ" name="Ver histórico de entregas"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_avae0Be8EeuOUfJj5huGoQ" name="Ver localização de veículos"/>
@@ -199,79 +203,33 @@ Condições após o cenário:&#xD;
 ID: UCcancelTripPassengerFine&#xD;
 Descrição: O utilizador é cobrado por cancelar viagens com demasiada frequência.&#xD;
 Atores:&#xD;
-    Primário: Cliente Uber&#xD;
-    Secundário: Nenhum&#xD;
+	Primário: Cliente Uber&#xD;
+	Secundário: Nenhum&#xD;
 Pré-condições: &#xD;
-    1. Cliente está registado.&#xD;
-    2. Cliente efetuou o login.&#xD;
-    3. Cliente adicionou forma de pagamento.&#xD;
-    4. Cliente escolheu localização.&#xD;
-    5. Cliente pediu viagem.&#xD;
-    6. Cliente tem uma viagem em curso.&#xD;
-    7. Cliente não está perto do destino final.&#xD;
-    8. O cliente cancelou 2 ou mais viagens nos ultimos 30 minutos.&#xD;
+	1. Cliente efetuou o login.&#xD;
+	2. Cliente adicionou forma de pagamento.&#xD;
+	3. Cliente escolheu localização.&#xD;
+	4. Cliente pediu viagem.&#xD;
+	5. Cliente tem uma viagem em curso.&#xD;
+	6. Cliente não está perto do destino final.&#xD;
+	7. O cliente cancelou 2 ou mais viagens nos ultimos 30 minutos.&#xD;
 Cenário Principal:&#xD;
-    1. O UC começa quando o cliente cancela uma viagem pela segunda vez ou mais nos ultimos 30 minutos.&#xD;
-    2. Um valor é debitado da conta do cliente.&#xD;
-    3. O sistema notifica o cliente acerca do valor debitado e o UC termina.&#xD;
+	1. O UC começa quando o cliente cancela uma viagem pela segunda vez ou mais nos ultimos 30 minutos.&#xD;
+	2. Um valor é debitado da conta do cliente.&#xD;
+	3. O sistema notifica o cliente acerca do valor debitado e o UC termina.&#xD;
 &#xD;
 Condições após o cenário:&#xD;
-    1. O cliente foi roubado</body>
+	1. O cliente foi roubado.&#xD;
+	</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_vXxB4BfHEeuOUfJj5huGoQ" extendedCase="_NJPd8BcVEeuKtZIUcs3eaQ" extensionLocation="_vXyQABfHEeuOUfJj5huGoQ"/>
       <include xmi:type="uml:Include" xmi:id="_aRZq4BhxEeuYrbs0zz3Jbw" addition="_KCelMBhxEeuYrbs0zz3Jbw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_zLX2YBfHEeuOUfJj5huGoQ" name="Cancelar pedido">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_8tLS0BiCEeuYrbs0zz3Jbw">
-        <body>Nome: Cancelar pedido&#xD;
-ID: UCcancelOrderUberEats&#xD;
-Descrição: O pedido do cliente Uber Eats é cancelado&#xD;
-Atores:&#xD;
-    Primário: Cliente Uber Eats&#xD;
-    Secundário: Nenhum&#xD;
-Pré-condições: &#xD;
-    1. Cliente efetuou o login.&#xD;
-    2. Cliente adicionou forma de pagamento.&#xD;
-    3. Cliente escolheu localização.&#xD;
-    4. Cliente efetuou pedido.&#xD;
-Cenário Principal:&#xD;
-    1. O UC começa quando o cliente carrega no botão de &quot;Cancelar pedido&quot;.&#xD;
-    2. Se o cliente escolher a opção &quot;Não&quot; quando questionado se a decisão é final:&#xD;
-        2.1. A viagem continua normalmente.&#xD;
-    3. Se o cliente confirmar que quer cancelar o pedido:&#xD;
-        3.1. O processo de cancelamente é iniciado.&#xD;
-    Ponto de extensão: Receber reembolso&#xD;
-    4. Aparece um ecrã que pergunta ao cliente a razão pela qual o pedido foi cancelado.&#xD;
-    5. O cliente justifica o cancelamento selecionando a opção.&#xD;
-    6. O pedido é cancelada e o UC termina.&#xD;
-&#xD;
-Condições após o cenário:&#xD;
-    1. O pedido foi cancelado.</body>
-      </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_4QQskBfHEeuOUfJj5huGoQ" name="Caso restaurante ainda não tenha aceite"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DBk6ERfIEeuOUfJj5huGoQ" name="ExtensionPoint2"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Ad0j4BfIEeuOUfJj5huGoQ" name="Receber reembolso">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_O2MGoBiDEeuYrbs0zz3Jbw">
-        <body>Nome: Receber reembolso&#xD;
-ID: UCcancelOrderReimbursement&#xD;
-Descrição: O utilizador recebe um reembolso do cancelamento do pedido&#xD;
-Atores:&#xD;
-    Primário: Cliente Uber&#xD;
-    Secundário: Restaurante&#xD;
-Pré-condições: &#xD;
-    1. Cliente efetuou o login.&#xD;
-    2. Cliente adicionou forma de pagamento.&#xD;
-    3. Cliente cancelou um pedido&#xD;
-    4. O pedido ainda não tinha sido aceite pelo restaurante&#xD;
-Cenário Principal:&#xD;
-    1. O UC começa quando o cliente cancela um pedido e este pedido ainda não tinha sido aceite pelo restaurante.&#xD;
-    2. É depositado o valor pago anteriormente quando o pedido foi efetuado.&#xD;
-    3. O sistema notifica o cliente acerca do valor depositado e o Use Case termina.&#xD;
-&#xD;
-Condições após o cenário:&#xD;
-    (?)</body>
-      </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_DBk6EBfIEeuOUfJj5huGoQ" extendedCase="_zLX2YBfHEeuOUfJj5huGoQ" extensionLocation="_DBk6ERfIEeuOUfJj5huGoQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ZZM30BfSEeuOUfJj5huGoQ" name="Fazer pedido ">
@@ -361,9 +319,6 @@ Condições após o cenário:&#xD;
 	Secundário: Nenhum</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_ObKnQBhyEeuYrbs0zz3Jbw" extendedCase="_Pw9AYBhwEeuYrbs0zz3Jbw" extensionLocation="_ObTKIBhyEeuYrbs0zz3Jbw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_q2Ac8BiCEeuYrbs0zz3Jbw" name="Terminar viagem">
-      <include xmi:type="uml:Include" xmi:id="_wEkzkBiCEeuYrbs0zz3Jbw" addition="_4Mnj8BcdEeuKtZIUcs3eaQ"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_KkJrABcVEeuKtZIUcs3eaQ" name="Cliente com sessão iniciada"/>
@@ -475,6 +430,13 @@ Condições após o cenário:&#xD;
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Mo9X8BewEeuOUfJj5huGoQ" name="condutor" type="_hiWygBcdEeuKtZIUcs3eaQ" association="_MoxKsBewEeuOUfJj5huGoQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Mo9_ABewEeuOUfJj5huGoQ" name="aceitar viagem" type="_2TOZYBcdEeuKtZIUcs3eaQ" association="_MoxKsBewEeuOUfJj5huGoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OoPvIBewEeuOUfJj5huGoQ" memberEnd="_OoQWMhewEeuOUfJj5huGoQ _OoQWMxewEeuOUfJj5huGoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OoQWMBewEeuOUfJj5huGoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OoQWMRewEeuOUfJj5huGoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OoQWMhewEeuOUfJj5huGoQ" type="_hiWygBcdEeuKtZIUcs3eaQ" association="_OoPvIBewEeuOUfJj5huGoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OoQWMxewEeuOUfJj5huGoQ" name="classificar o passageiro" type="_4Mnj8BcdEeuKtZIUcs3eaQ" association="_OoPvIBewEeuOUfJj5huGoQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_P9m_kBewEeuOUfJj5huGoQ" memberEnd="_P9oNsRewEeuOUfJj5huGoQ _P9oNshewEeuOUfJj5huGoQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P9nmoBewEeuOUfJj5huGoQ" source="org.eclipse.papyrus">
@@ -695,12 +657,5 @@ Condições após o cenário:&#xD;
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_gh8RUBhwEeuYrbs0zz3Jbw" name="confirmar entrega" type="_Pw9AYBhwEeuYrbs0zz3Jbw" association="_gh0VgBhwEeuYrbs0zz3Jbw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_gh8RURhwEeuYrbs0zz3Jbw" type="_oHNgQBcVEeuKtZIUcs3eaQ" association="_gh0VgBhwEeuYrbs0zz3Jbw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_u6HLkBiCEeuYrbs0zz3Jbw" memberEnd="_u6HyohiCEeuYrbs0zz3Jbw _u6IZsBiCEeuYrbs0zz3Jbw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u6HyoBiCEeuYrbs0zz3Jbw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u6HyoRiCEeuYrbs0zz3Jbw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_u6HyohiCEeuYrbs0zz3Jbw" name="terminar viagem" type="_q2Ac8BiCEeuYrbs0zz3Jbw" association="_u6HLkBiCEeuYrbs0zz3Jbw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_u6IZsBiCEeuYrbs0zz3Jbw" type="_hiWygBcdEeuKtZIUcs3eaQ" association="_u6HLkBiCEeuYrbs0zz3Jbw"/>
   </packagedElement>
 </uml:Package>
