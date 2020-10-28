@@ -64,6 +64,7 @@ Condições após o cenário:&#xD;
     2. O cliente classifica a comida, o restaurante, e o entregador.</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_JcqW8RlkEeunmKVrAQGWnw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WPI8MBlqEeu3Sdm93qvZCQ" name="Caso o cliente não tenha dinheiro suficiente na conta e o pedido tenha sido realizado"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Q7wikBlgEeunmKVrAQGWnw" name="Terminar viagem">
       <ownedComment xmi:type="uml:Comment" xmi:id="_2nKTwBlnEeudTKqSsrchbQ">
@@ -347,6 +348,7 @@ Cenário alternativo:&#xD;
         <body>Descrição: Condutor termina viagem pela app.</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_MlUxARlkEeunmKVrAQGWnw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gWGlIBlqEeu3Sdm93qvZCQ" name="Caso o cliente não tenha dinheiro suficiente e a viagem ja tenha sido realizada"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_126xUBlhEeunmKVrAQGWnw" name="Classificar pedido">
       <ownedComment xmi:type="uml:Comment" xmi:id="_z_cDkBlnEeudTKqSsrchbQ">
@@ -452,16 +454,16 @@ Descrição: O utilizador recebe um reembolso do cancelamento do pedido&#xD;
 Atores:&#xD;
     Primário: Cliente Uber&#xD;
     Secundário: Restaurante&#xD;
-Pré-condições: &#xD;
-    3. Cliente cancelou um pedido&#xD;
-    4. O pedido ainda não tinha sido aceite pelo restaurante&#xD;
-Cenário Principal:&#xD;
+Pré-condições do segmento 1: &#xD;
+    1. Cliente cancelou um pedido&#xD;
+    2. O pedido ainda não tinha sido aceite pelo restaurante&#xD;
+Cenário do Segmento 1:&#xD;
     1. O UC começa quando o cliente cancela um pedido e este pedido ainda não tinha sido aceite pelo restaurante.&#xD;
     2. É depositado o valor pago anteriormente quando o pedido foi efetuado.&#xD;
     3. O sistema notifica o cliente acerca do valor depositado e o Use Case termina.&#xD;
 &#xD;
-Condições após o cenário:&#xD;
-    O cliente recebeu de volta o dinheiro do pedido</body>
+Condições após o cenário do segmento 1:&#xD;
+    O cliente recebeu de volta o dinheiro do pedido.</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_jIXVkBljEeunmKVrAQGWnw" extendedCase="_7Y1hwBlhEeunmKVrAQGWnw" extensionLocation="_jIYjsBljEeunmKVrAQGWnw"/>
     </packagedElement>
@@ -474,20 +476,17 @@ Atores:&#xD;
     Primário: Cliente Uber Eats&#xD;
     Secundário: Nenhum&#xD;
 Pré-condições: &#xD;
-    1. Cliente efetuou o login.&#xD;
-    2. Cliente adicionou forma de pagamento.&#xD;
-    3. Cliente escolheu localização.&#xD;
-    4. Cliente efetuou pedido.&#xD;
+    1. Cliente efetuou pedido.&#xD;
 Cenário Principal:&#xD;
     1. O UC começa quando o cliente carrega no botão de &quot;Cancelar pedido&quot;.&#xD;
     2. Se o cliente escolher a opção &quot;Não&quot; quando questionado se a decisão é final:&#xD;
-        2.1. A viagem continua normalmente.&#xD;
+        2.1. A entrega do pedido continua normalmente.&#xD;
     3. Se o cliente confirmar que quer cancelar o pedido:&#xD;
-        3.1. O processo de cancelamente é iniciado.&#xD;
+        3.1. O processo de cancelamento é iniciado.&#xD;
     Ponto de extensão: Receber reembolso&#xD;
     4. Aparece um ecrã que pergunta ao cliente a razão pela qual o pedido foi cancelado.&#xD;
     5. O cliente justifica o cancelamento selecionando a opção.&#xD;
-    6. O pedido é cancelada e o UC termina.&#xD;
+    6. O pedido é cancelado e o UC termina.&#xD;
 &#xD;
 Condições após o cenário:&#xD;
     1. O pedido foi cancelado.</body>
@@ -628,16 +627,16 @@ Descrição: O utilizador é cobrado por cancelar viagens com demasiada frequên
 Atores:&#xD;
     Primário: Cliente Uber&#xD;
     Secundário: Nenhum&#xD;
-Pré-condições: &#xD;
+Pré-condições para o segmento 1: &#xD;
     1. A viagem foi cancelada.&#xD;
     2. O cliente cancelou 2 ou mais viagens nos ultimos 30 minutos.&#xD;
-Cenário Principal:&#xD;
+Cenário Segmento 1:&#xD;
     1. O UC começa quando o cliente cancela uma viagem pela segunda vez ou mais nos ultimos 30 minutos.&#xD;
     Include(Selecionar forma de pagamento)&#xD;
     2. Um valor é debitado da conta do cliente.&#xD;
     3. O sistema notifica o cliente acerca do valor debitado e o UC termina.&#xD;
 &#xD;
-Condições após o cenário:&#xD;
+Condições após o cenário do segmento 1:&#xD;
     1. O cliente foi roubado</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="__FWk4BljEeunmKVrAQGWnw" extendedCase="_fucB0BliEeunmKVrAQGWnw" extensionLocation="__FWk4RljEeunmKVrAQGWnw"/>
@@ -682,7 +681,7 @@ Atores:&#xD;
     Secundário: Nenhum&#xD;
 Precondições: &#xD;
     1. O cliente está demasiado perto do destino para cancelar.&#xD;
-Cenário Alternativo:&#xD;
+Cenário Principal:&#xD;
     1. A opção para cancelar é escondida do cliente e a viagem já não pode ser cancelada.&#xD;
 &#xD;
 Condições após o cenário:&#xD;
@@ -697,8 +696,8 @@ Condições após o cenário:&#xD;
 ID: UCRateRide&#xD;
 Descrição: Depois de efetuar uma viagem o ator classifica a mesma.&#xD;
 Atores:&#xD;
-	Primário: Cliente Uber e Condutor&#xD;
-	Secundário: Nenhum&#xD;
+    Primário: Cliente Uber e Condutor&#xD;
+    Secundário: Nenhum&#xD;
 &#xD;
 Pré-condições: &#xD;
     1. A viagem terminou.&#xD;
@@ -781,13 +780,13 @@ Descrição: A conta do cliente é bloqueada por falhar ao pagar a entrega.&#xD;
 Atores:&#xD;
     Primário: Cliente Uber&#xD;
     Secundário: Nenhum&#xD;
-Pré-condições: &#xD;
+Pré-condições do segmento 1: &#xD;
     1. Efetuou uma viagem ou entrega.&#xD;
-Cenário Principal:&#xD;
+Cenário do segmento 1:&#xD;
     	1. O UC começa quando o sistema tenta cobrar o metodo de pagamento selecionado pelo utilizador.
 	2. Se o pagamento falhar, quer seja porque metodo de pagamento do utlizador não tem fundos suficiente para cobrir o pagamento ou por qualquer outra razão, a conta do cliente é bloqueada até que ele forneça um metodo de pagamento com que seja possivel processar o pagamento.&#xD;
 &#xD;
-Condições após o cenário:&#xD;
+Condições após o cenário do segmento 1:&#xD;
     1. O cliente tem a sua conta bloqueada.</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_JcqW8BlkEeunmKVrAQGWnw" extendedCase="_JKipABlgEeunmKVrAQGWnw" extensionLocation="_JcqW8RlkEeunmKVrAQGWnw"/>
@@ -1114,7 +1113,7 @@ Condições após o cenário:&#xD;
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_27m2kRljEeunmKVrAQGWnw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_27m2khljEeunmKVrAQGWnw" name="registar" type="_vDYLgBliEeunmKVrAQGWnw" association="_27mPgBljEeunmKVrAQGWnw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_27m2kxljEeunmKVrAQGWnw" type="_1rercBljEeunmKVrAQGWnw" association="_27mPgBljEeunmKVrAQGWnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_27m2kxljEeunmKVrAQGWnw" type="_jewuQBlhEeunmKVrAQGWnw" association="_27mPgBljEeunmKVrAQGWnw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_Bkh9EBlkEeunmKVrAQGWnw" memberEnd="_Bkh9ExlkEeunmKVrAQGWnw _Bkh9FBlkEeunmKVrAQGWnw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bkh9ERlkEeunmKVrAQGWnw" source="org.eclipse.papyrus">
