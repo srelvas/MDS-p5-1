@@ -140,14 +140,9 @@ Condições após o cenário:&#xD;
       </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_WwLm4BhxEeuYrbs0zz3Jbw" addition="_KCelMBhxEeuYrbs0zz3Jbw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_XiiNABcVEeuKtZIUcs3eaQ" name="Classificar entregador">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_XvbnIBiiEeuc3rY7_8B_1g">
-        <body>Descrição: O cliente dá uma classificação ao seu entregador</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_YqyOgBcVEeuKtZIUcs3eaQ" name="Classificar restaurante">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YqyOgBcVEeuKtZIUcs3eaQ" name="Classificar pedido">
       <ownedComment xmi:type="uml:Comment" xmi:id="_beWI4BiiEeuc3rY7_8B_1g">
-        <body>Descrição: O cliente classifica o restaurante de onde pediu comida.</body>
+        <body>Descrição: O cliente classifica o restaurante de onde pediu comida e o entregador.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ptkaEBcVEeuKtZIUcs3eaQ" name="Receber pedido na aplicação">
@@ -197,11 +192,6 @@ Condições após o cenário:
     <packagedElement xmi:type="uml:UseCase" xmi:id="_tnd8cBcYEeuKtZIUcs3eaQ" name="Recebe um pedido">
       <ownedComment xmi:type="uml:Comment" xmi:id="_wYNMUBilEeuc3rY7_8B_1g">
         <body>Descrição: O restaurante aceita e começa a preparar um pedido</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_jT6zkBcZEeuKtZIUcs3eaQ" name="Regista restaurante">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_kb2IABilEeuc3rY7_8B_1g">
-        <body>Descrição: O restaurante regista-se no sistema</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_2TOZYBcdEeuKtZIUcs3eaQ" name="Aceitar viagem">
@@ -334,16 +324,11 @@ Condições após o cenário:&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_iAPvoBiiEeuc3rY7_8B_1g">
         <body>Descrição: O cliente lê o código do veículo e passa a poder utilizá-lo</body>
       </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_23wfIBikEeuc3rY7_8B_1g" addition="_KCelMBhxEeuYrbs0zz3Jbw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_h7OiEBe4EeuOUfJj5huGoQ" name="Terminar viagem">
       <ownedComment xmi:type="uml:Comment" xmi:id="_kXnPoBiiEeuc3rY7_8B_1g">
         <body>Descrição: O cliente termina a viagem e abandona o veículo</body>
-      </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_23wfIBikEeuc3rY7_8B_1g" addition="_KCelMBhxEeuYrbs0zz3Jbw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_wPpp8Be4EeuOUfJj5huGoQ" name="Reservar veículo">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlrHEBiiEeuc3rY7_8B_1g">
-        <body>Descrição: O cliente reserva um veículo para mais tarde.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_axTckBe5EeuOUfJj5huGoQ" name="Juntar-se a uma frota">
@@ -448,11 +433,12 @@ Condições após o cenário: Pedido é feito e fica disponível na plataforma&#
 Cenário Principal:&#xD;
 	1. UC começa quando no website ou app se decide criar uma expedição na respetiva janela;&#xD;
 	2. É iniciado o processo de recolha de dados:&#xD;
-		2.1. É pedida o orçamento;&#xD;
+		2.1. É pedido o orçamento;&#xD;
 		2.2. É pedido o local de recolha e entrega da mercadoria;&#xD;
 		2.3. É pedida a data de recolha da mercadoria e a data de entrega da mercadoria no respetivo destino;&#xD;
 		2.4. É pedido as informações sensíveis em relação à mercadoria - valor, fragilidade, condições de transporte e entrega;&#xD;
 		2.5. Concorda-se com os termos e condições;&#xD;
+		Include(Selecionar forma de pagamento)&#xD;
 	3. Informações são submetidas;&#xD;
 &#xD;
 Cenário Alternativo:&#xD;
@@ -565,8 +551,6 @@ Atores:&#xD;
     Primário: Cliente Uber&#xD;
     Secundário: Restaurante&#xD;
 Pré-condições: &#xD;
-    1. Cliente efetuou o login.&#xD;
-    2. Cliente adicionou forma de pagamento.&#xD;
     3. Cliente cancelou um pedido&#xD;
     4. O pedido ainda não tinha sido aceite pelo restaurante&#xD;
 Cenário Principal:&#xD;
@@ -575,7 +559,7 @@ Cenário Principal:&#xD;
     3. O sistema notifica o cliente acerca do valor depositado e o Use Case termina.&#xD;
 &#xD;
 Condições após o cenário:&#xD;
-    (?)</body>
+    O cliente recebeu de volta o dinheiro do pedido</body>
       </ownedComment>
       <extend xmi:type="uml:Extend" xmi:id="_DBk6EBfIEeuOUfJj5huGoQ" extendedCase="_zLX2YBfHEeuOUfJj5huGoQ" extensionLocation="_DBk6ERfIEeuOUfJj5huGoQ"/>
     </packagedElement>
@@ -850,13 +834,6 @@ Condições após o cenário:&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_CI2V0hcZEeuKtZIUcs3eaQ" name="login" type="_D5SVgBcVEeuKtZIUcs3eaQ" association="_CI1uwBcZEeuKtZIUcs3eaQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_CI2V0xcZEeuKtZIUcs3eaQ" name="utilizador" type="_BEmqkBcZEeuKtZIUcs3eaQ" association="_CI1uwBcZEeuKtZIUcs3eaQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_lI8bgBcZEeuKtZIUcs3eaQ" memberEnd="_lI9CkhcZEeuKtZIUcs3eaQ _lI9CkxcZEeuKtZIUcs3eaQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lI9CkBcZEeuKtZIUcs3eaQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lI9CkRcZEeuKtZIUcs3eaQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_lI9CkhcZEeuKtZIUcs3eaQ" name="regista restaurante" type="_jT6zkBcZEeuKtZIUcs3eaQ" association="_lI8bgBcZEeuKtZIUcs3eaQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_lI9CkxcZEeuKtZIUcs3eaQ" name="restaurante" type="_rmwo8BcYEeuKtZIUcs3eaQ" association="_lI8bgBcZEeuKtZIUcs3eaQ"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_hiWygBcdEeuKtZIUcs3eaQ" name="Condutor">
     <generalization xmi:type="uml:Generalization" xmi:id="_-2OfoBimEeuc3rY7_8B_1g" general="_BEmqkBcZEeuKtZIUcs3eaQ"/>
   </packagedElement>
@@ -970,13 +947,6 @@ Condições após o cenário:&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_smZrUhe4EeuOUfJj5huGoQ" name="cliente uber scoot" type="_Q7C-kBe4EeuOUfJj5huGoQ" association="_smZEQBe4EeuOUfJj5huGoQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_smaSYBe4EeuOUfJj5huGoQ" name="terminar viagem" type="_h7OiEBe4EeuOUfJj5huGoQ" association="_smZEQBe4EeuOUfJj5huGoQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_4WcK4Be4EeuOUfJj5huGoQ" memberEnd="_4Wcx8Re4EeuOUfJj5huGoQ _4Wcx8he4EeuOUfJj5huGoQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4WcK4Re4EeuOUfJj5huGoQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4Wcx8Be4EeuOUfJj5huGoQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_4Wcx8Re4EeuOUfJj5huGoQ" name="cliente uber scoot" type="_Q7C-kBe4EeuOUfJj5huGoQ" association="_4WcK4Be4EeuOUfJj5huGoQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_4Wcx8he4EeuOUfJj5huGoQ" name="reservar veículo" type="_wPpp8Be4EeuOUfJj5huGoQ" association="_4WcK4Be4EeuOUfJj5huGoQ"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_e1Y9EBe5EeuOUfJj5huGoQ" memberEnd="_e1ZkIhe5EeuOUfJj5huGoQ _e1ZkIxe5EeuOUfJj5huGoQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e1ZkIBe5EeuOUfJj5huGoQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e1ZkIRe5EeuOUfJj5huGoQ" key="nature" value="UML_Nature"/>
@@ -1031,13 +1001,6 @@ Condições após o cenário:&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_L-DxEBfBEeuOUfJj5huGoQ" name="Cliente Uber Eats">
     <generalization xmi:type="uml:Generalization" xmi:id="_JBhKoBfFEeuOUfJj5huGoQ" general="_KkJrABcVEeuKtZIUcs3eaQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_SnDeUBfBEeuOUfJj5huGoQ" memberEnd="_SnEFYhfBEeuOUfJj5huGoQ _SnEFYxfBEeuOUfJj5huGoQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SnEFYBfBEeuOUfJj5huGoQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SnEFYRfBEeuOUfJj5huGoQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_SnEFYhfBEeuOUfJj5huGoQ" name="cliente uber eats" type="_L-DxEBfBEeuOUfJj5huGoQ" association="_SnDeUBfBEeuOUfJj5huGoQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_SnEFYxfBEeuOUfJj5huGoQ" name="classificar entregador" type="_XiiNABcVEeuKtZIUcs3eaQ" association="_SnDeUBfBEeuOUfJj5huGoQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_TdXbQBfBEeuOUfJj5huGoQ" memberEnd="_TdZ3ghfBEeuOUfJj5huGoQ _TdaekBfBEeuOUfJj5huGoQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TdZ3gBfBEeuOUfJj5huGoQ" source="org.eclipse.papyrus">
