@@ -147,20 +147,20 @@ Condições após o cenário:&#xD;
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ptkaEBcVEeuKtZIUcs3eaQ" name="Receber pedido na aplicação">
       <ownedComment xmi:type="uml:Comment" xmi:id="_1AS5IBiiEeuc3rY7_8B_1g">
-        <body>Nome: Receber pedido na aplicação
-ID: UC_getNewDeliveryRequest
-Descrição: O entregador aceita um pedido para ir buscar comida
-Atores:
-    Primário: Entregador
-    Secundário: Nenhum
-Pré-condições: 
-    1. Entregador efetuou o login.
-    2. O cliente fez um pedido.
-    3. O restaurante recebeu um pedido e começou a prepara-lo
-Cenário Principal:
-    1. O UC começa quando o entregador recebe uma notificação que tem uma nova entrega para fazer.
-    2. O entregador aceita o pedido e dirige-se ao restaurante para recolher o pedido.
-Condições após o cenário:
+        <body>Nome: Receber pedido na aplicação&#xD;
+ID: UC_getNewDeliveryRequest&#xD;
+Descrição: O entregador aceita um pedido para ir buscar comida&#xD;
+Atores:&#xD;
+    Primário: Entregador&#xD;
+    Secundário: Nenhum&#xD;
+Pré-condições: &#xD;
+    1. Entregador efetuou o login.&#xD;
+    2. O cliente fez um pedido.&#xD;
+    3. O restaurante recebeu um pedido e começou a prepara-lo&#xD;
+Cenário Principal:&#xD;
+    1. O UC começa quando o entregador recebe uma notificação que tem uma nova entrega para fazer.&#xD;
+    2. O entregador aceita o pedido e dirige-se ao restaurante para recolher o pedido.&#xD;
+Condições após o cenário:&#xD;
     1. O entregador agora encontra-se em serviço a meio duma entrega, e a dirigir-se para o restaurante.</body>
       </ownedComment>
     </packagedElement>
@@ -657,37 +657,37 @@ Condições após o cenário:&#xD;
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Pw9AYBhwEeuYrbs0zz3Jbw" name="Confirmar entrega">
       <ownedComment xmi:type="uml:Comment" xmi:id="_2Zrs8BitEeuc3rY7_8B_1g">
-        <body>Nome: Confirmar entrega
-ID: UC_confirmDelivery
-Descrição: O entregador confirma a entrega como concluida.
-Atores:
-    Primário: Entregador
-    Secundário: Nenhum
-Pré-condições: 
-    1. Entregador efetuou o login.
-    2. O entregador recebeu um pedido na aplicação.
-    3. O entregador marcou o pedido como recolhido.
-Cenário Principal:
-    1. O UC começa quando o entregador chega a localizacao de entrga
-    2. Se for uma entrega do tipo &quot;encontro à porta&quot;
-        2.1. O sistema notifica o cliente que o entregador chegou, e pare este se encontrar com o entregador à porta
-        2.2. O sistema apresenta a informação ao entregador sobre em que porta entregar
-        2.3. O entregador e o cliente encontram-se e é feita a entrega
-    3. Se for uma entrega do tipo  &quot;encontro no veiculo&quot;
-        3.1. O sistema notifica o cliente que o entregador chegou, e pare este se encontrar com o entregador no veiculo
-        3.2. O sistema apresenta a informação ao entregador de a quem entregar
-        3.3. O entregador e o cliente encontram-se e é feita a entrega
-    4. Se for uma entrega do tipo &quot;deixar à porta&quot;
-        4.1. O sistema notifica o cliente que o entregador chegou
-        4.2. O sistema apresenta a informação ao entregador sobre em frente a qual porta deixar
-        4.3. O sistema pede uma foto de comprovativo da entrega deixada à porta
-    5. O entregador marca a sua entrega como concluida
-    6. O cliente é cobrado o preço da entrega, no metodo de pagamento que ele selecionou ao fazer o pedido.
-Ponto de extensão: Conta bloqueada
-    7. Se o método de pagamento do cliente não tiver fundos suficientes para cobrir o preço da entrega, ou o pagamento falhe por qualque outra razão, a conta do cliente é bloqueada até que ele forneça um metodo de pagamento com que seja possivel processar o pagamento.
-Condições após o cenário:
-    1. O utilizador recebe uma notificação que a entrega foi concluida
-        1.1. Se foi uma entrega do tipo &quot;deixar à porta&quot; a notificação inclui a foto de comprovativo de entrega tirada pelo entregador
+        <body>Nome: Confirmar entrega&#xD;
+ID: UC_confirmDelivery&#xD;
+Descrição: O entregador confirma a entrega como concluida.&#xD;
+Atores:&#xD;
+    Primário: Entregador&#xD;
+    Secundário: Nenhum&#xD;
+Pré-condições: &#xD;
+    1. Entregador efetuou o login.&#xD;
+    2. O entregador recebeu um pedido na aplicação.&#xD;
+    3. O entregador marcou o pedido como recolhido.&#xD;
+Cenário Principal:&#xD;
+    1. O UC começa quando o entregador chega a localizacao de entrga&#xD;
+    2. Se for uma entrega do tipo &quot;encontro à porta&quot;&#xD;
+        2.1. O sistema notifica o cliente que o entregador chegou, e pare este se encontrar com o entregador à porta&#xD;
+        2.2. O sistema apresenta a informação ao entregador sobre em que porta entregar&#xD;
+        2.3. O entregador e o cliente encontram-se e é feita a entrega&#xD;
+    3. Se for uma entrega do tipo  &quot;encontro no veiculo&quot;&#xD;
+        3.1. O sistema notifica o cliente que o entregador chegou, e pare este se encontrar com o entregador no veiculo&#xD;
+        3.2. O sistema apresenta a informação ao entregador de a quem entregar&#xD;
+        3.3. O entregador e o cliente encontram-se e é feita a entrega&#xD;
+    4. Se for uma entrega do tipo &quot;deixar à porta&quot;&#xD;
+        4.1. O sistema notifica o cliente que o entregador chegou&#xD;
+        4.2. O sistema apresenta a informação ao entregador sobre em frente a qual porta deixar&#xD;
+        4.3. O sistema pede uma foto de comprovativo da entrega deixada à porta&#xD;
+    5. O entregador marca a sua entrega como concluida&#xD;
+    6. O cliente é cobrado o preço da entrega, no metodo de pagamento que ele selecionou ao fazer o pedido.&#xD;
+Ponto de extensão: Conta bloqueada&#xD;
+    7. Se o método de pagamento do cliente não tiver fundos suficientes para cobrir o preço da entrega, ou o pagamento falhe por qualque outra razão, a conta do cliente é bloqueada até que ele forneça um metodo de pagamento com que seja possivel processar o pagamento.&#xD;
+Condições após o cenário:&#xD;
+    1. O utilizador recebe uma notificação que a entrega foi concluida&#xD;
+        1.1. Se foi uma entrega do tipo &quot;deixar à porta&quot; a notificação inclui a foto de comprovativo de entrega tirada pelo entregador&#xD;
     2. O cliente classifica a comida, o restaurante, e o entregador.</body>
       </ownedComment>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ObTKIBhyEeuYrbs0zz3Jbw" name="ExtensionPoint1"/>
