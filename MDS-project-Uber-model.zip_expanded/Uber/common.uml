@@ -1138,4 +1138,25 @@ Condições após o cenário do segmento 1:&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_WORBMRlkEeunmKVrAQGWnw" name="condutor" type="_XKBmMBlhEeunmKVrAQGWnw" association="_WOQaIBlkEeunmKVrAQGWnw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WORBMhlkEeunmKVrAQGWnw" name="cancelar viagem" type="_cJo60BlhEeunmKVrAQGWnw" association="_WOQaIBlkEeunmKVrAQGWnw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_O3GpUCseEeuktfQLFG4ubA" memberEnd="_O3H3ciseEeuktfQLFG4ubA _O3IegCseEeuktfQLFG4ubA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O3H3cCseEeuktfQLFG4ubA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O3H3cSseEeuktfQLFG4ubA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O3H3ciseEeuktfQLFG4ubA" name="pagar multa" type="_Y-R8oBliEeunmKVrAQGWnw" association="_O3GpUCseEeuktfQLFG4ubA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O3IegCseEeuktfQLFG4ubA" type="_0shv4BljEeunmKVrAQGWnw" association="_O3GpUCseEeuktfQLFG4ubA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HniO0CsfEeuktfQLFG4ubA" memberEnd="_Hnjc8isfEeuktfQLFG4ubA _Hnjc8ysfEeuktfQLFG4ubA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hnjc8CsfEeuktfQLFG4ubA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hnjc8SsfEeuktfQLFG4ubA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hnjc8isfEeuktfQLFG4ubA" name="entregador" type="_BWT3sBlgEeunmKVrAQGWnw" association="_HniO0CsfEeuktfQLFG4ubA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hnjc8ysfEeuktfQLFG4ubA" name="conta bloqueada" type="_HR2sQBlkEeunmKVrAQGWnw" association="_HniO0CsfEeuktfQLFG4ubA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ft2ukCsfEeuktfQLFG4ubA" memberEnd="_ft38sSsfEeuktfQLFG4ubA _ft38sisfEeuktfQLFG4ubA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ft3VoCsfEeuktfQLFG4ubA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ft38sCsfEeuktfQLFG4ubA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ft38sSsfEeuktfQLFG4ubA" name="conta bloqueada" type="_HR2sQBlkEeunmKVrAQGWnw" association="_ft2ukCsfEeuktfQLFG4ubA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ft38sisfEeuktfQLFG4ubA" name="condutor" type="_XKBmMBlhEeunmKVrAQGWnw" association="_ft2ukCsfEeuktfQLFG4ubA"/>
+  </packagedElement>
 </uml:Package>
