@@ -222,11 +222,6 @@ Cenário Alternativo: nenhum;</body>
         <body>Descrição: O condutor aceita uma viagem de um cliente.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_cJo60BlhEeunmKVrAQGWnw" name="Cancelar viagem">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_lDrEUBlmEeudTKqSsrchbQ">
-        <body>Descrição: Depois de aceitar uma viagem o condutor cancela-a.</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_cyhfwBlhEeunmKVrAQGWnw" name="Recuar viagem">
       <ownedComment xmi:type="uml:Comment" xmi:id="_mi3mMBlmEeudTKqSsrchbQ">
         <body>Descrição: O condutor rejeita uma viagem possivel de um cliente.</body>
@@ -248,19 +243,20 @@ Cenário Principal: &#xD;
 Pós-condições: Dinheiro transferido para conta bancária é adicionado ao saldo total da conta do condutor;&#xD;
 Cenário alternativo:&#xD;
 &#xD;
-    Nome: Recolher dinheiro&#xD;
-    ID: UCRetrieveMoney&#xD;
+    ID: UCRetrieveMoney_NoBankAccount&#xD;
     Descrição: Condutor tenta recolher o dinheiro acumulado na sua conta Uber das viagens que fez sem uma conta bancária associada;&#xD;
     Atores: &#xD;
         Primário: Condutor&#xD;
         Secundário: Nenhum&#xD;
     Pré-condições: Condutor deve ter feito pelo menos uma viagem com passageiro até ao destino;&#xD;
-    Cenário Principal: &#xD;
-        1. UC começa quando o condutor decide selecionar a opção de levantar o dinheiro depositado na sua conta Uber sem ter conta bancária associada;&#xD;
-        2. Carregar no botão sem ter conta bancária associada à app&#xD;
-            2.1. Conta bancária (credenciais) é pedida;&#xD;
-            2.2. Se introduzidas volta-se ao passo 2 do cenário principal;&#xD;
-    Pós-condições: Dinheiro transferido para conta bancária é adicionado ao saldo total da conta do condutor.</body>
+					Não existe uma conta bancária associada ao ator;&#xD;
+    Cenário Alternativo: &#xD;
+         1. UC começa depois do passo 1 do cenário principal&#xD;
+         2. A conta bancária (credenciais) é pedida;&#xD;
+         3.1. Se introduzidas volta-se ao passo 2 do cenário principal;&#xD;
+	   3.2. &#xD;
+    Pós-condições: Dinheiro transferido para conta bancária é adicionado ao saldo total da conta do condutor.&#xD;
+</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_126xUBlhEeunmKVrAQGWnw" name="Classificar pedido">
@@ -453,22 +449,6 @@ Cenário Alternativo: Nenhum</body>
         <body>Descrição: O cliente adiciona um voucher de descontos.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_vDYLgBliEeunmKVrAQGWnw" name="Registar">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_apBDUBlmEeudTKqSsrchbQ">
-        <body>Descrição: O utilizador regista-se na app.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_wqmoABliEeunmKVrAQGWnw" name="Login">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_dHZKQBlmEeudTKqSsrchbQ">
-        <body>Pré-condições: Ser registado&#xD;
-Descrição: O utilizador efetua login na app;</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_xM6D0BliEeunmKVrAQGWnw" name="Fazer Logout">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_eorW0BlmEeudTKqSsrchbQ">
-        <body>Descrição: O cliente termina a sessão.</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_HR2sQBlkEeunmKVrAQGWnw" name="Conta bloqueada">
       <ownedComment xmi:type="uml:Comment" xmi:id="_-9-0wBlnEeudTKqSsrchbQ">
         <body>Nome: Conta bloqueada&#xD;
@@ -558,7 +538,7 @@ Atores:&#xD;
 	Secundário: Nenhum&#xD;
 Precondições: Cliente pede cancelamento do pedido&#xD;
 Cenário Primário:&#xD;
-	1. O cenário alternativo começa quando o cliente cancela o pedido&#xD;
+	1. O cenário alternativo começa a qualquer altura.&#xD;
 	2. O sistema pergunta ao cliente o motivo de este ter cancelado o pedido&#xD;
 	3. O cliente confirma o cancelamento&#xD;
 &#xD;
@@ -712,7 +692,7 @@ Post-conditions: A viagem tem uma classificação entre 1 e 5. Caso este UC seja
 Alternative flow: Classificar viagem:Cancelar&#xD;
 ID: UCcancelRateRide&#xD;
 Descrição: O ator cancela a classificação da viagem&#xD;
-Preconditions: Nenhuma&#xD;
+Preconditions: O ator pede o cancelamento da classificação da viagem&#xD;
 Primary actors: Cliente uber e Condutor&#xD;
 Secondary actors: Nenhum&#xD;
 Alternative flow: &#xD;
@@ -770,17 +750,17 @@ Condições após o cenário:&#xD;
 &#xD;
 Cenário Alternativo:&#xD;
 1. Cancelar pedido&#xD;
-2. Condutor pode recusar ou cancelar a entrega&#xD;
+2. Condutor pode recusar ou cancelar a viagem&#xD;
 &#xD;
 &#xD;
-ID: UC_clienteCancelaPedido&#xD;
-Descrição: O cliente cancela o pedido&#xD;
+ID: UC_clienteCancelaViagem&#xD;
+Descrição: O cliente cancela a viagem&#xD;
 Atores:&#xD;
 	Primário: Cliente Uber&#xD;
 	Secundário: Nenhum&#xD;
-Precondições: none&#xD;
+Precondições: O cliente pede para cancelar a viagem&#xD;
 Cenário Alternativo:&#xD;
-	1. O cenário alternativo começa quando o cliente cancela o pedido&#xD;
+	1. O cenário alternativo começa a qualquer altura&#xD;
 	2. O sistema pergunta ao cliente o motivo de este ter cancelado a viagem&#xD;
 	3. O cliente confirma o cancelamento&#xD;
 &#xD;
@@ -793,12 +773,14 @@ Descrição: Condutor pode cancelar a viagem&#xD;
 Atores:&#xD;
 	Primário: Cliente Uber&#xD;
 	Secundário: Condutor&#xD;
-Precondições: condutor aceitou a viagem&#xD;
+Precondições: Condutor aceitou a viagem&#xD;
+				Condutor cancelou a viagem&#xD;
 Cenário Alternativo:&#xD;
-	1. O condutor cancela a viagem e o sistema avisa o cliente do sucedido&#xD;
-	2. O sistema procura um novo condutor disponivel para a viagem do cliente&#xD;
-		2.1 Se o sistema encontrar então muda logo de condutor e mostra ao cliente as informações do novo condutor&#xD;
-		2.2 Se o sistema não encontrar condutor disponivel então o sistema avisa o cliente e pede que este espere algum tempo para pedir novamente a viagem&#xD;
+	1. O cenário alternativo começa a qualquer altura&#xD;
+	2. O sistema avisa o cliente que o condutor cancelou a viagem&#xD;
+	3. O sistema procura um novo condutor disponivel para a viagem do cliente&#xD;
+		3.1 Se o sistema encontrar então muda logo de condutor e mostra ao cliente as informações do novo condutor&#xD;
+		3.2 Se o sistema não encontrar condutor disponivel então o sistema avisa o cliente e pede que este espere algum tempo para pedir novamente a viagem&#xD;
 &#xD;
 Condições após o cenário:&#xD;
 	1. A viagem muda de condutor mas ainda está a decorrer ou não há condutor disponível e a viagem é cancelada e o cliente reembolsado&#xD;
@@ -820,12 +802,36 @@ Condições após o cenário:&#xD;
         <include xmi:type="uml:Include" xmi:id="_9rf2ABljEeunmKVrAQGWnw" addition="_OArmoBliEeunmKVrAQGWnw"/>
         <include xmi:type="uml:Include" xmi:id="_JMAnoBlrEeu3Sdm93qvZCQ" addition="_oydAABliEeunmKVrAQGWnw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_cJo60BlhEeunmKVrAQGWnw" name="Cancelar viagem">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_lDrEUBlmEeudTKqSsrchbQ">
+          <body>Descrição: Depois de aceitar uma viagem o condutor cancela-a.</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4g8c0CtjEeu9g7B-Kzoz8g" name="Uber Scoot &amp; Bike"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GqvpECtkEeu9g7B-Kzoz8g" name="Sistema geral">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_xM6D0BliEeunmKVrAQGWnw" name="Fazer Logout">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_eorW0BlmEeudTKqSsrchbQ">
+          <body>Descrição: O cliente termina a sessão.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_wqmoABliEeunmKVrAQGWnw" name="Login">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_dHZKQBlmEeudTKqSsrchbQ">
+          <body>Pré-condições: Ser registado&#xD;
+Descrição: O utilizador efetua login na app;</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_vDYLgBliEeunmKVrAQGWnw" name="Registar">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_apBDUBlmEeudTKqSsrchbQ">
+          <body>Descrição: O utilizador regista-se na app.</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_NkjWMBlgEeunmKVrAQGWnw" name="Cliente Uber Scoot &amp; Bike">
     <generalization xmi:type="uml:Generalization" xmi:id="_5ZwCEBllEeudTKqSsrchbQ" general="_jewuQBlhEeunmKVrAQGWnw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_pIArMBlgEeunmKVrAQGWnw" name="Transporadora">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pIArMBlgEeunmKVrAQGWnw" name="Transportadora">
     <generalization xmi:type="uml:Generalization" xmi:id="_PdFWYBlmEeudTKqSsrchbQ" general="_jewuQBlhEeunmKVrAQGWnw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_4K1KIBlgEeunmKVrAQGWnw" name="Remetente">
@@ -1118,7 +1124,7 @@ Condições após o cenário:&#xD;
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1rfSgRljEeunmKVrAQGWnw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_1rfSghljEeunmKVrAQGWnw" name="login" type="_wqmoABliEeunmKVrAQGWnw" association="_1rercBljEeunmKVrAQGWnw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_1rfSgxljEeunmKVrAQGWnw" type="_1UiLEBljEeunmKVrAQGWnw" association="_1rercBljEeunmKVrAQGWnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1rfSgxljEeunmKVrAQGWnw" type="_jewuQBlhEeunmKVrAQGWnw" association="_1rercBljEeunmKVrAQGWnw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_27mPgBljEeunmKVrAQGWnw" memberEnd="_27m2khljEeunmKVrAQGWnw _27m2kxljEeunmKVrAQGWnw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_27m2kBljEeunmKVrAQGWnw" source="org.eclipse.papyrus">
