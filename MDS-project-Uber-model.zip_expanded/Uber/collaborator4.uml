@@ -29,7 +29,7 @@
       <upperBound xmi:type="uml:LiteralInteger" xmi:id="_zWHeMCxJEeu9g7B-Kzoz8g" value="1"/>
     </node>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Cancelar viagem" node="_5Ng1YCwHEeu9g7B-Kzoz8g _Rioy4CwYEeu9g7B-Kzoz8g _fEBUQCwYEeu9g7B-Kzoz8g _ycIYcCwYEeu9g7B-Kzoz8g _9574gCwYEeu9g7B-Kzoz8g _RSPxACwZEeu9g7B-Kzoz8g _nN-ogCwZEeu9g7B-Kzoz8g _4YS_cCwZEeu9g7B-Kzoz8g _I-fVoCwaEeu9g7B-Kzoz8g">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Cancelar viagem" node="_5Ng1YCwHEeu9g7B-Kzoz8g _Rioy4CwYEeu9g7B-Kzoz8g _fEBUQCwYEeu9g7B-Kzoz8g _ycIYcCwYEeu9g7B-Kzoz8g _9574gCwYEeu9g7B-Kzoz8g _RSPxACwZEeu9g7B-Kzoz8g _nN-ogCwZEeu9g7B-Kzoz8g _4YS_cCwZEeu9g7B-Kzoz8g _I-fVoCwaEeu9g7B-Kzoz8g _NwroUCzVEeu9g7B-Kzoz8g _PQNhYCzVEeu9g7B-Kzoz8g _VPAbECzVEeu9g7B-Kzoz8g _uKOigCzVEeu9g7B-Kzoz8g _2wP9ICzVEeu9g7B-Kzoz8g __SOlQCzVEeu9g7B-Kzoz8g _L4HuwCzWEeu9g7B-Kzoz8g _PEI-0CzWEeu9g7B-Kzoz8g _WAS4oCzWEeu9g7B-Kzoz8g _f-MsMCzWEeu9g7B-Kzoz8g _n3I-YCzWEeu9g7B-Kzoz8g _tIKzICzWEeu9g7B-Kzoz8g _wwiA8CzWEeu9g7B-Kzoz8g _6agL4CzWEeu9g7B-Kzoz8g _gyHnACzXEeu9g7B-Kzoz8g _ANJqgCzYEeu9g7B-Kzoz8g _Osj6YCzYEeu9g7B-Kzoz8g" group="_CJ0S4CzVEeu9g7B-Kzoz8g _F1moICzVEeu9g7B-Kzoz8g">
     <edge xmi:type="uml:ControlFlow" xmi:id="_Ri4DcCwYEeu9g7B-Kzoz8g" target="_Rioy4CwYEeu9g7B-Kzoz8g" source="_5Ng1YCwHEeu9g7B-Kzoz8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_fEVdUCwYEeu9g7B-Kzoz8g" target="_fEBUQCwYEeu9g7B-Kzoz8g" source="_Rioy4CwYEeu9g7B-Kzoz8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_ycdvoCwYEeu9g7B-Kzoz8g" name="não" target="_ycIYcCwYEeu9g7B-Kzoz8g" source="_fEBUQCwYEeu9g7B-Kzoz8g"/>
@@ -42,6 +42,27 @@
     </edge>
     <edge xmi:type="uml:ControlFlow" xmi:id="_FxE-cCwaEeu9g7B-Kzoz8g" target="_ycIYcCwYEeu9g7B-Kzoz8g" source="_4YS_cCwZEeu9g7B-Kzoz8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_I_DWUCwaEeu9g7B-Kzoz8g" target="_I-fVoCwaEeu9g7B-Kzoz8g" source="_ycIYcCwYEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_T-dZMCzVEeu9g7B-Kzoz8g" inPartition="_CJ0S4CzVEeu9g7B-Kzoz8g" target="_PQNhYCzVEeu9g7B-Kzoz8g" source="_NwroUCzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_kw6CsCzVEeu9g7B-Kzoz8g" target="_VPAbECzVEeu9g7B-Kzoz8g" source="_PQNhYCzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wIGkcCzVEeu9g7B-Kzoz8g" target="_uKOigCzVEeu9g7B-Kzoz8g" source="_VPAbECzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2w0k4CzVEeu9g7B-Kzoz8g" name="Sim" target="_2wP9ICzVEeu9g7B-Kzoz8g" source="_uKOigCzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__Su7kCzVEeu9g7B-Kzoz8g" name="Não" target="__SOlQCzVEeu9g7B-Kzoz8g" source="_uKOigCzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_L4x2ECzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_L4HuwCzWEeu9g7B-Kzoz8g" source="__SOlQCzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PEuNoCzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_PEI-0CzWEeu9g7B-Kzoz8g" source="_2wP9ICzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WBB4cCzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_WAS4oCzWEeu9g7B-Kzoz8g" source="_2wP9ICzVEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_j0ZhsCzWEeu9g7B-Kzoz8g" target="_f-MsMCzWEeu9g7B-Kzoz8g" source="_WAS4oCzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_n4XGYCzWEeu9g7B-Kzoz8g" target="_n3I-YCzWEeu9g7B-Kzoz8g" source="_f-MsMCzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tI4k0CzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_tIKzICzWEeu9g7B-Kzoz8g" source="_n3I-YCzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wx9kUCzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_wwiA8CzWEeu9g7B-Kzoz8g" source="_tIKzICzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6bbY8CzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_6agL4CzWEeu9g7B-Kzoz8g" source="_PEI-0CzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_gy97kCzXEeu9g7B-Kzoz8g" name="Sim" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_gyHnACzXEeu9g7B-Kzoz8g" source="_6agL4CzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AOCbUCzYEeu9g7B-Kzoz8g" name="Não" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_ANJqgCzYEeu9g7B-Kzoz8g" source="_6agL4CzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FDrUkCzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_ANJqgCzYEeu9g7B-Kzoz8g" source="_gyHnACzXEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GhmrICzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_wwiA8CzWEeu9g7B-Kzoz8g" source="_ANJqgCzYEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NBNy4CzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_L4HuwCzWEeu9g7B-Kzoz8g" source="_wwiA8CzWEeu9g7B-Kzoz8g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Otu_ECzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g" target="_Osj6YCzYEeu9g7B-Kzoz8g" source="_L4HuwCzWEeu9g7B-Kzoz8g"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_CJ0S4CzVEeu9g7B-Kzoz8g" name=" Cliente Uber Ride" node="_NwroUCzVEeu9g7B-Kzoz8g _PQNhYCzVEeu9g7B-Kzoz8g _uKOigCzVEeu9g7B-Kzoz8g _f-MsMCzWEeu9g7B-Kzoz8g" edge="_T-dZMCzVEeu9g7B-Kzoz8g"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_F1moICzVEeu9g7B-Kzoz8g" name="Sistema" node="_VPAbECzVEeu9g7B-Kzoz8g _2wP9ICzVEeu9g7B-Kzoz8g __SOlQCzVEeu9g7B-Kzoz8g _L4HuwCzWEeu9g7B-Kzoz8g _PEI-0CzWEeu9g7B-Kzoz8g _WAS4oCzWEeu9g7B-Kzoz8g _n3I-YCzWEeu9g7B-Kzoz8g _tIKzICzWEeu9g7B-Kzoz8g _wwiA8CzWEeu9g7B-Kzoz8g _6agL4CzWEeu9g7B-Kzoz8g _gyHnACzXEeu9g7B-Kzoz8g _ANJqgCzYEeu9g7B-Kzoz8g _Osj6YCzYEeu9g7B-Kzoz8g" edge="_L4x2ECzWEeu9g7B-Kzoz8g _PEuNoCzWEeu9g7B-Kzoz8g _WBB4cCzWEeu9g7B-Kzoz8g _tI4k0CzWEeu9g7B-Kzoz8g _wx9kUCzWEeu9g7B-Kzoz8g _6bbY8CzWEeu9g7B-Kzoz8g _gy97kCzXEeu9g7B-Kzoz8g _AOCbUCzYEeu9g7B-Kzoz8g _FDrUkCzYEeu9g7B-Kzoz8g _GhmrICzYEeu9g7B-Kzoz8g _NBNy4CzYEeu9g7B-Kzoz8g _Otu_ECzYEeu9g7B-Kzoz8g"/>
     <node xmi:type="uml:InitialNode" xmi:id="_5Ng1YCwHEeu9g7B-Kzoz8g" name="" outgoing="_Ri4DcCwYEeu9g7B-Kzoz8g"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_Rioy4CwYEeu9g7B-Kzoz8g" name="Questionar o cliente se a decisão é final" incoming="_Ri4DcCwYEeu9g7B-Kzoz8g" outgoing="_fEVdUCwYEeu9g7B-Kzoz8g"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_fEBUQCwYEeu9g7B-Kzoz8g" name="Decisão final?" incoming="_fEVdUCwYEeu9g7B-Kzoz8g" outgoing="_ycdvoCwYEeu9g7B-Kzoz8g _96vJwCwYEeu9g7B-Kzoz8g"/>
@@ -59,6 +80,23 @@
       </inputValue>
     </node>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_I-fVoCwaEeu9g7B-Kzoz8g" name="" incoming="_I_DWUCwaEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_NwroUCzVEeu9g7B-Kzoz8g" name="" outgoing="_T-dZMCzVEeu9g7B-Kzoz8g" inPartition="_CJ0S4CzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PQNhYCzVEeu9g7B-Kzoz8g" name="Clicar em botão &quot;Cancelar&quot;" incoming="_T-dZMCzVEeu9g7B-Kzoz8g" outgoing="_kw6CsCzVEeu9g7B-Kzoz8g" inPartition="_CJ0S4CzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_VPAbECzVEeu9g7B-Kzoz8g" name="Mostra mensagem &quot;Confirmar cancelamento da viagem?&quot;" incoming="_kw6CsCzVEeu9g7B-Kzoz8g" outgoing="_wIGkcCzVEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_uKOigCzVEeu9g7B-Kzoz8g" name="Confirma?" incoming="_wIGkcCzVEeu9g7B-Kzoz8g" outgoing="_2w0k4CzVEeu9g7B-Kzoz8g __Su7kCzVEeu9g7B-Kzoz8g" inPartition="_CJ0S4CzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_2wP9ICzVEeu9g7B-Kzoz8g" name="" incoming="_2w0k4CzVEeu9g7B-Kzoz8g" outgoing="_PEuNoCzWEeu9g7B-Kzoz8g _WBB4cCzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="__SOlQCzVEeu9g7B-Kzoz8g" name="Voltar ao ecrã de viagem a decorrer" incoming="__Su7kCzVEeu9g7B-Kzoz8g" outgoing="_L4x2ECzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_L4HuwCzWEeu9g7B-Kzoz8g" name="" incoming="_L4x2ECzWEeu9g7B-Kzoz8g _NBNy4CzYEeu9g7B-Kzoz8g" outgoing="_Otu_ECzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PEI-0CzWEeu9g7B-Kzoz8g" name="Verificar se é a segunda viagem que o cliente cancela em menos de 30 minutos" incoming="_PEuNoCzWEeu9g7B-Kzoz8g" outgoing="_6bbY8CzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_WAS4oCzWEeu9g7B-Kzoz8g" name="Mostrar ecrã a questionar o motivo de cancelamento" incoming="_WBB4cCzWEeu9g7B-Kzoz8g" outgoing="_j0ZhsCzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:SendSignalAction" xmi:id="_f-MsMCzWEeu9g7B-Kzoz8g" name="Selecionar uma opção" incoming="_j0ZhsCzWEeu9g7B-Kzoz8g" outgoing="_n4XGYCzWEeu9g7B-Kzoz8g" inPartition="_CJ0S4CzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:AcceptEventAction" xmi:id="_n3I-YCzWEeu9g7B-Kzoz8g" name="O motivo é guardado no sistema" incoming="_n4XGYCzWEeu9g7B-Kzoz8g" outgoing="_tI4k0CzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_tIKzICzWEeu9g7B-Kzoz8g" name="Viagem é cancelada" incoming="_tI4k0CzWEeu9g7B-Kzoz8g" outgoing="_wx9kUCzWEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_wwiA8CzWEeu9g7B-Kzoz8g" name="" incoming="_wx9kUCzWEeu9g7B-Kzoz8g _GhmrICzYEeu9g7B-Kzoz8g" outgoing="_NBNy4CzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_6agL4CzWEeu9g7B-Kzoz8g" name="2ª viagem cancelada em menos de 30 min?" incoming="_6bbY8CzWEeu9g7B-Kzoz8g" outgoing="_gy97kCzXEeu9g7B-Kzoz8g _AOCbUCzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_gyHnACzXEeu9g7B-Kzoz8g" name="Pagar multa" incoming="_gy97kCzXEeu9g7B-Kzoz8g" outgoing="_FDrUkCzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_ANJqgCzYEeu9g7B-Kzoz8g" name="" incoming="_AOCbUCzYEeu9g7B-Kzoz8g _FDrUkCzYEeu9g7B-Kzoz8g" outgoing="_GhmrICzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_Osj6YCzYEeu9g7B-Kzoz8g" name="" incoming="_Otu_ECzYEeu9g7B-Kzoz8g" inPartition="_F1moICzVEeu9g7B-Kzoz8g"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_owSkwA2ZEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_raorIA2ZEeujq4q3EywG0A" name="StateMachine4">
