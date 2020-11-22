@@ -215,14 +215,6 @@
               <element xmi:type="uml:InitialNode" href="collaborator2.uml#_55RD4CzSEeuQWYtbwl9T-g"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_55g7gSzSEeuQWYtbwl9T-g" x="608" y="15"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_BV_UICzTEeuQWYtbwl9T-g" type="CreateObjectAction_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_BV_UIizTEeuQWYtbwl9T-g" type="CreateObjectAction_NameLabel"/>
-              <children xmi:type="notation:DecorationNode" xmi:id="_BV_UIyzTEeuQWYtbwl9T-g" type="CreateObjectAction_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_BV_UJCzTEeuQWYtbwl9T-g" y="15"/>
-              </children>
-              <element xmi:type="uml:CreateObjectAction" href="collaborator2.uml#_BVu1cCzTEeuQWYtbwl9T-g"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BV_UISzTEeuQWYtbwl9T-g" x="888" y="95" width="320"/>
-            </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_us11tiw4Eeu29sRdFVwE4w"/>
           </children>
           <element xmi:type="uml:ActivityPartition" href="collaborator2.uml#_us0AgCw4Eeu29sRdFVwE4w"/>

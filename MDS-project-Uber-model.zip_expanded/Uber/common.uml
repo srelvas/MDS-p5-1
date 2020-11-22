@@ -222,7 +222,7 @@ Cenário Alternativo: nenhum;</body>
         <body>Descrição: O condutor aceita uma viagem de um cliente.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_cyhfwBlhEeunmKVrAQGWnw" name="Recuar viagem">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cyhfwBlhEeunmKVrAQGWnw" name="Recusar viagem">
       <ownedComment xmi:type="uml:Comment" xmi:id="_mi3mMBlmEeudTKqSsrchbQ">
         <body>Descrição: O condutor rejeita uma viagem possivel de um cliente.</body>
       </ownedComment>
@@ -1170,5 +1170,180 @@ Descrição: O utilizador efetua login na app;</body>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_tZu40StYEeuhx-nQPiqkEQ" name="cliente com sessão iniciada" type="_lSmqcBlhEeunmKVrAQGWnw" association="_tZtDoCtYEeuhx-nQPiqkEQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_tZu40itYEeuhx-nQPiqkEQ" name="conta bloqueada" type="_HR2sQBlkEeunmKVrAQGWnw" association="_tZtDoCtYEeuhx-nQPiqkEQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_28PN4CzZEeu44_eVzMNV2w" name="Utilizador">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PUMd8CzfEeu44_eVzMNV2w" name="userID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_swi08CzkEeu44_eVzMNV2w" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u-ZzoCzkEeu44_eVzMNV2w" name="password">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mh2eECzkEeu44_eVzMNV2w" name="nome">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_k9d5MCzvEeu44_eVzMNV2w" name="contas" type="_qPCPkCzmEeu44_eVzMNV2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Q6O8CzvEeu44_eVzMNV2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_84Cb8CzvEeu44_eVzMNV2w" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q1r7UCzeEeu44_eVzMNV2w" name="register" concurrency="concurrent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_j1mvsCzjEeu44_eVzMNV2w" name="logIn"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ymw24CzjEeu44_eVzMNV2w" name="logOut"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PBYzgCzbEeu44_eVzMNV2w" name="Entregador">
+    <generalization xmi:type="uml:Generalization" xmi:id="_FzjVgCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dgze4CzlEeu44_eVzMNV2w" name="saldo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8VoH4CzuEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bhYuYCzxEeu44_eVzMNV2w" name="classificação">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QHFQQCzbEeu44_eVzMNV2w" name="Restaurante">
+    <generalization xmi:type="uml:Generalization" xmi:id="_OtkDICzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4EHwECzmEeu44_eVzMNV2w" name="saldo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i8ofUCzuEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fHAxQCzxEeu44_eVzMNV2w" name="classificação">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yHNrwCzxEeu44_eVzMNV2w" name="menu">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16r9YCzxEeu44_eVzMNV2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_164KoCzxEeu44_eVzMNV2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_57gHcCzxEeu44_eVzMNV2w" name="pedidos" type="_Dv-2ECzuEeu44_eVzMNV2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DK_V0CzyEeu44_eVzMNV2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLHRoCzyEeu44_eVzMNV2w" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Q9HgYCzbEeu44_eVzMNV2w" name="Cliente com sessão iniciada">
+    <generalization xmi:type="uml:Generalization" xmi:id="_C8KRoCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ITQXgCzvEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WeL8QCzbEeu44_eVzMNV2w" name="Cliente Uber">
+    <generalization xmi:type="uml:Generalization" xmi:id="_LtaE0CzcEeu44_eVzMNV2w" general="_Q9HgYCzbEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6vLj8CztEeu44_eVzMNV2w" name="viagens" type="_mY4OoCzsEeu44_eVzMNV2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BcuaACzuEeu44_eVzMNV2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ao_P8CzuEeu44_eVzMNV2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bzRlECzwEeu44_eVzMNV2w" name="favoritos" type="_mY4OoCzsEeu44_eVzMNV2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fylTQCzwEeu44_eVzMNV2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fy41QCzwEeu44_eVzMNV2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PSr84CzxEeu44_eVzMNV2w" name="classificação">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YPIVcCzbEeu44_eVzMNV2w" name="Cliente Uber Eats">
+    <generalization xmi:type="uml:Generalization" xmi:id="_MOR9QCzcEeu44_eVzMNV2w" general="_Q9HgYCzbEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_F7-zkCzuEeu44_eVzMNV2w" name="pedidos" visibility="public" type="_Dv-2ECzuEeu44_eVzMNV2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J2fhUCzuEeu44_eVzMNV2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiDiYCzuEeu44_eVzMNV2w" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dZvZICzbEeu44_eVzMNV2w" name="Cliente Uber Scoot &amp; Bike">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Ejs3MCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fApskCzbEeu44_eVzMNV2w" name="Condutor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_FL1OMCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kuRyMCzlEeu44_eVzMNV2w" name="saldo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5LnqACzuEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SPXJYCzxEeu44_eVzMNV2w" name="classificação">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WmnLkCzzEeu44_eVzMNV2w" name="frota" type="_TO5o4CzzEeu44_eVzMNV2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_huAqsCzbEeu44_eVzMNV2w" name="Camionista">
+    <generalization xmi:type="uml:Generalization" xmi:id="_TlO8sCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_imDF8CzbEeu44_eVzMNV2w" name="Rementente">
+    <generalization xmi:type="uml:Generalization" xmi:id="_SUo3gCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jjOf4CzbEeu44_eVzMNV2w" name="Transportadora">
+    <generalization xmi:type="uml:Generalization" xmi:id="_SyR1wCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qPCPkCzmEeu44_eVzMNV2w" name="Conta Bancária"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_paPgICznEeu44_eVzMNV2w" memberEnd="_paR8YSznEeu44_eVzMNV2w _paSjcCznEeu44_eVzMNV2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_paRVUCznEeu44_eVzMNV2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_paR8YCznEeu44_eVzMNV2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_paR8YSznEeu44_eVzMNV2w" name="conta bancária" type="_qPCPkCzmEeu44_eVzMNV2w" association="_paPgICznEeu44_eVzMNV2w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uxfRoCznEeu44_eVzMNV2w" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_paSjcCznEeu44_eVzMNV2w" name="utilizador" type="_28PN4CzZEeu44_eVzMNV2w" association="_paPgICznEeu44_eVzMNV2w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vS5VkCznEeu44_eVzMNV2w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mY4OoCzsEeu44_eVzMNV2w" name="Viagem">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_t4jFMCzsEeu44_eVzMNV2w" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vd9j0CzsEeu44_eVzMNV2w" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xarIICzsEeu44_eVzMNV2w" name="custo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1kjHkCzsEeu44_eVzMNV2w" name="condutor" type="_fApskCzbEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3DZEICzsEeu44_eVzMNV2w" name="passageiro" type="_WeL8QCzbEeu44_eVzMNV2w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5do5ACzsEeu44_eVzMNV2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hUNI8CzuEeu44_eVzMNV2w" name="voucher"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3d-KgCzwEeu44_eVzMNV2w" name="data" type="_xIiScCzwEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_52sVYCzwEeu44_eVzMNV2w" name="hora" type="_yCuCwCzwEeu44_eVzMNV2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_q9zyYCzsEeu44_eVzMNV2w" name="Localização">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qMKEQCzyEeu44_eVzMNV2w" name="latitude">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_26UY8CzyEeu44_eVzMNV2w" name="longitude">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WIy14CztEeu44_eVzMNV2w" name="Veiculo"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gxPbQCztEeu44_eVzMNV2w" name="Scoot"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Dv-2ECzuEeu44_eVzMNV2w" name="Pedido">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_USYRYCzuEeu44_eVzMNV2w" name="restaurante" type="_QHFQQCzbEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_f1GtsCzuEeu44_eVzMNV2w" name="voucher"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qwbLwCzuEeu44_eVzMNV2w" name="cliente" type="_YPIVcCzbEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uV9IACzuEeu44_eVzMNV2w" name="entregador" type="_PBYzgCzbEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NhRUgCzvEeu44_eVzMNV2w" name="localDeEntrega" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EVs1cCzyEeu44_eVzMNV2w" name="refeição">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NxIOECzyEeu44_eVzMNV2w" name="foiEntregado">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SPcMcCzyEeu44_eVzMNV2w" name="foiRecolhido">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xIiScCzwEeu44_eVzMNV2w" name="Data">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VjpvMCzyEeu44_eVzMNV2w" name="data">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bTKPsCzyEeu44_eVzMNV2w" value="3"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bTYSICzyEeu44_eVzMNV2w" value="3"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yCuCwCzwEeu44_eVzMNV2w" name="Hora">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fDgU0CzyEeu44_eVzMNV2w" name="hora">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hzfwMCzyEeu44_eVzMNV2w" value="2"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzr9cCzyEeu44_eVzMNV2w" value="2"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5l7DkCzyEeu44_eVzMNV2w" name="GPS"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TO5o4CzzEeu44_eVzMNV2w" name="Frota"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_o88psCzzEeu44_eVzMNV2w" name="Instalação">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qviosCzzEeu44_eVzMNV2w" name="classificação">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tg_coCzzEeu44_eVzMNV2w" name="nome">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wkg4ACzzEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
   </packagedElement>
 </uml:Package>
