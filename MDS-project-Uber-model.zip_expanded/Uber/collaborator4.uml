@@ -13,11 +13,7 @@
     <edge xmi:type="uml:ControlFlow" xmi:id="_IDsBoCwXEeu9g7B-Kzoz8g" inPartition="_KC81kCwVEeu9g7B-Kzoz8g" target="_sXPvwCwWEeu9g7B-Kzoz8g" source="_EePk8CwXEeu9g7B-Kzoz8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_vbFMACxJEeu9g7B-Kzoz8g" inPartition="_KC81kCwVEeu9g7B-Kzoz8g" target="_EePk8CwXEeu9g7B-Kzoz8g" source="_n4u04CxJEeu9g7B-Kzoz8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_2bQqMCxJEeu9g7B-Kzoz8g" target="_TN8lgCwVEeu9g7B-Kzoz8g" source="_zWG3ICxJEeu9g7B-Kzoz8g"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_En4UACwVEeu9g7B-Kzoz8g" name="User" node="_gsDwcCwVEeu9g7B-Kzoz8g _NoLaYCwWEeu9g7B-Kzoz8g _T6DoICwWEeu9g7B-Kzoz8g" edge="_NoimwCwWEeu9g7B-Kzoz8g _T6o28CwWEeu9g7B-Kzoz8g _iAwdECwWEeu9g7B-Kzoz8g">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_zZnw4CwXEeu9g7B-Kzoz8g">
-        <body>Devia começar qd o AD de terminar viagem acaba, nesse manda-se um sinal para este começar, pôr o cancelar??</body>
-      </ownedComment>
-    </group>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_En4UACwVEeu9g7B-Kzoz8g" name="User" node="_gsDwcCwVEeu9g7B-Kzoz8g _NoLaYCwWEeu9g7B-Kzoz8g _T6DoICwWEeu9g7B-Kzoz8g" edge="_NoimwCwWEeu9g7B-Kzoz8g _T6o28CwWEeu9g7B-Kzoz8g _iAwdECwWEeu9g7B-Kzoz8g"/>
     <group xmi:type="uml:ActivityPartition" xmi:id="_KC81kCwVEeu9g7B-Kzoz8g" name="System" node="_Ec0qoCwBEeu9g7B-Kzoz8g _TN8lgCwVEeu9g7B-Kzoz8g _dEcJgCwVEeu9g7B-Kzoz8g _mqSpcCwVEeu9g7B-Kzoz8g _sXPvwCwWEeu9g7B-Kzoz8g _EePk8CwXEeu9g7B-Kzoz8g _n4u04CxJEeu9g7B-Kzoz8g" edge="_aaBxsCwVEeu9g7B-Kzoz8g _v46VICwVEeu9g7B-Kzoz8g _yOnBMCwVEeu9g7B-Kzoz8g _G0RBICwXEeu9g7B-Kzoz8g _IDsBoCwXEeu9g7B-Kzoz8g _vbFMACxJEeu9g7B-Kzoz8g"/>
     <node xmi:type="uml:InitialNode" xmi:id="_Ec0qoCwBEeu9g7B-Kzoz8g" name="" outgoing="_aaBxsCwVEeu9g7B-Kzoz8g" inPartition="_KC81kCwVEeu9g7B-Kzoz8g"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_TN8lgCwVEeu9g7B-Kzoz8g" name="Verifica se já foi atribuída classificação" incoming="_aaBxsCwVEeu9g7B-Kzoz8g _2bQqMCxJEeu9g7B-Kzoz8g" outgoing="_v46VICwVEeu9g7B-Kzoz8g" inPartition="_KC81kCwVEeu9g7B-Kzoz8g"/>

@@ -422,12 +422,12 @@
     <edge xmi:type="uml:ControlFlow" xmi:id="_vw3ZYCuGEeuIUJtP1XqFLw" inPartition="_B5jhQCuAEeuIUJtP1XqFLw" target="_V3wNsCuDEeuIUJtP1XqFLw" source="_oqX30CuGEeuIUJtP1XqFLw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_pwD_YCxIEeu9g7B-Kzoz8g" target="_pvAPcCxIEeu9g7B-Kzoz8g" source="_YQhGwCuBEeuIUJtP1XqFLw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_5UJYUCxIEeu9g7B-Kzoz8g" inPartition="_B5jhQCuAEeuIUJtP1XqFLw" target="_ZaAeYCuBEeuIUJtP1XqFLw" source="_pvAPcCxIEeu9g7B-Kzoz8g"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_7t_W4Ct_EeuIUJtP1XqFLw" name="Cliente Uber" node="_GKqKECuAEeuIUJtP1XqFLw _MUz_MCuAEeuIUJtP1XqFLw _e5s2sCuAEeuIUJtP1XqFLw _YQhGwCuBEeuIUJtP1XqFLw" edge="_QJQhMCuAEeuIUJtP1XqFLw _L4wqcCuCEeuIUJtP1XqFLw"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_B5jhQCuAEeuIUJtP1XqFLw" name="Sistema Uber Driver" node="_VG0x8CuBEeuIUJtP1XqFLw _ZaAeYCuBEeuIUJtP1XqFLw _piN4ECuBEeuIUJtP1XqFLw _rl61MCuBEeuIUJtP1XqFLw _jkNBgCuBEeuIUJtP1XqFLw _V3wNsCuDEeuIUJtP1XqFLw _jbafoCuGEeuIUJtP1XqFLw _oqX30CuGEeuIUJtP1XqFLw _pvAPcCxIEeu9g7B-Kzoz8g" edge="_3NhVACuCEeuIUJtP1XqFLw _4LsNcCuCEeuIUJtP1XqFLw _7zIOMCuCEeuIUJtP1XqFLw _g9zfoCuEEeuIUJtP1XqFLw _rX5OACuGEeuIUJtP1XqFLw _5UJYUCxIEeu9g7B-Kzoz8g _dRLK8CuGEeuIUJtP1XqFLw _vw3ZYCuGEeuIUJtP1XqFLw">
+    <group xmi:type="uml:ActivityPartition" xmi:id="_7t_W4Ct_EeuIUJtP1XqFLw" name="Cliente Uber" node="_GKqKECuAEeuIUJtP1XqFLw _MUz_MCuAEeuIUJtP1XqFLw _e5s2sCuAEeuIUJtP1XqFLw _YQhGwCuBEeuIUJtP1XqFLw _pvAPcCxIEeu9g7B-Kzoz8g" edge="_QJQhMCuAEeuIUJtP1XqFLw _L4wqcCuCEeuIUJtP1XqFLw">
       <ownedComment xmi:type="uml:Comment" xmi:id="_8YAx8CxIEeu9g7B-Kzoz8g" annotatedElement="_pvAPcCxIEeu9g7B-Kzoz8g">
         <body>Chama outra atividade</body>
       </ownedComment>
     </group>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_B5jhQCuAEeuIUJtP1XqFLw" name="Sistema Uber Driver" node="_VG0x8CuBEeuIUJtP1XqFLw _ZaAeYCuBEeuIUJtP1XqFLw _piN4ECuBEeuIUJtP1XqFLw _rl61MCuBEeuIUJtP1XqFLw _jkNBgCuBEeuIUJtP1XqFLw _V3wNsCuDEeuIUJtP1XqFLw _jbafoCuGEeuIUJtP1XqFLw _oqX30CuGEeuIUJtP1XqFLw" edge="_3NhVACuCEeuIUJtP1XqFLw _4LsNcCuCEeuIUJtP1XqFLw _7zIOMCuCEeuIUJtP1XqFLw _g9zfoCuEEeuIUJtP1XqFLw _rX5OACuGEeuIUJtP1XqFLw _5UJYUCxIEeu9g7B-Kzoz8g _dRLK8CuGEeuIUJtP1XqFLw _vw3ZYCuGEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:InitialNode" xmi:id="_GKqKECuAEeuIUJtP1XqFLw" name="" outgoing="_QJQhMCuAEeuIUJtP1XqFLw" inPartition="_7t_W4Ct_EeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_MUz_MCuAEeuIUJtP1XqFLw" name="Iniciar pedido de viagem" incoming="_QJQhMCuAEeuIUJtP1XqFLw" outgoing="_L4wqcCuCEeuIUJtP1XqFLw" inPartition="_7t_W4Ct_EeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_e5s2sCuAEeuIUJtP1XqFLw" name="Escolher localização de origem e destino" incoming="_L4wqcCuCEeuIUJtP1XqFLw" outgoing="_NmzgoCuCEeuIUJtP1XqFLw" inPartition="_7t_W4Ct_EeuIUJtP1XqFLw"/>
@@ -452,9 +452,9 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LHS2oiuVEeuIUJtP1XqFLw" value="1"/>
       </result>
     </node>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_pvAPcCxIEeu9g7B-Kzoz8g" name="Selecionar forma de pagamento" incoming="_pwD_YCxIEeu9g7B-Kzoz8g" outgoing="_5UJYUCxIEeu9g7B-Kzoz8g" inPartition="_B5jhQCuAEeuIUJtP1XqFLw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_pvAPcCxIEeu9g7B-Kzoz8g" name="Selecionar forma de pagamento" incoming="_pwD_YCxIEeu9g7B-Kzoz8g" outgoing="_5UJYUCxIEeu9g7B-Kzoz8g" inPartition="_7t_W4Ct_EeuIUJtP1XqFLw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_th4oUA2VEeujq4q3EywG0A" name="Fazer pedido" node="_OQZgICuWEeuIUJtP1XqFLw _P9abkCuWEeuIUJtP1XqFLw _RIP3ACuWEeuIUJtP1XqFLw _R5Xx8CuWEeuIUJtP1XqFLw _YGI2MCuWEeuIUJtP1XqFLw _e2tLECuWEeuIUJtP1XqFLw _gEmhkCuWEeuIUJtP1XqFLw _g3ewACuWEeuIUJtP1XqFLw _hmjcgCuWEeuIUJtP1XqFLw _iexd8CuWEeuIUJtP1XqFLw _S5KlkCuXEeuIUJtP1XqFLw _X8gHICuYEeuIUJtP1XqFLw _rpbIQCuZEeupY6_9COemug _EBGdwCuaEeupY6_9COemug _Hyu8UCuaEeupY6_9COemug" group="_FsbT8CuWEeuIUJtP1XqFLw _JexkMCuWEeuIUJtP1XqFLw">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_th4oUA2VEeujq4q3EywG0A" name="Fazer pedido" node="_OQZgICuWEeuIUJtP1XqFLw _P9abkCuWEeuIUJtP1XqFLw _RIP3ACuWEeuIUJtP1XqFLw _R5Xx8CuWEeuIUJtP1XqFLw _YGI2MCuWEeuIUJtP1XqFLw _e2tLECuWEeuIUJtP1XqFLw _gEmhkCuWEeuIUJtP1XqFLw _g3ewACuWEeuIUJtP1XqFLw _hmjcgCuWEeuIUJtP1XqFLw _iexd8CuWEeuIUJtP1XqFLw _S5KlkCuXEeuIUJtP1XqFLw _X8gHICuYEeuIUJtP1XqFLw _rpbIQCuZEeupY6_9COemug _EBGdwCuaEeupY6_9COemug _Hyu8UCuaEeupY6_9COemug _GyPW4CzSEeuQWYtbwl9T-g" group="_FsbT8CuWEeuIUJtP1XqFLw _JexkMCuWEeuIUJtP1XqFLw">
     <edge xmi:type="uml:ControlFlow" xmi:id="_POgRsCuXEeuIUJtP1XqFLw" inPartition="_FsbT8CuWEeuIUJtP1XqFLw" target="_P9abkCuWEeuIUJtP1XqFLw" source="_OQZgICuWEeuIUJtP1XqFLw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_U8WlUCuXEeuIUJtP1XqFLw" name="sim" target="_e2tLECuWEeuIUJtP1XqFLw" source="_S5KlkCuXEeuIUJtP1XqFLw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_Ve-xQCuXEeuIUJtP1XqFLw" inPartition="_JexkMCuWEeuIUJtP1XqFLw" target="_S5KlkCuXEeuIUJtP1XqFLw" source="_YGI2MCuWEeuIUJtP1XqFLw"/>
@@ -470,9 +470,15 @@
     <edge xmi:type="uml:ControlFlow" xmi:id="_C-THgCubEeupY6_9COemug" inPartition="_FsbT8CuWEeuIUJtP1XqFLw" target="_R5Xx8CuWEeuIUJtP1XqFLw" source="_RIP3ACuWEeuIUJtP1XqFLw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_D9yOkCubEeupY6_9COemug" target="_YGI2MCuWEeuIUJtP1XqFLw" source="_R5Xx8CuWEeuIUJtP1XqFLw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_hQWwwCubEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw" target="_iexd8CuWEeuIUJtP1XqFLw" source="_hmjcgCuWEeuIUJtP1XqFLw"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_F3t7sCxLEeu9g7B-Kzoz8g" target="_X8gHICuYEeuIUJtP1XqFLw" source="_e2tLECuWEeuIUJtP1XqFLw"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_FsbT8CuWEeuIUJtP1XqFLw" name="Cliente Uber Eats" node="_OQZgICuWEeuIUJtP1XqFLw _P9abkCuWEeuIUJtP1XqFLw _RIP3ACuWEeuIUJtP1XqFLw _R5Xx8CuWEeuIUJtP1XqFLw _e2tLECuWEeuIUJtP1XqFLw" edge="_POgRsCuXEeuIUJtP1XqFLw _CbxpQCubEeupY6_9COemug _C-THgCubEeupY6_9COemug"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_JexkMCuWEeuIUJtP1XqFLw" name="Sistema Uber Eats" node="_YGI2MCuWEeuIUJtP1XqFLw _gEmhkCuWEeuIUJtP1XqFLw _g3ewACuWEeuIUJtP1XqFLw _hmjcgCuWEeuIUJtP1XqFLw _iexd8CuWEeuIUJtP1XqFLw _S5KlkCuXEeuIUJtP1XqFLw _X8gHICuYEeuIUJtP1XqFLw _rpbIQCuZEeupY6_9COemug _EBGdwCuaEeupY6_9COemug _Hyu8UCuaEeupY6_9COemug" edge="_Ve-xQCuXEeuIUJtP1XqFLw _eFkXICuYEeuIUJtP1XqFLw _jv748CuYEeuIUJtP1XqFLw _kbmFECuYEeuIUJtP1XqFLw _tdvlkCuZEeupY6_9COemug _Jd9vECuaEeupY6_9COemug _Zf6vwCuaEeupY6_9COemug _hQWwwCubEeupY6_9COemug _dPAQoCuaEeupY6_9COemug"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Hw0fACzSEeuQWYtbwl9T-g" target="_GyPW4CzSEeuQWYtbwl9T-g" source="_e2tLECuWEeuIUJtP1XqFLw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IsW6MCzSEeuQWYtbwl9T-g" inPartition="_JexkMCuWEeuIUJtP1XqFLw" target="_X8gHICuYEeuIUJtP1XqFLw" source="_GyPW4CzSEeuQWYtbwl9T-g"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_FsbT8CuWEeuIUJtP1XqFLw" name="Cliente Uber Eats" node="_OQZgICuWEeuIUJtP1XqFLw _P9abkCuWEeuIUJtP1XqFLw _RIP3ACuWEeuIUJtP1XqFLw _R5Xx8CuWEeuIUJtP1XqFLw _e2tLECuWEeuIUJtP1XqFLw _GyPW4CzSEeuQWYtbwl9T-g" edge="_POgRsCuXEeuIUJtP1XqFLw _CbxpQCubEeupY6_9COemug _C-THgCubEeupY6_9COemug">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_QLdJACzSEeuQWYtbwl9T-g" annotatedElement="_GyPW4CzSEeuQWYtbwl9T-g">
+        <body>Chama outra activity&#xD;
+</body>
+      </ownedComment>
+    </group>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_JexkMCuWEeuIUJtP1XqFLw" name="Sistema Uber Eats" node="_YGI2MCuWEeuIUJtP1XqFLw _gEmhkCuWEeuIUJtP1XqFLw _g3ewACuWEeuIUJtP1XqFLw _hmjcgCuWEeuIUJtP1XqFLw _iexd8CuWEeuIUJtP1XqFLw _S5KlkCuXEeuIUJtP1XqFLw _X8gHICuYEeuIUJtP1XqFLw _rpbIQCuZEeupY6_9COemug _EBGdwCuaEeupY6_9COemug _Hyu8UCuaEeupY6_9COemug" edge="_Ve-xQCuXEeuIUJtP1XqFLw _eFkXICuYEeuIUJtP1XqFLw _jv748CuYEeuIUJtP1XqFLw _kbmFECuYEeuIUJtP1XqFLw _tdvlkCuZEeupY6_9COemug _Jd9vECuaEeupY6_9COemug _Zf6vwCuaEeupY6_9COemug _hQWwwCubEeupY6_9COemug _dPAQoCuaEeupY6_9COemug _IsW6MCzSEeuQWYtbwl9T-g"/>
     <node xmi:type="uml:InitialNode" xmi:id="_OQZgICuWEeuIUJtP1XqFLw" outgoing="_POgRsCuXEeuIUJtP1XqFLw" inPartition="_FsbT8CuWEeuIUJtP1XqFLw">
       <name xsi:nil="true"/>
     </node>
@@ -480,16 +486,17 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_RIP3ACuWEeuIUJtP1XqFLw" name="Escolher localização de recolha" incoming="_CbxpQCubEeupY6_9COemug" outgoing="_C-THgCubEeupY6_9COemug" inPartition="_FsbT8CuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_R5Xx8CuWEeuIUJtP1XqFLw" name="Escolher restaurante pretendido" incoming="_C-THgCubEeupY6_9COemug _6tERICuaEeupY6_9COemug" outgoing="_D9yOkCubEeupY6_9COemug" inPartition="_FsbT8CuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_YGI2MCuWEeuIUJtP1XqFLw" name="Verificar se restaurante está disponivel para entregas naquela localização" incoming="_D9yOkCubEeupY6_9COemug" outgoing="_Ve-xQCuXEeuIUJtP1XqFLw" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_e2tLECuWEeuIUJtP1XqFLw" name="Escolher comida pretendida" incoming="_U8WlUCuXEeuIUJtP1XqFLw" outgoing="_F3t7sCxLEeu9g7B-Kzoz8g" inPartition="_FsbT8CuWEeuIUJtP1XqFLw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_e2tLECuWEeuIUJtP1XqFLw" name="Escolher comida pretendida" incoming="_U8WlUCuXEeuIUJtP1XqFLw" outgoing="_Hw0fACzSEeuQWYtbwl9T-g" inPartition="_FsbT8CuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_gEmhkCuWEeuIUJtP1XqFLw" name="há entregadores disponiveis?" incoming="_eFkXICuYEeuIUJtP1XqFLw" outgoing="_jv748CuYEeuIUJtP1XqFLw _kbmFECuYEeuIUJtP1XqFLw" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_g3ewACuWEeuIUJtP1XqFLw" name="Informa com uma mensagem que não existem entregadores disponiveis" incoming="_kbmFECuYEeuIUJtP1XqFLw" outgoing="_Zf6vwCuaEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_hmjcgCuWEeuIUJtP1XqFLw" name="Mostrar informações do entregador" incoming="_jv748CuYEeuIUJtP1XqFLw" outgoing="_hQWwwCubEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_iexd8CuWEeuIUJtP1XqFLw" name="Regista pedido  e retira dinheiro" incoming="_hQWwwCubEeupY6_9COemug" outgoing="_dPAQoCuaEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_S5KlkCuXEeuIUJtP1XqFLw" name="restaurante disponivel?" incoming="_Ve-xQCuXEeuIUJtP1XqFLw" outgoing="_U8WlUCuXEeuIUJtP1XqFLw _tdvlkCuZEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_X8gHICuYEeuIUJtP1XqFLw" name="Procurar por entregadores disponíveis" incoming="_F3t7sCxLEeu9g7B-Kzoz8g" outgoing="_eFkXICuYEeuIUJtP1XqFLw" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_X8gHICuYEeuIUJtP1XqFLw" name="Procurar por entregadores disponíveis" incoming="_IsW6MCzSEeuQWYtbwl9T-g" outgoing="_eFkXICuYEeuIUJtP1XqFLw" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_rpbIQCuZEeupY6_9COemug" name="Pede através de uma mensagem no ecra que o utilizador escolha um novo restaurante ou que este cancele pedido" incoming="_tdvlkCuZEeupY6_9COemug" outgoing="_6tERICuaEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_EBGdwCuaEeupY6_9COemug" name="" incoming="_Jd9vECuaEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_Hyu8UCuaEeupY6_9COemug" name="" incoming="_Zf6vwCuaEeupY6_9COemug _dPAQoCuaEeupY6_9COemug" outgoing="_Jd9vECuaEeupY6_9COemug" inPartition="_JexkMCuWEeuIUJtP1XqFLw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_GyPW4CzSEeuQWYtbwl9T-g" name="Selecionar forma de pagamento" incoming="_Hw0fACzSEeuQWYtbwl9T-g" outgoing="_IsW6MCzSEeuQWYtbwl9T-g" inPartition="_FsbT8CuWEeuIUJtP1XqFLw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_tqLzQA2WEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="StateMachine4">

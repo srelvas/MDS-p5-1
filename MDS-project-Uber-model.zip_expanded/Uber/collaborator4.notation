@@ -141,11 +141,6 @@
               <element xmi:type="uml:DecisionNode" href="collaborator4.uml#_T6DoICwWEeu9g7B-Kzoz8g"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T6K84SwWEeu9g7B-Kzoz8g" x="110" y="367"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_zZz-ICwXEeu9g7B-Kzoz8g" type="Comment_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_zZz-IiwXEeu9g7B-Kzoz8g" type="Comment_BodyLabel"/>
-              <element xmi:type="uml:Comment" href="collaborator4.uml#_zZnw4CwXEeu9g7B-Kzoz8g"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zZz-ISwXEeu9g7B-Kzoz8g" x="54" y="30" width="241"/>
-            </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_En_oxCwVEeu9g7B-Kzoz8g"/>
           </children>
           <element xmi:type="uml:ActivityPartition" href="collaborator4.uml#_En4UACwVEeu9g7B-Kzoz8g"/>
@@ -443,7 +438,7 @@
       <element xmi:type="uml:ControlFlow" href="collaborator4.uml#_2bQqMCxJEeu9g7B-Kzoz8g"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2bbpUixJEeu9g7B-Kzoz8g" points="[775, 126, -643984, -643984]$[648, 160, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2b_qACxJEeu9g7B-Kzoz8g" id="(0.16,0.55)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2b_qASxJEeu9g7B-Kzoz8g" id="(0.9888059701492538,0.3)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2b_qASxJEeu9g7B-Kzoz8g" id="(1.0,0.225)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_hTA64A2ZEeujq4q3EywG0A" type="PapyrusUMLActivityDiagram" name="ActivityDiagram2" measurementUnit="Pixel">

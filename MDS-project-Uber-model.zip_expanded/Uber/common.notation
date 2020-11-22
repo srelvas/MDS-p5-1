@@ -73,7 +73,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4jezcitjEeu9g7B-Kzoz8g"/>
           </children>
           <element xmi:type="uml:Package" href="common.uml#_4g8c0CtjEeu9g7B-Kzoz8g"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4jOUwStjEeu9g7B-Kzoz8g" x="1434" y="31" width="473" height="300"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4jOUwStjEeu9g7B-Kzoz8g" x="1414" y="32" width="473" height="300"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_Yu82YCtZEeuhx-nQPiqkEQ" type="Package_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_Yu82YitZEeuhx-nQPiqkEQ" type="Package_NameLabel"/>
