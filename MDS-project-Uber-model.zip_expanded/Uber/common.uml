@@ -1181,10 +1181,6 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_u-ZzoCzkEeu44_eVzMNV2w" name="password">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_k9d5MCzvEeu44_eVzMNV2w" name="contas" type="_qPCPkCzmEeu44_eVzMNV2w">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s3kfoC0IEeuB1a_D3CFulA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sIB5EC0IEeuB1a_D3CFulA" value="*"/>
-    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Q1r7UCzeEeu44_eVzMNV2w" name="register" concurrency="concurrent">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_0RUkUC0cEeuB1a_D3CFulA" name="email">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1231,10 +1227,6 @@ Descrição: O utilizador efetua login na app;</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16r9YCzxEeu44_eVzMNV2w"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_164KoCzxEeu44_eVzMNV2w" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_57gHcCzxEeu44_eVzMNV2w" name="pedidos" type="_Dv-2ECzuEeu44_eVzMNV2w">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DK_V0CzyEeu44_eVzMNV2w"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLHRoCzyEeu44_eVzMNV2w" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PA-BUC0eEeuB1a_D3CFulA" name="editarMenu"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_RWoRIC0eEeuB1a_D3CFulA" name="verListaDePedidos"/>
@@ -1287,10 +1279,6 @@ Descrição: O utilizador efetua login na app;</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_YPIVcCzbEeu44_eVzMNV2w" name="Cliente Uber Eats">
     <generalization xmi:type="uml:Generalization" xmi:id="_MOR9QCzcEeu44_eVzMNV2w" general="_Q9HgYCzbEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_F7-zkCzuEeu44_eVzMNV2w" name="pedidos" visibility="public" type="_Dv-2ECzuEeu44_eVzMNV2w">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J2fhUCzuEeu44_eVzMNV2w"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiDiYCzuEeu44_eVzMNV2w" value="*"/>
-    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_teNNkC0jEeuB1a_D3CFulA" name="fazerPedido">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_Dxx9UC0kEeuB1a_D3CFulA" name="restaurante">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
