@@ -1309,6 +1309,10 @@ Descrição: O utilizador efetua login na app;</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_dZvZICzbEeu44_eVzMNV2w" name="Cliente Uber Scoot &amp; Bike">
     <generalization xmi:type="uml:Generalization" xmi:id="_Ejs3MCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cLyWMC21EeuWtfD0qx_X-w" name="scooter/bike" type="_gxPbQCztEeu44_eVzMNV2w" association="_cKlcUC21EeuWtfD0qx_X-w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cLzkUC21EeuWtfD0qx_X-w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cL0LYC21EeuWtfD0qx_X-w" value="1"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_MkAvUC0hEeuB1a_D3CFulA" name="verLocalizacaoVeiculos"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_QTZyMC0hEeuB1a_D3CFulA" name="terminarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_UhT9EC0hEeuB1a_D3CFulA" name="lerCodigoQR">
@@ -1578,7 +1582,9 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_eQBmcC0TEeuB1a_D3CFulA" name="veiculo" type="_WIy14CztEeu44_eVzMNV2w" association="_eQAYUC0TEeuB1a_D3CFulA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SwwRUC0UEeuB1a_D3CFulA" value="*"/>
     </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_eQFQ0C0TEeuB1a_D3CFulA" name="frota" type="_TO5o4CzzEeu44_eVzMNV2w" association="_eQAYUC0TEeuB1a_D3CFulA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eQFQ0C0TEeuB1a_D3CFulA" name="frota" type="_TO5o4CzzEeu44_eVzMNV2w" association="_eQAYUC0TEeuB1a_D3CFulA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OMABkC21EeuWtfD0qx_X-w"/>
+    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_ggOugC0TEeuB1a_D3CFulA" visibility="public" memberEnd="_ggP8oi0TEeuB1a_D3CFulA _ggRKwC0TEeuB1a_D3CFulA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ggP8oC0TEeuB1a_D3CFulA" source="org.eclipse.papyrus">
@@ -1591,18 +1597,18 @@ Descrição: O utilizador efetua login na app;</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lHxhYC0TEeuB1a_D3CFulA"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_c6aMcC0VEeuB1a_D3CFulA" name="uses" visibility="public" memberEnd="_c6azgi0VEeuB1a_D3CFulA _c6cBoC0VEeuB1a_D3CFulA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c6azgC0VEeuB1a_D3CFulA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c6azgS0VEeuB1a_D3CFulA" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cKlcUC21EeuWtfD0qx_X-w" memberEnd="_cLyWMC21EeuWtfD0qx_X-w _cL31wC21EeuWtfD0qx_X-w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cKsKAC21EeuWtfD0qx_X-w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cKtYIC21EeuWtfD0qx_X-w" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_c6azgi0VEeuB1a_D3CFulA" name="scooter/bike" type="_gxPbQCztEeu44_eVzMNV2w" association="_c6aMcC0VEeuB1a_D3CFulA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o9vbcC0VEeuB1a_D3CFulA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o9-sAC0VEeuB1a_D3CFulA" value="*"/>
-    </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_c6cBoC0VEeuB1a_D3CFulA" name="cliente uber scoot &amp; bike" type="_dZvZICzbEeu44_eVzMNV2w" association="_c6aMcC0VEeuB1a_D3CFulA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pdaaAC0VEeuB1a_D3CFulA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pdpqkC0VEeuB1a_D3CFulA" value="*"/>
-    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cL31wC21EeuWtfD0qx_X-w" name="cliente uber scoot &amp; bike" type="_dZvZICzbEeu44_eVzMNV2w" association="_cKlcUC21EeuWtfD0qx_X-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zUrkYC21EeuWtfD0qx_X-w" memberEnd="_zUySEC21EeuWtfD0qx_X-w _zU94QC21EeuWtfD0qx_X-w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zUxrAC21EeuWtfD0qx_X-w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zUxrAS21EeuWtfD0qx_X-w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zUySEC21EeuWtfD0qx_X-w" name="condutor" type="_fApskCzbEeu44_eVzMNV2w" association="_zUrkYC21EeuWtfD0qx_X-w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zU94QC21EeuWtfD0qx_X-w" name="veiculo" type="_WIy14CztEeu44_eVzMNV2w" association="_zUrkYC21EeuWtfD0qx_X-w"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cri5wC0EEeuB1a_D3CFulA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_crku8C0EEeuB1a_D3CFulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
