@@ -1432,6 +1432,11 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_SPcMcCzyEeu44_eVzMNV2w" name="foiRecolhido">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TAXNkC5nEeu0gsNkXOfCmA" name="data" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Zj9dcC5nEeu0gsNkXOfCmA" name="hora" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_b2_3EC5nEeu0gsNkXOfCmA" name="custo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_TO5o4CzzEeu44_eVzMNV2w" name="Frota">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_3pluYC0hEeuB1a_D3CFulA" name="adicionartVeiculo">
@@ -1518,7 +1523,9 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="__svVMC0QEeuB1a_D3CFulA" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_XeUJci0QEeuB1a_D3CFulA" name="condutor" type="_fApskCzbEeu44_eVzMNV2w" association="_XeS7UC0QEeuB1a_D3CFulA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_XeUJcy0QEeuB1a_D3CFulA" name="cliente uber" type="_WeL8QCzbEeu44_eVzMNV2w" association="_XeS7UC0QEeuB1a_D3CFulA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XeUJcy0QEeuB1a_D3CFulA" name="cliente uber" type="_WeL8QCzbEeu44_eVzMNV2w" association="_XeS7UC0QEeuB1a_D3CFulA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GdYncC5iEeu0gsNkXOfCmA" value="*"/>
+    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_CH_aMC0SEeuB1a_D3CFulA" memberEnd="_CIABQi0SEeuB1a_D3CFulA _CIAoUC0SEeuB1a_D3CFulA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CIABQC0SEeuB1a_D3CFulA" source="org.eclipse.papyrus">
