@@ -1226,11 +1226,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fHAxQCzxEeu44_eVzMNV2w" name="classificação">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_yHNrwCzxEeu44_eVzMNV2w" name="menu">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16r9YCzxEeu44_eVzMNV2w"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_164KoCzxEeu44_eVzMNV2w" value="*"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ETIqsi6UEeu0gsNkXOfCmA" name="menu" type="_u9-rAC6TEeu0gsNkXOfCmA" association="_ES_gwC6UEeu0gsNkXOfCmA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PA-BUC0eEeuB1a_D3CFulA" name="editarMenu"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_RWoRIC0eEeuB1a_D3CFulA" name="verListaDePedidos"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_cdwWkC0eEeuB1a_D3CFulA" name="aceitarPedido">
@@ -1635,6 +1631,32 @@ Descrição: O utilizador efetua login na app;</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_NLqRkC5HEeuqBZ3VvYlkDw" client="_kQr-UC5FEeuqBZ3VvYlkDw" supplier="_txO9cC0GEeuB1a_D3CFulA"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_OIUHEC5HEeuqBZ3VvYlkDw" client="_nQuA0C5FEeuqBZ3VvYlkDw" supplier="_txO9cC0GEeuB1a_D3CFulA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_u9-rAC6TEeu0gsNkXOfCmA" name="Menu">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_C0s90C6UEeu0gsNkXOfCmA" name="refeicao" type="_3gvWQC6TEeu0gsNkXOfCmA" association="_C0jz4C6UEeu0gsNkXOfCmA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C0s90S6UEeu0gsNkXOfCmA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C0s90i6UEeu0gsNkXOfCmA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3gvWQC6TEeu0gsNkXOfCmA" name="Refeicao">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9yhdYC6TEeu0gsNkXOfCmA" name="refeicao">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C0jz4C6UEeu0gsNkXOfCmA" memberEnd="_C0s90C6UEeu0gsNkXOfCmA _C0s90y6UEeu0gsNkXOfCmA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C0jz4S6UEeu0gsNkXOfCmA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C0jz4i6UEeu0gsNkXOfCmA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C0s90y6UEeu0gsNkXOfCmA" name="menu" type="_u9-rAC6TEeu0gsNkXOfCmA" association="_C0jz4C6UEeu0gsNkXOfCmA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JrdaQC6UEeu0gsNkXOfCmA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JrdaQS6UEeu0gsNkXOfCmA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ES_gwC6UEeu0gsNkXOfCmA" memberEnd="_ETIqsi6UEeu0gsNkXOfCmA _ETIqtS6UEeu0gsNkXOfCmA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ETIqsC6UEeu0gsNkXOfCmA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ETIqsS6UEeu0gsNkXOfCmA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ETIqtS6UEeu0gsNkXOfCmA" name="restaurante" type="_QHFQQCzbEeu44_eVzMNV2w" association="_ES_gwC6UEeu0gsNkXOfCmA"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cri5wC0EEeuB1a_D3CFulA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_crku8C0EEeuB1a_D3CFulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
