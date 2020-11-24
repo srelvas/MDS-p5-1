@@ -1227,6 +1227,8 @@ Descrição: O utilizador efetua login na app;</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ETIqsi6UEeu0gsNkXOfCmA" name="menu" type="_u9-rAC6TEeu0gsNkXOfCmA" association="_ES_gwC6UEeu0gsNkXOfCmA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_avaRMC6ZEeu0gsNkXOfCmA" name="horaFecho" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_f9W8wC6ZEeu0gsNkXOfCmA" name="horaAbertura" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PA-BUC0eEeuB1a_D3CFulA" name="editarMenu"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_RWoRIC0eEeuB1a_D3CFulA" name="verListaDePedidos"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_cdwWkC0eEeuB1a_D3CFulA" name="aceitarPedido">

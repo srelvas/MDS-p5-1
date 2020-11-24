@@ -2116,6 +2116,26 @@
           <element xmi:type="uml:Property" href="common.uml#_fHAxQCzxEeu44_eVzMNV2w"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_fH-akSzxEeu44_eVzMNV2w"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_ax8n0C6ZEeu0gsNkXOfCmA" type="Property_ClassAttributeLabel" fontName="Segoe UI">
+          <styles xmi:type="notation:StringListValueStyle" xmi:id="_fgv5QC6ZEeu0gsNkXOfCmA" name="maskLabel">
+            <stringListValue>multiplicity</stringListValue>
+            <stringListValue>name</stringListValue>
+            <stringListValue>type</stringListValue>
+            <stringListValue>derived</stringListValue>
+          </styles>
+          <element xmi:type="uml:Property" href="common.uml#_avaRMC6ZEeu0gsNkXOfCmA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ax8n0S6ZEeu0gsNkXOfCmA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_f-_7gC6ZEeu0gsNkXOfCmA" type="Property_ClassAttributeLabel">
+          <styles xmi:type="notation:StringListValueStyle" xmi:id="_gSEogC6ZEeu0gsNkXOfCmA" name="maskLabel">
+            <stringListValue>multiplicity</stringListValue>
+            <stringListValue>name</stringListValue>
+            <stringListValue>type</stringListValue>
+            <stringListValue>derived</stringListValue>
+          </styles>
+          <element xmi:type="uml:Property" href="common.uml#_f9W8wC6ZEeu0gsNkXOfCmA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_f-_7gS6ZEeu0gsNkXOfCmA"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_QHNzISzbEeu44_eVzMNV2w"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_QHNzIizbEeu44_eVzMNV2w"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_QHNzIyzbEeu44_eVzMNV2w"/>
