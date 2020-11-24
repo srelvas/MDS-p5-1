@@ -3829,11 +3829,11 @@
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_VtPiiC0SEeuB1a_D3CFulA" type="Association_SourceMultiplicityLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_nY5r8C0SEeuB1a_D3CFulA" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_VtPiiS0SEeuB1a_D3CFulA" x="14" y="-26"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VtPiiS0SEeuB1a_D3CFulA" x="45" y="-10"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_VtPiii0SEeuB1a_D3CFulA" type="Association_TargetMultiplicityLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_nZUisC0SEeuB1a_D3CFulA" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_VtPiiy0SEeuB1a_D3CFulA" x="-10" y="-25"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VtPiiy0SEeuB1a_D3CFulA" x="-26" y="-19"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_VtO7cS0SEeuB1a_D3CFulA"/>
       <element xmi:type="uml:Association" href="common.uml#_VstXAC0SEeuB1a_D3CFulA"/>
