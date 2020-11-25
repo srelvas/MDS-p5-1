@@ -1408,13 +1408,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_p1-0kC0hEeuB1a_D3CFulA" name="terminarViagem"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Dv-2ECzuEeu44_eVzMNV2w" name="Pedido">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_f1GtsCzuEeu44_eVzMNV2w" name="voucher">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_NhRUgCzvEeu44_eVzMNV2w" name="localDeEntrega" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_EVs1cCzyEeu44_eVzMNV2w" name="refeição">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_NxIOECzyEeu44_eVzMNV2w" name="foiEntregado">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
@@ -1496,9 +1490,6 @@ Descrição: O utilizador efetua login na app;</body>
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XeUJcS0QEeuB1a_D3CFulA" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kF7xQC0QEeuB1a_D3CFulA" name="data" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nk5ygC0QEeuB1a_D3CFulA" name="voucher">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0ZVuUC0QEeuB1a_D3CFulA" name="hora" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_53busC0QEeuB1a_D3CFulA" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_9JKlMC0QEeuB1a_D3CFulA" name="custo">
@@ -1655,7 +1646,6 @@ Descrição: O utilizador efetua login na app;</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JrdaQS6UEeu0gsNkXOfCmA" value="*"/>
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_C0s90C6UEeu0gsNkXOfCmA" name="refeicao" type="_3gvWQC6TEeu0gsNkXOfCmA" association="_C0jz4C6UEeu0gsNkXOfCmA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C0s90S6UEeu0gsNkXOfCmA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C0s90i6UEeu0gsNkXOfCmA" value="*"/>
     </ownedEnd>
   </packagedElement>
@@ -1704,7 +1694,7 @@ Descrição: O utilizador efetua login na app;</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NYV4QC8vEeuVuYaDiASjxQ" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_vtdcYC8xEeuVuYaDiASjxQ" memberEnd="_vteDcC8xEeuVuYaDiASjxQ _vteDcS8xEeuVuYaDiASjxQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_vtdcYC8xEeuVuYaDiASjxQ" memberEnd="_vteDcC8xEeuVuYaDiASjxQ _vteDcS8xEeuVuYaDiASjxQ" navigableOwnedEnd="_vteDcC8xEeuVuYaDiASjxQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vtdcYS8xEeuVuYaDiASjxQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vtdcYi8xEeuVuYaDiASjxQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -1715,6 +1705,18 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_vteDcS8xEeuVuYaDiASjxQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w" association="_vtdcYC8xEeuVuYaDiASjxQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TTs8EC8yEeuVuYaDiASjxQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TT37MC8yEeuVuYaDiASjxQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IV8mUC84EeuVuYaDiASjxQ" memberEnd="_IV90cC84EeuVuYaDiASjxQ _IV-bgC84EeuVuYaDiASjxQ" navigableOwnedEnd="_IV90cC84EeuVuYaDiASjxQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IV9NYC84EeuVuYaDiASjxQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IV9NYS84EeuVuYaDiASjxQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IV90cC84EeuVuYaDiASjxQ" name="refeicao" type="_3gvWQC6TEeu0gsNkXOfCmA" association="_IV8mUC84EeuVuYaDiASjxQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RGcLkC84EeuVuYaDiASjxQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IV-bgC84EeuVuYaDiASjxQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w" association="_IV8mUC84EeuVuYaDiASjxQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoYWkC84EeuVuYaDiASjxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QCUcIC84EeuVuYaDiASjxQ" value="*"/>
     </ownedEnd>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cri5wC0EEeuB1a_D3CFulA">
