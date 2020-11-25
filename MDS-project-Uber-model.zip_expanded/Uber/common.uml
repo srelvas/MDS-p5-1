@@ -1365,6 +1365,7 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_2PjrQC0fEeuB1a_D3CFulA" name="atribuirCamionista">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_DoLSMC0gEeuB1a_D3CFulA" name="camionista" type="_huAqsCzbEeu44_eVzMNV2w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="__CgggC9BEeuvx77J0r1sng" name="camião" type="_gyUfgC9BEeuvx77J0r1sng"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_GLxQUC0gEeuB1a_D3CFulA" name="expedicao" type="_txO9cC0GEeuB1a_D3CFulA"/>
     </ownedOperation>
   </packagedElement>
@@ -1454,6 +1455,9 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_DojEcC0GEeuB1a_D3CFulA" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_NCnLIC0GEeuB1a_D3CFulA" name="tipo">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BUcRcC9DEeuvx77J0r1sng" name="peso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_txO9cC0GEeuB1a_D3CFulA" name="Expedição">
@@ -1719,6 +1723,28 @@ Descrição: O utilizador efetua login na app;</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoYWkC84EeuVuYaDiASjxQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QCUcIC84EeuVuYaDiASjxQ" value="*"/>
     </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gyUfgC9BEeuvx77J0r1sng" name="Camião">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w9FogC9CEeuvx77J0r1sng" name="pesoMaximo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_q0S6wC9BEeuvx77J0r1sng" memberEnd="_q0Th0i9BEeuvx77J0r1sng _q0UI4C9BEeuvx77J0r1sng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q0Th0C9BEeuvx77J0r1sng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q0Th0S9BEeuvx77J0r1sng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_q0Th0i9BEeuvx77J0r1sng" name="expedição" type="_txO9cC0GEeuB1a_D3CFulA" association="_q0S6wC9BEeuvx77J0r1sng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_q0UI4C9BEeuvx77J0r1sng" name="camião" type="_gyUfgC9BEeuvx77J0r1sng" association="_q0S6wC9BEeuvx77J0r1sng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rqOdMC9BEeuvx77J0r1sng" memberEnd="_rqPEQi9BEeuvx77J0r1sng _rqPrUC9BEeuvx77J0r1sng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rqPEQC9BEeuvx77J0r1sng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rqPEQS9BEeuvx77J0r1sng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rqPrUC9BEeuvx77J0r1sng" name="camião" type="_gyUfgC9BEeuvx77J0r1sng" association="_rqOdMC9BEeuvx77J0r1sng">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qNvboC9CEeuvx77J0r1sng"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qNwpwC9CEeuvx77J0r1sng" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rqPEQi9BEeuvx77J0r1sng" name="transportadora" type="_jjOf4CzbEeu44_eVzMNV2w" association="_rqOdMC9BEeuvx77J0r1sng"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cri5wC0EEeuB1a_D3CFulA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_crku8C0EEeuB1a_D3CFulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
