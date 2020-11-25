@@ -833,7 +833,7 @@ Descrição: O utilizador efetua login na app;</body>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_NkjWMBlgEeunmKVrAQGWnw" name="Cliente Uber Scoot &amp; Bike">
-    <generalization xmi:type="uml:Generalization" xmi:id="_5ZwCEBllEeudTKqSsrchbQ" general="_jewuQBlhEeunmKVrAQGWnw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_MzbhcC88Eeuvx77J0r1sng" general="_lSmqcBlhEeunmKVrAQGWnw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_pIArMBlgEeunmKVrAQGWnw" name="Transportadora">
     <generalization xmi:type="uml:Generalization" xmi:id="_PdFWYBlmEeudTKqSsrchbQ" general="_jewuQBlhEeunmKVrAQGWnw"/>
@@ -1288,7 +1288,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ry4ewC0kEeuB1a_D3CFulA" name="cancelarPedido"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_dZvZICzbEeu44_eVzMNV2w" name="Cliente Uber Scoot &amp; Bike">
-    <generalization xmi:type="uml:Generalization" xmi:id="_Ejs3MCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_rILSUC88Eeuvx77J0r1sng" general="_Q9HgYCzbEeu44_eVzMNV2w"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_MkAvUC0hEeuB1a_D3CFulA" name="verLocalizacaoVeiculos"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_QTZyMC0hEeuB1a_D3CFulA" name="terminarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_UhT9EC0hEeuB1a_D3CFulA" name="lerCodigoQR">
@@ -1403,7 +1403,8 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WIy14CztEeu44_eVzMNV2w" name="Veiculo"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_gxPbQCztEeu44_eVzMNV2w" name="Scooter/bike">
+  <packagedElement xmi:type="uml:Class" xmi:id="_gxPbQCztEeu44_eVzMNV2w" name="Scooter/bike" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0vDF8C88Eeuvx77J0r1sng" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jQhjgC0hEeuB1a_D3CFulA" name="comecarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_p1-0kC0hEeuB1a_D3CFulA" name="terminarViagem"/>
   </packagedElement>
