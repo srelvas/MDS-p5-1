@@ -1674,10 +1674,10 @@ Descrição: O utilizador efetua login na app;</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_2pycsC8uEeuVuYaDiASjxQ" name="Voucher">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kOUxgC8vEeuVuYaDiASjxQ" name="dataExpirar" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fTgLYC8xEeuVuYaDiASjxQ" name="Desconto">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fTgLYC8xEeuVuYaDiASjxQ" name="desconto">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0pZK4C8xEeuVuYaDiASjxQ" name="Código">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0pZK4C8xEeuVuYaDiASjxQ" name="codigo">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
   </packagedElement>
