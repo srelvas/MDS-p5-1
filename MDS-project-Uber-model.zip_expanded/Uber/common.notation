@@ -3734,7 +3734,7 @@
         <styles xmi:type="notation:FilteringStyle" xmi:id="_gyYw-C9BEeuvx77J0r1sng"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gyYw-S9BEeuvx77J0r1sng"/>
       </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_gyYw-i9BEeuvx77J0r1sng" type="Class_NestedClassifierCompartment">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_gyYw-i9BEeuvx77J0r1sng" visible="false" type="Class_NestedClassifierCompartment">
         <styles xmi:type="notation:TitleStyle" xmi:id="_gyYw-y9BEeuvx77J0r1sng"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_gyYw_C9BEeuvx77J0r1sng"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_gyYw_S9BEeuvx77J0r1sng"/>

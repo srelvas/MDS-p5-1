@@ -1403,7 +1403,7 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WIy14CztEeu44_eVzMNV2w" name="Veiculo"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_gxPbQCztEeu44_eVzMNV2w" name="Scooter/bike" visibility="private">
+  <packagedElement xmi:type="uml:Class" xmi:id="_gxPbQCztEeu44_eVzMNV2w" name="Scooter/bike" visibility="public">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0vDF8C88Eeuvx77J0r1sng" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jQhjgC0hEeuB1a_D3CFulA" name="comecarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_p1-0kC0hEeuB1a_D3CFulA" name="terminarViagem"/>
@@ -1691,7 +1691,6 @@ Descrição: O utilizador efetua login na app;</body>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_-CDqwi8uEeuVuYaDiASjxQ" name="voucher" type="_2pycsC8uEeuVuYaDiASjxQ" association="_-CCcoC8uEeuVuYaDiASjxQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M7FUgC8vEeuVuYaDiASjxQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M7PFgC8vEeuVuYaDiASjxQ" value="*"/>
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_-CER0C8uEeuVuYaDiASjxQ" name="viagem" type="_XeS7UC0QEeuB1a_D3CFulA" association="_-CCcoC8uEeuVuYaDiASjxQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NYGnsC8vEeuVuYaDiASjxQ"/>
