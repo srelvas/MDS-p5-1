@@ -1716,9 +1716,7 @@ Descrição: O utilizador efetua login na app;</body>
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IV9NYC84EeuVuYaDiASjxQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IV9NYS84EeuVuYaDiASjxQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_IV90cC84EeuVuYaDiASjxQ" name="refeicao" type="_3gvWQC6TEeu0gsNkXOfCmA" association="_IV8mUC84EeuVuYaDiASjxQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RGcLkC84EeuVuYaDiASjxQ" value="*"/>
-    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IV90cC84EeuVuYaDiASjxQ" name="refeicao" type="_3gvWQC6TEeu0gsNkXOfCmA" association="_IV8mUC84EeuVuYaDiASjxQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_IV-bgC84EeuVuYaDiASjxQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w" association="_IV8mUC84EeuVuYaDiASjxQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoYWkC84EeuVuYaDiASjxQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QCUcIC84EeuVuYaDiASjxQ" value="*"/>
