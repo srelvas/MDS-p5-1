@@ -1206,11 +1206,11 @@ Descrição: O utilizador efetua login na app;</body>
   <packagedElement xmi:type="uml:Class" xmi:id="_PBYzgCzbEeu44_eVzMNV2w" name="Entregador">
     <generalization xmi:type="uml:Generalization" xmi:id="_FzjVgCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_dgze4CzlEeu44_eVzMNV2w" name="saldo">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_8VoH4CzuEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_bhYuYCzxEeu44_eVzMNV2w" name="classificação">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_D6sF4C0dEeuB1a_D3CFulA" name="confirmarRecolha"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_KqVNsC0dEeuB1a_D3CFulA" name="confirmarEntrega"/>
@@ -1221,11 +1221,11 @@ Descrição: O utilizador efetua login na app;</body>
   <packagedElement xmi:type="uml:Class" xmi:id="_QHFQQCzbEeu44_eVzMNV2w" name="Restaurante">
     <generalization xmi:type="uml:Generalization" xmi:id="_OtkDICzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_4EHwECzmEeu44_eVzMNV2w" name="saldo">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_i8ofUCzuEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fHAxQCzxEeu44_eVzMNV2w" name="classificação">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_avaRMC6ZEeu0gsNkXOfCmA" name="horaFecho" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_f9W8wC6ZEeu0gsNkXOfCmA" name="horaAbertura" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
@@ -1249,7 +1249,7 @@ Descrição: O utilizador efetua login na app;</body>
   <packagedElement xmi:type="uml:Class" xmi:id="_WeL8QCzbEeu44_eVzMNV2w" name="Cliente Uber">
     <generalization xmi:type="uml:Generalization" xmi:id="_LtaE0CzcEeu44_eVzMNV2w" general="_Q9HgYCzbEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_PSr84CzxEeu44_eVzMNV2w" name="classificação">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_gHT6YC0iEeuB1a_D3CFulA" name="classificarViagem">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_pQ240C0iEeuB1a_D3CFulA" name="classificao">
@@ -1297,11 +1297,11 @@ Descrição: O utilizador efetua login na app;</body>
   <packagedElement xmi:type="uml:Class" xmi:id="_fApskCzbEeu44_eVzMNV2w" name="Condutor" visibility="public">
     <generalization xmi:type="uml:Generalization" xmi:id="_FL1OMCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kuRyMCzlEeu44_eVzMNV2w" name="saldo">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_5LnqACzuEeu44_eVzMNV2w" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_SPXJYCzxEeu44_eVzMNV2w" name="classificação">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_JEHlMC0aEeuB1a_D3CFulA" name="aceitarViagem">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_L8Td0C0bEeuB1a_D3CFulA" name="viagem" type="_XeS7UC0QEeuB1a_D3CFulA"/>
@@ -1320,6 +1320,9 @@ Descrição: O utilizador efetua login na app;</body>
     <generalization xmi:type="uml:Generalization" xmi:id="_TlO8sCzcEeu44_eVzMNV2w" general="_28PN4CzZEeu44_eVzMNV2w"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_bpTI4C0gEeuB1a_D3CFulA" name="classificarInstalação" visibility="public">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_n3fkEC0gEeuB1a_D3CFulA" name="instalacao" type="_o88psCzzEeu44_eVzMNV2w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_xW6PMC9tEeuV96FAqYJYag" name="classificacao">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qSzI4C0gEeuB1a_D3CFulA" name="verclassificacaoInstalacao">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_xYgAQC0gEeuB1a_D3CFulA" name="instalacao" type="_o88psCzzEeu44_eVzMNV2w"/>
@@ -1370,7 +1373,7 @@ Descrição: O utilizador efetua login na app;</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_qPCPkCzmEeu44_eVzMNV2w" name="Conta Bancária">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BWkt4C0eEeuB1a_D3CFulA" name="saldo">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_gVn1cC0dEeuB1a_D3CFulA" name="tirarDinheiro">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_q2pkMC0dEeuB1a_D3CFulA" name="valor">
@@ -1419,7 +1422,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_TAXNkC5nEeu0gsNkXOfCmA" name="data" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Zj9dcC5nEeu0gsNkXOfCmA" name="hora" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_b2_3EC5nEeu0gsNkXOfCmA" name="custo">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_TO5o4CzzEeu44_eVzMNV2w" name="Frota">
@@ -1438,7 +1441,7 @@ Descrição: O utilizador efetua login na app;</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_o88psCzzEeu44_eVzMNV2w" name="Instalação">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_qviosCzzEeu44_eVzMNV2w" name="classificação">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_tg_coCzzEeu44_eVzMNV2w" name="nome">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1456,14 +1459,14 @@ Descrição: O utilizador efetua login na app;</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BUcRcC9DEeuvx77J0r1sng" name="peso">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_txO9cC0GEeuB1a_D3CFulA" name="Expedição">
     <ownedAttribute xmi:type="uml:Property" xmi:id="__l7uIC0GEeuB1a_D3CFulA" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_E7KtcC0HEeuB1a_D3CFulA" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_yBWncC0JEeuB1a_D3CFulA" name="preço">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_2rFnoC5GEeuqBZ3VvYlkDw" name="data_inicial" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BqoeYC5HEeuqBZ3VvYlkDw" name="horas" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
@@ -1497,11 +1500,11 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0ZVuUC0QEeuB1a_D3CFulA" name="hora" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_53busC0QEeuB1a_D3CFulA" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_9JKlMC0QEeuB1a_D3CFulA" name="custo">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="__svVMC0QEeuB1a_D3CFulA" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="__u-YMC8xEeuVuYaDiASjxQ" name="custo_final">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedEnd xmi:type="uml:Property" xmi:id="_XeUJci0QEeuB1a_D3CFulA" name="condutor" type="_fApskCzbEeu44_eVzMNV2w" association="_XeS7UC0QEeuB1a_D3CFulA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xtsoEC8sEeuVuYaDiASjxQ"/>
@@ -1722,7 +1725,7 @@ Descrição: O utilizador efetua login na app;</body>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_gyUfgC9BEeuvx77J0r1sng" name="Camião">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_w9FogC9CEeuvx77J0r1sng" name="pesoMaximo">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_q0S6wC9BEeuvx77J0r1sng" memberEnd="_q0Th0i9BEeuvx77J0r1sng _q0UI4C9BEeuvx77J0r1sng">
