@@ -2135,10 +2135,6 @@
           <element xmi:type="uml:Property" href="common.uml#_f9W8wC6ZEeu0gsNkXOfCmA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_f-_7gS6ZEeu0gsNkXOfCmA"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_rByCUC8vEeuVuYaDiASjxQ" type="Property_ClassAttributeLabel">
-          <element xmi:type="uml:Property" href="common.uml#_rAmWkC8vEeuVuYaDiASjxQ"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_rByCUS8vEeuVuYaDiASjxQ"/>
-        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_QHNzISzbEeu44_eVzMNV2w"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_QHNzIizbEeu44_eVzMNV2w"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_QHNzIyzbEeu44_eVzMNV2w"/>

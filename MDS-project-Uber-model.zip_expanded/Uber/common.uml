@@ -1229,7 +1229,6 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_avaRMC6ZEeu0gsNkXOfCmA" name="horaFecho" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_f9W8wC6ZEeu0gsNkXOfCmA" name="horaAbertura" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_rAmWkC8vEeuVuYaDiASjxQ" name="Distância"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PA-BUC0eEeuB1a_D3CFulA" name="editarMenu"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_RWoRIC0eEeuB1a_D3CFulA" name="verListaDePedidos"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_cdwWkC0eEeuB1a_D3CFulA" name="aceitarPedido">
@@ -1731,7 +1730,10 @@ Descrição: O utilizador efetua login na app;</body>
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q0Th0C9BEeuvx77J0r1sng" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q0Th0S9BEeuvx77J0r1sng" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_q0Th0i9BEeuvx77J0r1sng" name="expedição" type="_txO9cC0GEeuB1a_D3CFulA" association="_q0S6wC9BEeuvx77J0r1sng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_q0Th0i9BEeuvx77J0r1sng" name="expedição" type="_txO9cC0GEeuB1a_D3CFulA" association="_q0S6wC9BEeuvx77J0r1sng">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4AHOQC9hEeuV96FAqYJYag"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Aj6MC9hEeuV96FAqYJYag" value="*"/>
+    </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_q0UI4C9BEeuvx77J0r1sng" name="camião" type="_gyUfgC9BEeuvx77J0r1sng" association="_q0S6wC9BEeuvx77J0r1sng"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_rqOdMC9BEeuvx77J0r1sng" memberEnd="_rqPEQi9BEeuvx77J0r1sng _rqPrUC9BEeuvx77J0r1sng">
