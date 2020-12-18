@@ -1,0 +1,452 @@
+model Uber
+
+-- classes
+
+class Utilizador
+attributes
+ email: String
+ password : String
+operations
+    register(email : String, password : String)
+    logIn(email : String, password : String)
+    logOut()
+end
+
+class Cliente_com_sessao_iniciada < Utilizador
+attributes
+ localizacao: Localizacao
+operations
+    verHistorico()
+    adicionarVoucher(voucher : String)
+    bloquearConta()
+end
+
+class Condutor < Utilizador
+attributes
+ saldo: Real
+ localizacao : Localizacao
+ classificacao : Real
+operations
+    aceitarViagem(viagem : Viagem)
+    recusarViagem(viagem : Viagem)
+    cancelarViagem()
+    recolherDinheiro()
+    terminarViagem()
+    juntarAFrota(frota : Frota)
+end
+
+class Entregador < Utilizador
+attributes
+ saldo: Real
+ localizacao : Localizacao
+ classificacao : Real
+operations
+    confirmarRecolha()
+    confirmarEntrega()
+    aceitarPedido(pedido : Pedido)
+end
+
+class ContaBancaria
+attributes
+ saldo: Real
+operations
+    tirarDinheiro(valor: Integer)
+    adicionarDinheiro(valor: Integer)
+end
+
+class Menu
+end
+
+class Refeicao
+attributes
+ refeicao: String
+end
+
+class Restaurante < Utilizador
+attributes
+ saldo: Real
+ localizacao: Localizacao
+ classificacao: Real
+ horaFecho: Hora
+ horaAbertura: Hora
+operations
+    editarMenu()
+    verListaDePedidos()
+    aceitarPedido(pedido: Pedido)
+end
+
+class Remetente < Utilizador
+operations
+    criarExpedicao(custo : Real, origem: Localizacao, destino:Localizacao, datas: Integer, informacaoSensivel: String)
+    iniciarExpedicao(expedicao: Expedicao)
+    seguirCarga(carga : Carga)
+end
+
+class Transportadora < Utilizador 
+operations
+    verHistorico()
+    reservarCarga(carga: Carga)
+    verRecargas(carga: Carga)
+    verDetalhesCarga(carga: Carga)
+    atribuirCamionista(camionista: Camionista, camiao:Camiao, expedicao: Expedicao)
+end
+
+class Camionista < Utilizador 
+operations
+    classificarInstalacao(instalacao : Instalacao, classificacao : Integer)
+    verClassificacaoInstalacao(instalacao : Instalacao)
+end 
+
+class ClienteUberScootBike < Cliente_com_sessao_iniciada 
+operations
+    verLocalizacaoVeiculos()
+    terminarViagem(carga: Carga)
+    verRecargas(carga: Carga)
+    lerCodigoQR(veiculo:ScooterBike)
+end
+
+class ScooterBike 
+attributes 
+    localizacao: Localizacao
+operations
+    comecarViagem()
+    terminarViagem()
+end
+
+class Instalacao 
+attributes 
+    classificacao: Real
+    nome:String
+    localizacao: Localizacao
+operations
+    adicionarClassificacao( classificacao : Integer)
+end
+
+class Expedicao
+attributes 
+    data_entrega: Data
+    origem: Localizacao
+    destino: Localizacao
+    preco: Real
+    data_inicial: Data
+    horas: Hora
+    hora_entrega: Hora
+end
+
+class Carga
+attributes 
+    localizacao: Localizacao
+    tipo: String
+    peso: Real
+end
+
+class Frota
+operations
+    adicionarVeiculo(veiculo : Veiculo)
+    retirarVeiculo(veiculo : Veiculo)
+    adicionarCondutor(condutor : Condutor)
+    retirarCondutor(condutor : Condutor)
+end
+
+class Veiculo
+end
+
+class ClienteUber < Cliente_com_sessao_iniciada
+attributes
+    classificacao : Real
+operations
+    classificarViagem(classificacao : Integer)
+    cancelarViagem()
+    adicionarFavoritos(localizacao : Localizacao)
+    pedirViagem(localizacao : Localizacao)
+    agendarViagem(localizacao : Localizacao, data : Integer)
+    verLocalizacaoCondutores()
+end
+
+class ClienteUberEats < Cliente_com_sessao_iniciada
+operations
+    fazerPedido(restaurante : Restaurante, refeicao : String)
+    classificarPedido(classificacao : Integer, pedido : Pedido)
+    cancelarPedido()
+end
+
+class Favorito
+attributes
+    localizacao : Localizacao
+    nome : String
+end
+
+class Pedido 
+attributes
+ voucher: Voucher
+ localDeEntrega: Localizacao
+ foiEntregue: Boolean
+ foiRecolhido: Boolean
+ data: Data
+ hora: Hora
+ custo: Real
+end
+
+
+class Localizacao
+attributes 
+    latitude: Real
+    longitude: Real
+end
+
+class Voucher
+attributes
+	dataExpirar: Data
+	desconto: Real
+	codigo: String
+end
+
+class Data 
+attributes
+ dia: Integer
+ mes: Integer
+ ano: Integer
+end
+
+class Hora 
+attributes
+ hora: Integer
+ minutos: Integer
+end
+
+class Camiao 
+attributes
+ pesoMaximo: Real
+end 
+
+--associations
+
+associationclass Viagem 
+between
+    Condutor[*]
+    ClienteUber[*]
+attributes
+    data : Data
+    hora : Hora
+    origem : Localizacao
+    custo : Real
+    destino : Localizacao
+	custo_final: Real
+end
+
+association viagemVoucher between
+	Viagem [0..*]
+	Voucher [0..1]
+end
+
+association pedidoVoucher between
+	Pedido [0..*]
+	Voucher [0..1]
+end
+
+association camiao_transportadora between
+    Camiao [0..*]
+    Transportadora [1]
+end
+
+association camiao_expedicao between
+    Camiao [1]
+    Expedicao [0..*]
+end
+
+association menu_prato between
+    Menu [1..*]
+    Refeicao [0..*]
+end
+
+association refeicao_pedido between
+    Pedido [0..*]
+    Refeicao [1]
+end
+
+association menu_restaurante between
+    Menu [1]
+    Restaurante [1]
+end
+
+association belongs between
+    Frota [0..1]
+    Condutor [1..*]
+end
+
+association Veiculo_Frota between
+    Frota [0..1]
+    Veiculo [1..*]
+end
+
+association Veiculo_Condutor between
+    Condutor [1]
+    Veiculo [1]
+end
+
+association clienteUberEats_Pedido between
+    ClienteUberEats [1]
+    Pedido [0..*]
+end
+
+association Entregador_Pedido between
+    Entregador [1]
+    Pedido [0..*]
+end
+
+association Pedido_Restaurante between
+    Pedido [0..*]
+    Restaurante [1]
+end
+
+association Utilizador_ContaBancaria between
+    Utilizador [1..*]
+    ContaBancaria [1..*]
+end
+
+association ClienteScoot_Bike between
+    ClienteUberScootBike [0..*]
+    ScooterBike [0..*]
+end
+
+association Transportadora_Camionista between
+    Transportadora [1]
+    Camionista [1..*]
+end
+
+association Camionista_Expedicao between
+    Camionista [1]
+    Expedicao [0..*]
+end
+
+association Transportadora_Expedicao between
+    Transportadora [1]
+    Expedicao [0..*]
+end
+
+association Carga_Expedicao between
+    Carga [1..*]
+    Expedicao [1]
+end
+
+association Remetente_Expedicao between
+    Remetente [1]
+    Expedicao [0..*]
+end
+
+association ClienteUber_Favorito between
+    ClienteUber [1]
+    Favorito [*]
+end
+
+constraints
+
+--MANUEL
+
+    --viagem vai ter custo descontado pelo voucher no valor correto
+	context Viagem
+	inv custoDescontado:
+		Viagem.allInstances->forAll(v: Viagem |
+		(v.custo_final=(v.custo-(v.voucher.desconto * v.custo))))
+
+    --o mesmo camionista nao pode ter mais de uma expedicao na mesma altura
+    context Expedicao
+    inv camionistaNaoTemExpedicoesDiferentes:
+       Expedicao.allInstances->forAll(e1, e2: Expedicao | ((e1.camionista.isDefined()) and ((e2.camionista.isDefined()) and (e1<>e2))) implies
+        ((e1.camionista.email<>e2.camionista.email) 
+        or ((e1.camionista.email = e2.camionista.email) and ((e1.data_entrega<>e2.data_entrega) 
+        or ((e1.data_entrega=e2.data_entrega) and (e1.hora_entrega<>e2.hora_entrega))))))
+    
+    --o camionista nao pode ser o mesmo que o remetente na mesma expedica
+    context Expedicao
+    inv remetenteNaoECamionista:
+        Expedicao.allInstances->forAll(e: Expedicao | (e.isDefined()) implies e.camionista.email<>e.remetente.email)
+
+	
+-- SARA
+
+	context Pedido
+	    inv voucherValido:
+		    Pedido.allInstances->forAll(p:Pedido |
+		    ((p.voucher.dataExpirar.ano > p.data.ano) 
+	    	or ((p.voucher.dataExpirar.ano = p.data.ano) and (p.voucher.dataExpirar.mes > p.data.mes)) 
+	    	or ((p.voucher.dataExpirar.ano = p.data.ano) and (p.voucher.dataExpirar.mes = p.data.mes and p.voucher.dataExpirar.dia >= p.data.dia))))
+ 
+
+    context ClienteUberScootBike::lerCodigoQR(veiculo:ScooterBike)
+        pre naoAtivarScooterLongeDela:
+            self.localizacao.latitude = veiculo.localizacao.latitude and self.localizacao.longitude = veiculo.localizacao.longitude
+
+
+    context Viagem
+        inv viagensDiferentesVouchersDiferentes:
+        Viagem.allInstances->forAll(v1, v2: Viagem | (v1 <> v2) and (v1.clienteUber.email = v2.clienteUber.email) and (v1.voucher.isDefined() and v2.voucher.isDefined())
+        implies (v1.voucher.codigo <> v2.voucher.codigo))
+
+    
+-- PEDRO
+
+context Expedicao
+       inv camiao_Conduzido_Por_Camionista_Da_Mesma_Transportadora:
+			Expedicao.allInstances->forAll(e1:Expedicao | ((e1.transportadora.isDefined()) and (e1.camionista.isDefined()) and (e1.camiao.isDefined())) implies (
+				e1.camiao.transportadora.email=e1.camionista.transportadora.email
+                )
+            )
+		
+   context Condutor
+        inv condutor_que_pertence_Frota_com_Veiculo_Da_Mesma_Frota:
+            Condutor.allInstances->forAll(c:Condutor |  (c.frota.isDefined()) implies (
+                    c.frota=c.veiculo.frota
+                )
+            )
+
+    context Viagem
+        inv sem_Viagens_Ao_Mesmo_Tempo:
+            Viagem.allInstances->forAll(v1, v2:Viagem | ((v1.condutor.email = v2.condutor.email) or (v1.clienteUber.email = v2.clienteUber.email)) implies
+            ((((v1.data.ano<>v2.data.ano) or (v1.data.mes<>v2.data.mes) or (v1.data.dia<>v2.data.dia)) or ((v1.data.ano=v2.data.ano and v1.data.mes=v2.data.mes and v1.data.dia=v2.data.dia) and ((v1.hora.hora<>v2.hora.hora) or (v1.hora.minutos<>v2.hora.minutos))))))
+  
+
+    
+-- GONCALO
+
+--evita um pedido num restaurante fechado
+context Pedido
+    inv pedidoEmRestauranteFechado:
+        ((self.hora.hora > self.restaurante.horaAbertura.hora) 
+			or (self.hora.hora = self.restaurante.horaAbertura.hora) 
+			and (self.hora.minutos >= self.restaurante.horaAbertura.minutos))
+    and ((self.hora.hora < self.restaurante.horaFecho.hora) 
+			or (self.hora.hora = self.restaurante.horaFecho.hora) 
+			and (self.hora.minutos <= self.restaurante.horaFecho.minutos)) 
+			
+
+--garante que todos os pedidos feitos a um restaurante pertencem ao restaurante
+context Restaurante
+    inv todosPedidosEmMenu:
+        self.pedido -> forAll(p:Pedido | self.menu.refeicao.refeicao -> includes(p.refeicao.refeicao))
+
+context Pedido
+    inv unicoPedido:
+	Pedido.allInstances -> forAll(p1, p2: Pedido | p1 <> p2 implies
+	(p1.entregador.email <> p2.entregador.email)
+    or(p1.clienteUberEats.email <> p2.clienteUberEats.email)
+    or(p1.data.dia <> p2.data.dia)
+	or(p1.data.mes <> p2.data.mes)
+	or(p1.data.ano <> p2.data.ano)
+	or(p1.hora.minutos <> p2.hora.minutos)
+    or(p1.hora.hora <> p2.hora.hora))
+
+-- ARVANA
+        
+context Transportadora::atribuirCamionista(camionista:Camionista, camiao: Camiao, expedicao: Expedicao)
+    pre pesoMax:
+        expedicao.carga.peso->sum() <= camiao.pesoMaximo
+
+context Expedicao
+    inv remetenteTransportadoraDiferentes:
+        Expedicao.allInstances->forAll(e:Expedicao |
+        (e.remetente.email <> e.transportadora.email))
+
+context Utilizador
+    inv umaContaPorUtilizador:
+      Utilizador.allInstances->isUnique(user | user.email)
