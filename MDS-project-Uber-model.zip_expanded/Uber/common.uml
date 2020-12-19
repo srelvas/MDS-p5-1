@@ -417,16 +417,17 @@ Condições após o cenário:&#xD;
 &#xD;
 Cenário Alternativo:&#xD;
 &#xD;
-ID: UCcancelTripPassengerLate&#xD;
-Descrição: O cliente está perto do destino e já não pode cancelar a viagem.&#xD;
+ID: UCcancelTripPassengerAlreadyStarted&#xD;
+Descrição: A viagem já foi iniciada portanto o cliente não a pode cancelar.&#xD;
 Atores:&#xD;
     Primário: Cliente Uber&#xD;
     Secundário: Nenhum&#xD;
 Precondições: &#xD;
-    1. O cliente está demasiado perto do destino para cancelar.&#xD;
+    1. Viagem já iniciada.&#xD;
 Cenário Principal:&#xD;
-    1. A opção para cancelar é escondida do cliente e a viagem já não pode ser cancelada.&#xD;
-&#xD;
+    1. O cenário alternativo começa no passo 1 do cenário principal.&#xD;
+    2. A viagem já está a decorrer portanto o cliente não pode cancelar a viagem, é mostrada uma mensagem de erro 'Viagem não pode ser cancelada'.&#xD;
+    3. O cenário alternativo termina, assim como o cenário principal.&#xD;
 Condições após o cenário:&#xD;
     1. A viagem continua.</body>
       </ownedComment>
