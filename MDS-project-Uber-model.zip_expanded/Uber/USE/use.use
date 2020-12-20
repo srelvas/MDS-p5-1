@@ -6,6 +6,7 @@ class Utilizador
 attributes
  email: String
  password : String
+ idUtilizador : String
 operations
     register(email : String, password : String)
     logIn(email : String, password : String)
@@ -15,6 +16,7 @@ end
 class Cliente_com_sessao_iniciada < Utilizador
 attributes
  localizacao: Localizacao
+ idCliente : String
 operations
     verHistorico()
     adicionarVoucher(voucher : String)
@@ -26,6 +28,7 @@ attributes
  saldo: Real
  localizacao : Localizacao
  classificacao : Real
+ idCondutor : String
 operations
     aceitarViagem(viagem : Viagem)
     recusarViagem(viagem : Viagem)
@@ -40,6 +43,7 @@ attributes
  saldo: Real
  localizacao : Localizacao
  classificacao : Real
+ idEntregador : String
 operations
     confirmarRecolha()
     confirmarEntrega()
@@ -49,12 +53,15 @@ end
 class ContaBancaria
 attributes
  saldo: Real
+ iban : String
 operations
     tirarDinheiro(valor: Integer)
     adicionarDinheiro(valor: Integer)
 end
 
 class Menu
+attributes
+ idMenu : String
 end
 
 class Refeicao
@@ -69,6 +76,7 @@ attributes
  classificacao: Real
  horaFecho: Hora
  horaAbertura: Hora
+ idRestaurante : String
 operations
     editarMenu()
     verListaDePedidos()
@@ -76,13 +84,17 @@ operations
 end
 
 class Remetente < Utilizador
+attributes
+ idRemetente : String
 operations
     criarExpedicao(custo : Real, origem: Localizacao, destino:Localizacao, datas: Integer, informacaoSensivel: String)
     iniciarExpedicao(expedicao: Expedicao)
     seguirCarga(carga : Carga)
 end
 
-class Transportadora < Utilizador 
+class Transportadora < Utilizador
+attributes
+ idTransportadora : String
 operations
     verHistorico()
     reservarCarga(carga: Carga)
@@ -92,6 +104,8 @@ operations
 end
 
 class Camionista < Utilizador 
+attributes
+ idCamionista : String
 operations
     classificarInstalacao(instalacao : Instalacao, classificacao : Integer)
     verClassificacaoInstalacao(instalacao : Instalacao)
@@ -108,6 +122,7 @@ end
 class ScooterBike 
 attributes 
     localizacao: Localizacao
+	idScooter : String
 operations
     comecarViagem()
     terminarViagem()
@@ -118,6 +133,7 @@ attributes
     classificacao: Real
     nome:String
     localizacao: Localizacao
+	idInstalacao : String
 operations
     adicionarClassificacao( classificacao : Integer)
 end
@@ -131,6 +147,7 @@ attributes
     data_inicial: Data
     horas: Hora
     hora_entrega: Hora
+	idExpedicao : String
 end
 
 class Carga
@@ -138,9 +155,13 @@ attributes
     localizacao: Localizacao
     tipo: String
     peso: Real
+	idCarga : String
 end
 
 class Frota
+attributes
+ idFrota : String
+ nomeFrota : String
 operations
     adicionarVeiculo(veiculo : Veiculo)
     retirarVeiculo(veiculo : Veiculo)
@@ -149,6 +170,9 @@ operations
 end
 
 class Veiculo
+attributes
+ idVeiculo : String
+ matricula : String
 end
 
 class ClienteUber < Cliente_com_sessao_iniciada
@@ -185,6 +209,7 @@ attributes
  data: Data
  hora: Hora
  custo: Real
+ idPedido : String
 end
 
 
@@ -217,6 +242,7 @@ end
 class Camiao 
 attributes
  pesoMaximo: Real
+ idCamiao : String
 end 
 
 --associations
@@ -232,6 +258,7 @@ attributes
     custo : Real
     destino : Localizacao
 	custo_final: Real
+	idViagem : String
 end
 
 association viagemVoucher between
