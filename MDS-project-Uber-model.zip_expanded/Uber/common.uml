@@ -192,7 +192,7 @@ Pré-condições: &#xD;
 Condições após o cenário: Preenchimento do Pedido é reiniciado desde passo 2.2.&#xD;
 &#xD;
 Cenário Principal:&#xD;
-	1. Cenário Alternativo começa quando o orçamento é inválido&#xD;
+	1. Cenário Alternativo começa quando o orçamento inserido é inválido&#xD;
 	2. Avisa-se que orçamento é insuficiente, volta-se ao passo 2.1 do cenário principal&#xD;
 &#xD;
 Cenário Alternativo:&#xD;

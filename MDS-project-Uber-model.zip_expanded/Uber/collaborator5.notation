@@ -1432,6 +1432,14 @@
               <children xmi:type="notation:BasicCompartment" xmi:id="_UcBGAkMdEeuwpcskWYXiXQ" type="State_RegionCompartment">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcBGA0MdEeuwpcskWYXiXQ" y="-1" width="201"/>
               </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_gbq0oEN6Eeu9i5rW18hatA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_gbq0oUN6Eeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gbq0okN6Eeu9i5rW18hatA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_qoz7EEObEeu9i5rW18hatA" type="Behavior_EntryBehaviorLabel">
+                <element xmi:type="uml:Activity" href="collaborator5.uml#_qowQsEObEeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_qoz7EUObEeu9i5rW18hatA" x="-10" y="-10"/>
+              </children>
               <element xmi:type="uml:State" href="collaborator5.uml#_Ub8NgEMdEeuwpcskWYXiXQ"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcAe8UMdEeuwpcskWYXiXQ" x="269" y="30" width="201" height="101"/>
             </children>
@@ -1445,6 +1453,14 @@
               <children xmi:type="notation:BasicCompartment" xmi:id="_uMtc5UMdEeuwpcskWYXiXQ" type="State_RegionCompartment">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uMtc5kMdEeuwpcskWYXiXQ" y="-1" width="221"/>
               </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_gcFEUEN6Eeu9i5rW18hatA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_gcFEUUN6Eeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gcFEUkN6Eeu9i5rW18hatA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_xD6WQEObEeu9i5rW18hatA" type="Behavior_EntryBehaviorLabel">
+                <element xmi:type="uml:Activity" href="collaborator5.uml#_xD2r4EObEeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_xD6WQUObEeu9i5rW18hatA" x="-10" y="-10"/>
+              </children>
               <element xmi:type="uml:State" href="collaborator5.uml#_uMmIIEMdEeuwpcskWYXiXQ"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uMtc4UMdEeuwpcskWYXiXQ" x="629" y="30" width="221" height="101"/>
             </children>
@@ -1455,6 +1471,14 @@
               </children>
               <children xmi:type="notation:BasicCompartment" xmi:id="_dDKFhUMeEeuwpcskWYXiXQ" type="State_RegionCompartment">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDKFhkMeEeuwpcskWYXiXQ"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_gcOOQEN6Eeu9i5rW18hatA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_gcOOQUN6Eeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gcOOQkN6Eeu9i5rW18hatA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_2fKeAEObEeu9i5rW18hatA" type="Behavior_EntryBehaviorLabel">
+                <element xmi:type="uml:Activity" href="collaborator5.uml#_2fGMkEObEeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_2fKeAUObEeu9i5rW18hatA" x="-10" y="-10"/>
               </children>
               <element xmi:type="uml:State" href="collaborator5.uml#_dDEl8EMeEeuwpcskWYXiXQ"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDKFgUMeEeuwpcskWYXiXQ" x="629" y="210" width="201" height="108"/>
@@ -1469,6 +1493,14 @@
               <children xmi:type="notation:BasicCompartment" xmi:id="_-pos40MeEeuwpcskWYXiXQ" type="State_RegionCompartment">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-pos5EMeEeuwpcskWYXiXQ" y="-1" width="221"/>
               </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_gcX_QEN6Eeu9i5rW18hatA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_gcX_QUN6Eeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gcX_QkN6Eeu9i5rW18hatA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_7W3MwEObEeu9i5rW18hatA" type="Behavior_EntryBehaviorLabel">
+                <element xmi:type="uml:Activity" href="collaborator5.uml#_7WziYEObEeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7W3MwUObEeu9i5rW18hatA" x="-10" y="-10"/>
+              </children>
               <element xmi:type="uml:State" href="collaborator5.uml#_-ph_MEMeEeuwpcskWYXiXQ"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-poF0UMeEeuwpcskWYXiXQ" x="229" y="210" width="221" height="81"/>
             </children>
@@ -1479,6 +1511,14 @@
               </children>
               <children xmi:type="notation:BasicCompartment" xmi:id="_SQq95UMfEeuwpcskWYXiXQ" type="State_RegionCompartment">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SQq95kMfEeuwpcskWYXiXQ"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_gcfUAEN6Eeu9i5rW18hatA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_gcfUAUN6Eeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gcfUAkN6Eeu9i5rW18hatA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_-55OoEObEeu9i5rW18hatA" type="Behavior_EntryBehaviorLabel">
+                <element xmi:type="uml:Activity" href="collaborator5.uml#_-51kQEObEeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_-55OoUObEeu9i5rW18hatA" x="-4" y="-10"/>
               </children>
               <element xmi:type="uml:State" href="collaborator5.uml#_SQkQMEMfEeuwpcskWYXiXQ"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SQq94UMfEeuwpcskWYXiXQ" x="209" y="370" width="221" height="101"/>
@@ -1492,6 +1532,18 @@
               </children>
               <children xmi:type="notation:BasicCompartment" xmi:id="_l_g7hUMpEeuwpcskWYXiXQ" type="State_RegionCompartment">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l_g7hkMpEeuwpcskWYXiXQ" y="-1" width="221"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_gcqTIEN6Eeu9i5rW18hatA" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_gcqTIUN6Eeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gcqTIkN6Eeu9i5rW18hatA"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_Yd1tgEOdEeu9i5rW18hatA" type="Behavior_ExitBehaviorLabel">
+                <element xmi:type="uml:Activity" href="collaborator5.uml#_Ydvm4EOdEeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_Yd1tgUOdEeu9i5rW18hatA" x="-10" y="-10"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_5sNhcEOeEeu9i5rW18hatA" type="Behavior_DoActivityBehaviorLabel">
+                <element xmi:type="uml:Activity" href="collaborator5.uml#_5sJ3EEOeEeu9i5rW18hatA"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_5sNhcUOeEeu9i5rW18hatA" x="-10" y="-10"/>
               </children>
               <element xmi:type="uml:State" href="collaborator5.uml#_l_XxkEMpEeuwpcskWYXiXQ"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l_g7gUMpEeuwpcskWYXiXQ" x="549" y="370" width="221" height="81"/>
@@ -1636,7 +1688,7 @@
     <edges xmi:type="notation:Connector" xmi:id="_K7-EYEMjEeuwpcskWYXiXQ" type="Transition_Edge" source="_dDKFgEMeEeuwpcskWYXiXQ" target="_dDKFgEMeEeuwpcskWYXiXQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_K7-rcEMjEeuwpcskWYXiXQ" type="Transition_NameLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_OdaK0EMjEeuwpcskWYXiXQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_K7-rcUMjEeuwpcskWYXiXQ" y="20"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_K7-rcUMjEeuwpcskWYXiXQ" x="3" y="-7"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_K7-rckMjEeuwpcskWYXiXQ" type="Transition_GuardLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_OdgRcEMjEeuwpcskWYXiXQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -1689,7 +1741,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_rEoo8EMuEeuwpcskWYXiXQ" type="Transition_Edge" source="_l_g7gEMpEeuwpcskWYXiXQ" target="_YiaD4EMuEeuwpcskWYXiXQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_rEoo80MuEeuwpcskWYXiXQ" type="Transition_NameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_rEoo9EMuEeuwpcskWYXiXQ" y="20"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rEoo9EMuEeuwpcskWYXiXQ" x="14" y="-14"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_rEoo9UMuEeuwpcskWYXiXQ" type="Transition_GuardLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_rEoo9kMuEeuwpcskWYXiXQ" y="-20"/>

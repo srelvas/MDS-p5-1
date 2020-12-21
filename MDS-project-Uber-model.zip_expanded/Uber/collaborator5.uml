@@ -97,22 +97,35 @@
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="Criar Expedição">
     <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_98lPEEMdEeuwpcskWYXiXQ" name="Remetente tenta criar expedição" source="_Tgyz4EMdEeuwpcskWYXiXQ" target="_Ub8NgEMdEeuwpcskWYXiXQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_FtHMIEMeEeuwpcskWYXiXQ" name="inseriu orçamento válido" source="_Ub8NgEMdEeuwpcskWYXiXQ" target="_uMmIIEMdEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FtHMIEMeEeuwpcskWYXiXQ" name="validarOrçamento()" source="_Ub8NgEMdEeuwpcskWYXiXQ" target="_uMmIIEMdEeuwpcskWYXiXQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_n7LX8EMeEeuwpcskWYXiXQ" name="insere-se local de recolha" source="_uMmIIEMdEeuwpcskWYXiXQ" target="_dDEl8EMeEeuwpcskWYXiXQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_DshX8EMfEeuwpcskWYXiXQ" name="insere-se local de entrega válido" source="_dDEl8EMeEeuwpcskWYXiXQ" target="_-ph_MEMeEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_DshX8EMfEeuwpcskWYXiXQ" name="validarLocal()" source="_dDEl8EMeEeuwpcskWYXiXQ" target="_-ph_MEMeEeuwpcskWYXiXQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_YAfncEMfEeuwpcskWYXiXQ" name="insere-se data" source="_-ph_MEMeEeuwpcskWYXiXQ" target="_SQkQMEMfEeuwpcskWYXiXQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_7NnVIEMiEeuwpcskWYXiXQ" name="inseriu orçamento inválido" source="_Ub8NgEMdEeuwpcskWYXiXQ" target="_Ub8NgEMdEeuwpcskWYXiXQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_K706cEMjEeuwpcskWYXiXQ" source="_dDEl8EMeEeuwpcskWYXiXQ" target="_dDEl8EMeEeuwpcskWYXiXQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_k11EsEMrEeuwpcskWYXiXQ" name="concorda-se" source="_SQkQMEMfEeuwpcskWYXiXQ" target="_l_XxkEMpEeuwpcskWYXiXQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_b1e-MEMuEeuwpcskWYXiXQ" name="não concordou" source="_SQkQMEMfEeuwpcskWYXiXQ" target="_YiSvIEMuEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7NnVIEMiEeuwpcskWYXiXQ" name="!validarOrçamento()" source="_Ub8NgEMdEeuwpcskWYXiXQ" target="_Ub8NgEMdEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_K706cEMjEeuwpcskWYXiXQ" name="!validarLocal()" source="_dDEl8EMeEeuwpcskWYXiXQ" target="_dDEl8EMeEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_k11EsEMrEeuwpcskWYXiXQ" name="[concordouTermos()]" source="_SQkQMEMfEeuwpcskWYXiXQ" target="_l_XxkEMpEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_b1e-MEMuEeuwpcskWYXiXQ" name="[! concordouTermos()]" source="_SQkQMEMfEeuwpcskWYXiXQ" target="_YiSvIEMuEeuwpcskWYXiXQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_rEffAEMuEeuwpcskWYXiXQ" source="_l_XxkEMpEeuwpcskWYXiXQ" target="_YiSvIEMuEeuwpcskWYXiXQ"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_Tgyz4EMdEeuwpcskWYXiXQ"/>
-      <subvertex xmi:type="uml:State" xmi:id="_Ub8NgEMdEeuwpcskWYXiXQ" name="Esperar por orçamento"/>
-      <subvertex xmi:type="uml:State" xmi:id="_uMmIIEMdEeuwpcskWYXiXQ" name="Esperar que insira local de recolha"/>
-      <subvertex xmi:type="uml:State" xmi:id="_dDEl8EMeEeuwpcskWYXiXQ" name="Esperar que insira local de entrega"/>
-      <subvertex xmi:type="uml:State" xmi:id="_-ph_MEMeEeuwpcskWYXiXQ" name="Esperar que insira data de recolha"/>
-      <subvertex xmi:type="uml:State" xmi:id="_SQkQMEMfEeuwpcskWYXiXQ" name="Concordar com termos e condições"/>
-      <subvertex xmi:type="uml:State" xmi:id="_l_XxkEMpEeuwpcskWYXiXQ" name="Informação aceite e expedição criada"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Ub8NgEMdEeuwpcskWYXiXQ" name="Esperar por orçamento">
+        <entry xmi:type="uml:Activity" xmi:id="_qowQsEObEeu9i5rW18hatA" name="Mostrar form a pedir Orçamento"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_uMmIIEMdEeuwpcskWYXiXQ" name="Esperar que insira local de recolha">
+        <entry xmi:type="uml:Activity" xmi:id="_xD2r4EObEeu9i5rW18hatA" name="Mostrar form do lugar de recolha"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_dDEl8EMeEeuwpcskWYXiXQ" name="Esperar que insira local de entrega">
+        <entry xmi:type="uml:Activity" xmi:id="_2fGMkEObEeu9i5rW18hatA" name="Mostrar form do lugar de entrega"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_-ph_MEMeEeuwpcskWYXiXQ" name="Esperar que insira data de recolha">
+        <entry xmi:type="uml:Activity" xmi:id="_7WziYEObEeu9i5rW18hatA" name="Mostrar form da data de recolha"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_SQkQMEMfEeuwpcskWYXiXQ" name="Concordar com termos e condições">
+        <entry xmi:type="uml:Activity" xmi:id="_-51kQEObEeu9i5rW18hatA" name="Mostra-se opções de concordar ou discordar"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_l_XxkEMpEeuwpcskWYXiXQ" name="Informação aceite e expedição criada">
+        <doActivity xmi:type="uml:Activity" xmi:id="_5sJ3EEOeEeu9i5rW18hatA" name="criarExpedição()"/>
+        <exit xmi:type="uml:Activity" xmi:id="_Ydvm4EOdEeu9i5rW18hatA" name="Informar o cliente que a expedição foi criada"/>
+      </subvertex>
       <subvertex xmi:type="uml:FinalState" xmi:id="_YiSvIEMuEeuwpcskWYXiXQ"/>
     </region>
   </packagedElement>

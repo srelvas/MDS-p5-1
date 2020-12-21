@@ -499,7 +499,56 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_GyPW4CzSEeuQWYtbwl9T-g" name="Selecionar forma de pagamento" incoming="_Hw0fACzSEeuQWYtbwl9T-g" outgoing="_IsW6MCzSEeuQWYtbwl9T-g" inPartition="_FsbT8CuWEeuIUJtP1XqFLw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_tqLzQA2WEeujq4q3EywG0A" name="Interaction3"/>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="StateMachine4">
-    <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="Pedido de viagem confirmado">
+    <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_XAq6AEOfEeu9i5rW18hatA" name="o cliente selecionou a operação &quot;pedir viagem&quot;" source="_QZFiAEOfEeu9i5rW18hatA" target="_UVxaAEOfEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pGP_UEOfEeu9i5rW18hatA" name="when(!informaçõesValidas)" source="_g0TXQEOfEeu9i5rW18hatA" target="_UVxaAEOfEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5qJ2gEOfEeu9i5rW18hatA" name="inserir informações" source="_UVxaAEOfEeu9i5rW18hatA" target="_g0TXQEOfEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KcIl8EOgEeu9i5rW18hatA" name="when(informacoesValidas)" source="_g0TXQEOfEeu9i5rW18hatA" target="_tefx8EOfEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HOy1UEOiEeu9i5rW18hatA" source="_tefx8EOfEeu9i5rW18hatA" target="_Y5oxUEOgEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eOaLsEOiEeu9i5rW18hatA" name="when(clienteSelecionarFormaDePagamentoValida)" source="_Y5oxUEOgEeu9i5rW18hatA" target="_JlwssEOiEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_L_crcEOjEeu9i5rW18hatA" name="check(condutoresDisp==null)" source="_JlwssEOiEeu9i5rW18hatA" target="_6FfnUEOiEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dxctcEOjEeu9i5rW18hatA" name="check(condutoresDisp!=null)" source="_JlwssEOiEeu9i5rW18hatA" target="_VHl7sEOjEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pAXyEEOlEeu9i5rW18hatA" name="when(condutorAceitaViagem)" source="_VHl7sEOjEeu9i5rW18hatA" target="_5ZhnQEOkEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Pr0IIEOmEeu9i5rW18hatA" name="cliente pede para cancelar viagem" source="_5ZhnQEOkEeu9i5rW18hatA" target="_6HmYwEOlEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_khtY8EOmEeu9i5rW18hatA" name=" cliente não pede para cancelar a viagem" source="_5ZhnQEOkEeu9i5rW18hatA" target="_ZeRgsEOmEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_AYhu0EOnEeu9i5rW18hatA" name="o cliente chega ao destino" source="_ZeRgsEOmEeu9i5rW18hatA" target="_vCxj8EOmEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_G-ogIEOnEeu9i5rW18hatA" source="_6HmYwEOlEeu9i5rW18hatA" target="_EdKB4EOnEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IiffkEOnEeu9i5rW18hatA" source="_vCxj8EOmEeu9i5rW18hatA" target="_EdKB4EOnEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QMFHIEOnEeu9i5rW18hatA" source="_6FfnUEOiEeu9i5rW18hatA" target="_EdKB4EOnEeu9i5rW18hatA"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_QZFiAEOfEeu9i5rW18hatA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_UVxaAEOfEeu9i5rW18hatA" name="Pedido de viagem iniciado"/>
+      <subvertex xmi:type="uml:State" xmi:id="_g0TXQEOfEeu9i5rW18hatA" name="Informações guardadas">
+        <doActivity xmi:type="uml:Activity" xmi:id="_yLNYsEOfEeu9i5rW18hatA" name="validarInformacoes()"/>
+        <entry xmi:type="uml:Activity" xmi:id="_oU0iYEOfEeu9i5rW18hatA" name="guardarInformacoes()"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_tefx8EOfEeu9i5rW18hatA" name="Mostrar alternativas de viagem">
+        <entry xmi:type="uml:Activity" xmi:id="_X44e8EOgEeu9i5rW18hatA" name="logAlternativas_e_Precos()"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_Y5oxUEOgEeu9i5rW18hatA" name="Pedido de viagem confirmado"/>
+      <subvertex xmi:type="uml:State" xmi:id="_JlwssEOiEeu9i5rW18hatA" name="Procurar condutores disponiveis">
+        <doActivity xmi:type="uml:Activity" xmi:id="_ZtrygEOiEeu9i5rW18hatA" name="getCondutoresDisponiveis()"/>
+        <exit xmi:type="uml:Activity" xmi:id="_dcAeYEOiEeu9i5rW18hatA" name="condutoresDisp=returnCondutoresDisponiveis()"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_6FfnUEOiEeu9i5rW18hatA" name="Condutor não encontrado">
+        <entry xmi:type="uml:Activity" xmi:id="_CQJ7oEOjEeu9i5rW18hatA" name="logCondutoresIndisponiveisTenteMaisTarde"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_VHl7sEOjEeu9i5rW18hatA" name="Condutor encontrado">
+        <entry xmi:type="uml:Activity" xmi:id="_c07a0EOjEeu9i5rW18hatA" name="logInformacoesCodutor()"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_5ZhnQEOkEeu9i5rW18hatA" name="Pedido de viagem finalizado">
+        <doActivity xmi:type="uml:Activity" xmi:id="_mrsZsEOlEeu9i5rW18hatA" name="retirarDinheiro()"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_6HmYwEOlEeu9i5rW18hatA" name="viagem cancelada">
+        <doActivity xmi:type="uml:Activity" xmi:id="_FkPbMEOmEeu9i5rW18hatA" name="destroyViagem()"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_ZeRgsEOmEeu9i5rW18hatA" name="viagem iniciada">
+        <entry xmi:type="uml:Activity" xmi:id="_jyNOoEOmEeu9i5rW18hatA" name="criarViagem()"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_vCxj8EOmEeu9i5rW18hatA" name="Viagem finalizada">
+        <exit xmi:type="uml:Activity" xmi:id="_-jKIoEOmEeu9i5rW18hatA" name="logViagemFinalizada"/>
+      </subvertex>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_EdKB4EOnEeu9i5rW18hatA"/>
+    </region>
   </packagedElement>
 </uml:Package>
