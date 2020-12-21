@@ -125,17 +125,15 @@
         <doActivity xmi:type="uml:Activity" xmi:id="_skhb0EOFEeujVe3WB82Erw" name="avisar o cliente que já não é possível cancelar a viagem"/>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_282hkEOFEeujVe3WB82Erw" name="A_espera_de_confirmação">
-        <doActivity xmi:type="uml:Activity" xmi:id="_ycseMEOHEeujVe3WB82Erw" name="avisar o cliente que se cancelar esta viagem irá pagar uma taxa de cancelamento" visibility="public" precondition="_ycseMUOHEeujVe3WB82Erw">
+        <doActivity xmi:type="uml:Activity" xmi:id="_ycseMEOHEeujVe3WB82Erw" name="getNum de cancelamentos nos ultimos 30 min e caso sejam 2 ou mais avisa o cliente que se cancelar esta viagem irá pagar uma taxa de cancelamento" visibility="public" precondition="_ycseMUOHEeujVe3WB82Erw">
           <ownedRule xmi:type="uml:Constraint" xmi:id="_ycseMUOHEeujVe3WB82Erw" name="2º cancelamento em menos de 30 min"/>
         </doActivity>
         <entry xmi:type="uml:Activity" xmi:id="_gE4O0EOGEeujVe3WB82Erw" name="perguntar ao cliente se confirma o cancelamento da viagem"/>
-        <region xmi:type="uml:Region" xmi:id="_V02IcEOREeujVe3WB82Erw" name="Region3">
-          <subvertex xmi:type="uml:State" xmi:id="_V03WkEOREeujVe3WB82Erw" name="State1"/>
-          <subvertex xmi:type="uml:State" xmi:id="_erex8EOREeujVe3WB82Erw" name="State2"/>
-        </region>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_BBdOgEOQEeujVe3WB82Erw" name="Nao_confirma"/>
-      <subvertex xmi:type="uml:State" xmi:id="_inHWgEOQEeujVe3WB82Erw" name="Confirmou_cancelamento"/>
+      <subvertex xmi:type="uml:State" xmi:id="_inHWgEOQEeujVe3WB82Erw" name="Confirmou_cancelamento">
+        <entry xmi:type="uml:Activity" xmi:id="_sHjJIEPLEeuh1q0KKdiibA" name="get numero de cancelamentos do cliente nos ultimos 30 min"/>
+      </subvertex>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_VMQB8EOSEeujVe3WB82Erw" name="" kind="choice"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_aB2e8EOSEeujVe3WB82Erw" name="" kind="junction"/>
       <subvertex xmi:type="uml:State" xmi:id="_eIJl8EOSEeujVe3WB82Erw" name="pagar_multa">
