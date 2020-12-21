@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IpMUMA2TEeujq4q3EywG0A" name="collaborator2">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IpMUMA2TEeujq4q3EywG0A" name="collaborator2">
   <packagedElement xmi:type="uml:Activity" xmi:id="_9QdIEA2XEeujq4q3EywG0A" name="Confirmar entrega" node="_3ELUECw4Eeu29sRdFVwE4w _4dJSICw4Eeu29sRdFVwE4w _FZDH4Cw5Eeu29sRdFVwE4w _WrMlICw5Eeu29sRdFVwE4w _buVH0Cw5Eeu29sRdFVwE4w _P98NgCw6Eeu29sRdFVwE4w _bXp3wCw6Eeu29sRdFVwE4w _f7rckCw6Eeu29sRdFVwE4w _qPDw4Cw6Eeu29sRdFVwE4w _yaZaoCw6Eeu29sRdFVwE4w _3t9mACw6Eeu29sRdFVwE4w _A8i1cCw7Eeu29sRdFVwE4w _MarFoCw7Eeu29sRdFVwE4w _jzFK8CxFEeu9g7B-Kzoz8g _BeQaYCxGEeu9g7B-Kzoz8g _Z9qIgCxGEeu9g7B-Kzoz8g _55RD4CzSEeuQWYtbwl9T-g _UFwZMC80EeuVuYaDiASjxQ _fqscAC80EeuVuYaDiASjxQ _sHCA4C80EeuVuYaDiASjxQ _25Z-UC80EeuVuYaDiASjxQ _B6S44C81EeuVuYaDiASjxQ _INTIAC81EeuVuYaDiASjxQ" group="_t5ZmkCw4Eeu29sRdFVwE4w _us0AgCw4Eeu29sRdFVwE4w">
     <edge xmi:type="uml:ControlFlow" xmi:id="_8SDHICw4Eeu29sRdFVwE4w" inPartition="_us0AgCw4Eeu29sRdFVwE4w" target="_4dJSICw4Eeu29sRdFVwE4w" source="_3ELUECw4Eeu29sRdFVwE4w"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_NGXY4Cw5Eeu29sRdFVwE4w" name="encontro à porta ou no veículo" inPartition="_us0AgCw4Eeu29sRdFVwE4w" target="_buVH0Cw5Eeu29sRdFVwE4w" source="_4dJSICw4Eeu29sRdFVwE4w"/>
@@ -93,7 +93,90 @@
     <node xmi:type="uml:MergeNode" xmi:id="_yCEgkCxCEeu9g7B-Kzoz8g" name="" incoming="_iWG_ACw3Eeu29sRdFVwE4w _tV7ikCw3Eeu29sRdFVwE4w" outgoing="_62QTACxCEeu9g7B-Kzoz8g" inPartition="_fuGs4Cw1Eeu29sRdFVwE4w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_M_biYA2YEeujq4q3EywG0A" name="Interaction3"/>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_QxBksA2YEeujq4q3EywG0A" name="StateMachine4">
-    <region xmi:type="uml:Region" xmi:id="_SG810A2YEeujq4q3EywG0A" name="Region1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_QxBksA2YEeujq4q3EywG0A" name="Confirmar entrega">
+    <region xmi:type="uml:Region" xmi:id="_SG810A2YEeujq4q3EywG0A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_5zKMQEPFEeu9i5rW18hatA" source="_pqtiAEPFEeu9i5rW18hatA" target="_rDZMMEPFEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KOFtoEPGEeu9i5rW18hatA" source="_rDZMMEPFEeu9i5rW18hatA" target="_EDRKIEPGEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_LGWLUEPGEeu9i5rW18hatA" name="[deixar_a_porta]" source="_EDRKIEPGEeu9i5rW18hatA" target="_6yUjMEPFEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MvkWcEPHEeu9i5rW18hatA" name="[encontro_a_porta || encontro_no_veiculo]" source="_EDRKIEPGEeu9i5rW18hatA" target="_95mnwEPGEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_o0dkkEPHEeu9i5rW18hatA" source="_Vntb0EPHEeu9i5rW18hatA" target="_cg0BoEPHEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Ken8oEPJEeu9i5rW18hatA" source="_6yUjMEPFEeu9i5rW18hatA" target="_jk2PoEPIEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_L3IAoEPJEeu9i5rW18hatA" source="_95mnwEPGEeu9i5rW18hatA" target="_TWFskEPJEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YHN5QEPJEeu9i5rW18hatA" name="entregador submete comprovativo" source="_jk2PoEPIEeu9i5rW18hatA" target="_TWFskEPJEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_q8puMEPJEeu9i5rW18hatA" source="_TWFskEPJEeu9i5rW18hatA" target="_cpi08EPJEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_yx9dkEPJEeu9i5rW18hatA" name="entregador confirma a entrega" source="_cpi08EPJEeu9i5rW18hatA" target="_sKQJwEPJEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6zvisEPJEeu9i5rW18hatA" source="_sKQJwEPJEeu9i5rW18hatA" target="_1_6AQEPJEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KEAnwEPKEeu9i5rW18hatA" name="[cliente sem dinheiro na conta]" source="_1_6AQEPJEeu9i5rW18hatA" target="_C5PqMEPKEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_d5dvQEPKEeu9i5rW18hatA" source="_C5PqMEPKEeu9i5rW18hatA" target="_ba8eYEPKEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_h80P8EPKEeu9i5rW18hatA" name="[else]" source="_1_6AQEPJEeu9i5rW18hatA" target="_ba8eYEPKEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4TZ3cEPKEeu9i5rW18hatA" source="_ba8eYEPKEeu9i5rW18hatA" target="_q3AjwEPKEeu9i5rW18hatA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_42yRUEPKEeu9i5rW18hatA" source="_q3AjwEPKEeu9i5rW18hatA" target="_qC0twEPKEeu9i5rW18hatA"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_pqtiAEPFEeu9i5rW18hatA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_rDZMMEPFEeu9i5rW18hatA" name="entregador_no_local">
+        <entry xmi:type="uml:Activity" xmi:id="_46rsIEPFEeu9i5rW18hatA" name="get tipo de entrega"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_6yUjMEPFEeu9i5rW18hatA" name="deixar_a_porta">
+        <region xmi:type="uml:Region" xmi:id="_Mk_6oEPGEeu9i5rW18hatA" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_llPsAEPGEeu9i5rW18hatA" source="_MlBIwEPGEeu9i5rW18hatA" target="_OLHj4EPGEeu9i5rW18hatA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_qOcrwEPGEeu9i5rW18hatA" source="_OLHj4EPGEeu9i5rW18hatA" target="_mIeU4EPGEeu9i5rW18hatA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_5VHv8EPGEeu9i5rW18hatA" source="_vLlUIEPGEeu9i5rW18hatA" target="_wbA7sEPGEeu9i5rW18hatA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_8FTYkEPGEeu9i5rW18hatA" source="_wbA7sEPGEeu9i5rW18hatA" target="_6C3mwEPGEeu9i5rW18hatA"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_MlBIwEPGEeu9i5rW18hatA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_OLHj4EPGEeu9i5rW18hatA">
+            <entry xmi:type="uml:Activity" xmi:id="_g98JsEPGEeu9i5rW18hatA" name="mostrar número de portal porta ao entregador"/>
+          </subvertex>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_mIeU4EPGEeu9i5rW18hatA"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_vLlUIEPGEeu9i5rW18hatA" name=""/>
+          <subvertex xmi:type="uml:State" xmi:id="_wbA7sEPGEeu9i5rW18hatA">
+            <entry xmi:type="uml:Activity" xmi:id="_3UfU8EPGEeu9i5rW18hatA" name="avisar o cliente que entregador se encontra à porta"/>
+          </subvertex>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_6C3mwEPGEeu9i5rW18hatA" name=""/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_EDRKIEPGEeu9i5rW18hatA" name="tipo de entrega" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_95mnwEPGEeu9i5rW18hatA" name="encontro_presencial">
+        <region xmi:type="uml:Region" xmi:id="_cgyzgEPHEeu9i5rW18hatA" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_s0o1cEPHEeu9i5rW18hatA" source="_cg0BoEPHEeu9i5rW18hatA" target="_pZwqAEPHEeu9i5rW18hatA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_dUx_wEPIEeu9i5rW18hatA" source="_y0e4AEPHEeu9i5rW18hatA" target="_2mjbcEPHEeu9i5rW18hatA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_evkiwEPIEeu9i5rW18hatA" source="_2mjbcEPHEeu9i5rW18hatA" target="_cieZEEPIEeu9i5rW18hatA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_cg0BoEPHEeu9i5rW18hatA">
+            <entry xmi:type="uml:Activity" xmi:id="_l0w5QEPHEeu9i5rW18hatA" name="mostrar local de entrega ao entregador"/>
+          </subvertex>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_pZwqAEPHEeu9i5rW18hatA" name=""/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_y0e4AEPHEeu9i5rW18hatA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_2mjbcEPHEeu9i5rW18hatA">
+            <entry xmi:type="uml:Activity" xmi:id="_b3ap4EPIEeu9i5rW18hatA" name="avisar o cliente que entregador chegou ao local de entrega e mostra o local de entrega"/>
+          </subvertex>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_cieZEEPIEeu9i5rW18hatA" name=""/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Vntb0EPHEeu9i5rW18hatA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_jk2PoEPIEeu9i5rW18hatA" name="a_espera_de_comprovativo_de_entrega">
+        <entry xmi:type="uml:Activity" xmi:id="_JCy30EPJEeu9i5rW18hatA" name="pedir comprovativo de entrega ao entregador"/>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_TWFskEPJEeu9i5rW18hatA" kind="junction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_cpi08EPJEeu9i5rW18hatA" name="a_espera_de_confirmação_de_entrega">
+        <entry xmi:type="uml:Activity" xmi:id="_qFrC4EPJEeu9i5rW18hatA" name="pedir confirmação ao entregador"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_sKQJwEPJEeu9i5rW18hatA" name="cobrar_cliente">
+        <entry xmi:type="uml:Activity" xmi:id="_wto1YEPJEeu9i5rW18hatA" name="cobrar o cliente"/>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_1_6AQEPJEeu9i5rW18hatA" name="tipo de entrega" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_C5PqMEPKEeu9i5rW18hatA" name="bloquear_conta">
+        <entry xmi:type="uml:Activity" xmi:id="_Ji5ewEPKEeu9i5rW18hatA" name="bloquear conta do cliente"/>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_ba8eYEPKEeu9i5rW18hatA" name="" kind="junction"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_qC0twEPKEeu9i5rW18hatA" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_q3AjwEPKEeu9i5rW18hatA" name="terminar">
+        <doActivity xmi:type="uml:Activity" xmi:id="_3xaksEPKEeu9i5rW18hatA" name="pedir classificação ao cliente"/>
+        <entry xmi:type="uml:Activity" xmi:id="_y5hBoEPKEeu9i5rW18hatA" name="notificar cliente que a entrega foi concluida"/>
+      </subvertex>
+    </region>
   </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xFmJwEPGEeu9i5rW18hatA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xFpNEEPGEeu9i5rW18hatA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
