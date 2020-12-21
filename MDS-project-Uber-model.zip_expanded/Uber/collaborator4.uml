@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q3mgEA2TEeujq4q3EywG0A" name="collaborator4">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q3mgEA2TEeujq4q3EywG0A" name="collaborator4">
   <packagedElement xmi:type="uml:Activity" xmi:id="_e2lUsA2ZEeujq4q3EywG0A" name="Classificar viagem" node="_Ec0qoCwBEeu9g7B-Kzoz8g _TN8lgCwVEeu9g7B-Kzoz8g _dEcJgCwVEeu9g7B-Kzoz8g _gsDwcCwVEeu9g7B-Kzoz8g _mqSpcCwVEeu9g7B-Kzoz8g _NoLaYCwWEeu9g7B-Kzoz8g _T6DoICwWEeu9g7B-Kzoz8g _sXPvwCwWEeu9g7B-Kzoz8g _EePk8CwXEeu9g7B-Kzoz8g _n4u04CxJEeu9g7B-Kzoz8g _zWG3ICxJEeu9g7B-Kzoz8g" group="_En4UACwVEeu9g7B-Kzoz8g _KC81kCwVEeu9g7B-Kzoz8g">
     <edge xmi:type="uml:ControlFlow" xmi:id="_aaBxsCwVEeu9g7B-Kzoz8g" inPartition="_KC81kCwVEeu9g7B-Kzoz8g" target="_TN8lgCwVEeu9g7B-Kzoz8g" source="_Ec0qoCwBEeu9g7B-Kzoz8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_v46VICwVEeu9g7B-Kzoz8g" inPartition="_KC81kCwVEeu9g7B-Kzoz8g" target="_dEcJgCwVEeu9g7B-Kzoz8g" source="_TN8lgCwVEeu9g7B-Kzoz8g"/>
@@ -100,6 +100,29 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_owSkwA2ZEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_raorIA2ZEeujq4q3EywG0A" name="StateMachine4">
-    <region xmi:type="uml:Region" xmi:id="_sUsfoA2ZEeujq4q3EywG0A" name="Region1"/>
+    <region xmi:type="uml:Region" xmi:id="_sUsfoA2ZEeujq4q3EywG0A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_KjJdoEOEEeujVe3WB82Erw" source="_vBrssEODEeujVe3WB82Erw" target="_wBzs8EODEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_xcB9UEOFEeujVe3WB82Erw" name="viagem já iniciada" source="_wBzs8EODEeujVe3WB82Erw" target="_m8y-UEOFEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_9319wEOFEeujVe3WB82Erw" name="Viagem ainda não iniciada" source="_wBzs8EODEeujVe3WB82Erw" target="_282hkEOFEeujVe3WB82Erw"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_vBrssEODEeujVe3WB82Erw" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_wBzs8EODEeujVe3WB82Erw" name="Verificar_Viagem">
+        <doActivity xmi:type="uml:Activity" xmi:id="_S8ClwEOFEeujVe3WB82Erw" name="verificar se viagem já foi iniciada"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_m8y-UEOFEeujVe3WB82Erw" name="Viagem_a_decorrer">
+        <doActivity xmi:type="uml:Activity" xmi:id="_skhb0EOFEeujVe3WB82Erw" name="avisar o cliente que já não é possível cancelar a viagem"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_282hkEOFEeujVe3WB82Erw" name="A_espera_de_confirmação">
+        <doActivity xmi:type="uml:Activity" xmi:id="_ycseMEOHEeujVe3WB82Erw" name="avisar o cliente que se cancelar esta viagem irá pagar uma taxa de cancelamento" visibility="private" precondition="_ycseMUOHEeujVe3WB82Erw">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_ycseMUOHEeujVe3WB82Erw" name="2º cancelamento em menos de 30 min"/>
+        </doActivity>
+        <entry xmi:type="uml:Activity" xmi:id="_gE4O0EOGEeujVe3WB82Erw" name="perguntar ao cliente se confirma o cancelamento da viagem"/>
+      </subvertex>
+    </region>
   </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_47KoYEOFEeujVe3WB82Erw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4795oEOFEeujVe3WB82Erw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
