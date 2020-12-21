@@ -104,7 +104,20 @@
       <transition xmi:type="uml:Transition" xmi:id="_KjJdoEOEEeujVe3WB82Erw" source="_vBrssEODEeujVe3WB82Erw" target="_wBzs8EODEeujVe3WB82Erw"/>
       <transition xmi:type="uml:Transition" xmi:id="_xcB9UEOFEeujVe3WB82Erw" name="viagem já iniciada" source="_wBzs8EODEeujVe3WB82Erw" target="_m8y-UEOFEeujVe3WB82Erw"/>
       <transition xmi:type="uml:Transition" xmi:id="_9319wEOFEeujVe3WB82Erw" name="Viagem ainda não iniciada" source="_wBzs8EODEeujVe3WB82Erw" target="_282hkEOFEeujVe3WB82Erw"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_vBrssEODEeujVe3WB82Erw" name=""/>
+      <transition xmi:type="uml:Transition" xmi:id="_KxjPkEOQEeujVe3WB82Erw" name="select [não]" source="_282hkEOFEeujVe3WB82Erw" target="_BBdOgEOQEeujVe3WB82Erw">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_RM9MwEOQEeujVe3WB82Erw" name="nao"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_ofGdkEOQEeujVe3WB82Erw" name="select [sim]" source="_282hkEOFEeujVe3WB82Erw" target="_inHWgEOQEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YPM1kEOSEeujVe3WB82Erw" source="_inHWgEOQEeujVe3WB82Erw" target="_VMQB8EOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ffJOEEOSEeujVe3WB82Erw" name="2º cancelamento em menos de 30 min" source="_VMQB8EOSEeujVe3WB82Erw" target="_eIJl8EOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_iYs1IEOSEeujVe3WB82Erw" name="[else]" source="_VMQB8EOSEeujVe3WB82Erw" target="_aB2e8EOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_nHp3kEOSEeujVe3WB82Erw" source="_eIJl8EOSEeujVe3WB82Erw" target="_aB2e8EOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YiDDoEOTEeujVe3WB82Erw" source="_aB2e8EOSEeujVe3WB82Erw" target="_5rSx4EOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dSM_8EOTEeujVe3WB82Erw" source="_5rSx4EOSEeujVe3WB82Erw" target="_zvlocEOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fuA7EEOTEeujVe3WB82Erw" source="_BBdOgEOQEeujVe3WB82Erw" target="_zvlocEOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_hl8tEEOTEeujVe3WB82Erw" source="_m8y-UEOFEeujVe3WB82Erw" target="_zvlocEOSEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_yACg8EOTEeujVe3WB82Erw" source="_zvlocEOSEeujVe3WB82Erw" target="_sAbH4EOTEeujVe3WB82Erw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_18xcQEOTEeujVe3WB82Erw" source="_sAbH4EOTEeujVe3WB82Erw" target="_zq6uYEOTEeujVe3WB82Erw"/>
       <subvertex xmi:type="uml:State" xmi:id="_wBzs8EODEeujVe3WB82Erw" name="Verificar_Viagem">
         <doActivity xmi:type="uml:Activity" xmi:id="_S8ClwEOFEeujVe3WB82Erw" name="verificar se viagem já foi iniciada"/>
       </subvertex>
@@ -112,11 +125,30 @@
         <doActivity xmi:type="uml:Activity" xmi:id="_skhb0EOFEeujVe3WB82Erw" name="avisar o cliente que já não é possível cancelar a viagem"/>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_282hkEOFEeujVe3WB82Erw" name="A_espera_de_confirmação">
-        <doActivity xmi:type="uml:Activity" xmi:id="_ycseMEOHEeujVe3WB82Erw" name="avisar o cliente que se cancelar esta viagem irá pagar uma taxa de cancelamento" visibility="private" precondition="_ycseMUOHEeujVe3WB82Erw">
+        <doActivity xmi:type="uml:Activity" xmi:id="_ycseMEOHEeujVe3WB82Erw" name="avisar o cliente que se cancelar esta viagem irá pagar uma taxa de cancelamento" visibility="public" precondition="_ycseMUOHEeujVe3WB82Erw">
           <ownedRule xmi:type="uml:Constraint" xmi:id="_ycseMUOHEeujVe3WB82Erw" name="2º cancelamento em menos de 30 min"/>
         </doActivity>
         <entry xmi:type="uml:Activity" xmi:id="_gE4O0EOGEeujVe3WB82Erw" name="perguntar ao cliente se confirma o cancelamento da viagem"/>
+        <region xmi:type="uml:Region" xmi:id="_V02IcEOREeujVe3WB82Erw" name="Region3">
+          <subvertex xmi:type="uml:State" xmi:id="_V03WkEOREeujVe3WB82Erw" name="State1"/>
+          <subvertex xmi:type="uml:State" xmi:id="_erex8EOREeujVe3WB82Erw" name="State2"/>
+        </region>
       </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_BBdOgEOQEeujVe3WB82Erw" name="Nao_confirma"/>
+      <subvertex xmi:type="uml:State" xmi:id="_inHWgEOQEeujVe3WB82Erw" name="Confirmou_cancelamento"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_VMQB8EOSEeujVe3WB82Erw" name="" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_aB2e8EOSEeujVe3WB82Erw" name="" kind="junction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_eIJl8EOSEeujVe3WB82Erw" name="pagar_multa">
+        <doActivity xmi:type="uml:Activity" xmi:id="_VlAqwEOTEeujVe3WB82Erw" name="pagar multa"/>
+        <entry xmi:type="uml:Activity" xmi:id="_LMySsEOTEeujVe3WB82Erw" name="mostrar mensagem a avisar o cliente que terá de pagar uma multa"/>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_zvlocEOSEeujVe3WB82Erw" name="" kind="junction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_5rSx4EOSEeujVe3WB82Erw" name="viagem_cancelada"/>
+      <subvertex xmi:type="uml:State" xmi:id="_sAbH4EOTEeujVe3WB82Erw" name="Terminar">
+        <doActivity xmi:type="uml:Activity" xmi:id="_wJTBwEOTEeujVe3WB82Erw" name="mostrar mensagem ao cliente agradecendo a preferência"/>
+      </subvertex>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_zq6uYEOTEeujVe3WB82Erw" name=""/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_vBrssEODEeujVe3WB82Erw" name=""/>
     </region>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_47KoYEOFEeujVe3WB82Erw">
