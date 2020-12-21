@@ -1785,8 +1785,7 @@ Descrição: O utilizador efetua login na app;</body>
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vtdcYi8xEeuVuYaDiASjxQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_vteDcC8xEeuVuYaDiASjxQ" name="voucher" type="_2pycsC8uEeuVuYaDiASjxQ" association="_vtdcYC8xEeuVuYaDiASjxQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S_SLQC8yEeuVuYaDiASjxQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S_bVMC8yEeuVuYaDiASjxQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1cLfwEPXEeu59oU5HCwF3A"/>
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_vteDcS8xEeuVuYaDiASjxQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w" association="_vtdcYC8xEeuVuYaDiASjxQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TTs8EC8yEeuVuYaDiASjxQ"/>
@@ -1871,6 +1870,7 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_6onsEEOuEeuaFZFXgUt_vQ" name="&lt;Entity> Condutor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_xh5DMEPREeu59oU5HCwF3A" general="_8cddsEOtEeuaFZFXgUt_vQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_rOfjkEOyEeuaFZFXgUt_vQ" name="idCondutor" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
@@ -1880,6 +1880,11 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_rPHOoEOyEeuaFZFXgUt_vQ" name="saldo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kgmPwkPUEeu59oU5HCwF3A" name="&lt;entity> veiculo" type="_BHbikEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_kglosEPUEeu59oU5HCwF3A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gnlhYEPVEeu59oU5HCwF3A" name="&lt;entity> viagem" type="_C79bQEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_gnkTQEPVEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gnlhYUPVEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gnlhYkPVEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rObSIEOyEeuaFZFXgUt_vQ" name="cancelarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rOjN8EOyEeuaFZFXgUt_vQ" name="aceitarViagem">
@@ -1901,6 +1906,12 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_twVOMEOyEeuaFZFXgUt_vQ" name="nomeFrota" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLJX4EPTEeu59oU5HCwF3A" name="&lt;entity> condutor" type="_6onsEEOuEeuaFZFXgUt_vQ" aggregation="composite" association="_SLD4UEPTEeu59oU5HCwF3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pLlYMEPUEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uqUHMUPTEeu59oU5HCwF3A" name="&lt;entity> veiculo" type="_BHbikEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_uqS5EEPTEeu59oU5HCwF3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uqUuQEPTEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_twJA8EOyEeuaFZFXgUt_vQ" name="retirarCondutor">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_twJA8UOyEeuaFZFXgUt_vQ" name="condutor" type="_fApskCzbEeu44_eVzMNV2w"/>
@@ -1939,6 +1950,9 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0stKcEOyEeuaFZFXgUt_vQ" name="custo_final" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IXwq4kPWEeu59oU5HCwF3A" name="&lt;entity> voucher" type="_D-M7YEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_IXvcwEPWEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MF1fIEPWEeu59oU5HCwF3A"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_oCjPMEO2EeuaFZFXgUt_vQ" name="Viagem">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_vHbnMEO2EeuaFZFXgUt_vQ" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_0AAfsEO2EeuaFZFXgUt_vQ" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
@@ -1955,6 +1969,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_6osNcEPCEeuaFZFXgUt_vQ" name="Voucher"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_FQ0Z0EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente com sessao iniciada">
+    <generalization xmi:type="uml:Generalization" xmi:id="_njRd8EPREeu59oU5HCwF3A" general="_8cddsEOtEeuaFZFXgUt_vQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_i8WuQEOyEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_i8c04EOyEeuaFZFXgUt_vQ" name="idCliente" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1969,11 +1984,20 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_SUSVgEPCEeuaFZFXgUt_vQ" name="ClienteComSessaoIniciada"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_IAxY8EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente Uber">
+    <generalization xmi:type="uml:Generalization" xmi:id="_0I4hUEPWEeu59oU5HCwF3A" general="_FQ0Z0EOvEeuaFZFXgUt_vQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_nuFX4EOyEeuaFZFXgUt_vQ" name="classificação" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_pYLokEO6EeuaFZFXgUt_vQ" name="numCancelamentos" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_f2liQkPVEeu59oU5HCwF3A" name="&lt;entity> viagem" type="_C79bQEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_f2kUIEPVEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0CuEYEPVEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f2mJUUPVEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ZvSgkPWEeu59oU5HCwF3A" name="&lt;entity> favorito" type="_KUtKcEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_4ZurcEPWEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6k7-wEPWEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6k1REEPWEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_nt5KoEOyEeuaFZFXgUt_vQ" name="verLocalizacaoCondutores"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_nt9cEEOyEeuaFZFXgUt_vQ" name="cancelarViagem"/>
@@ -1997,6 +2021,11 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_A56T4EPDEeuaFZFXgUt_vQ" name="ClienteUber"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_JBZIcEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente Uber Eats">
+    <generalization xmi:type="uml:Generalization" xmi:id="_0vi4sEPWEeu59oU5HCwF3A" general="_FQ0Z0EOvEeuaFZFXgUt_vQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NJ3no0PZEeu59oU5HCwF3A" name="&lt;entity> pedido" type="_RuFy0EOvEeuaFZFXgUt_vQ" aggregation="shared" association="_NJ3noEPZEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X9rvgEPZEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJ4OsUPZEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kq8-EEOyEeuaFZFXgUt_vQ" name="fazerPedido">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_kq8-EUOyEeuaFZFXgUt_vQ" name="restaurante" type="_QHFQQCzbEeu44_eVzMNV2w"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_kq8-EkOyEeuaFZFXgUt_vQ" name="refeicao">
@@ -2021,6 +2050,11 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_4TKggEPCEeuaFZFXgUt_vQ" name="Favorito"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_LyjogEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente Uber Scoot&amp;Bike">
+    <generalization xmi:type="uml:Generalization" xmi:id="_1t8aoEPWEeu59oU5HCwF3A" general="_FQ0Z0EOvEeuaFZFXgUt_vQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BbNTAkPXEeu59oU5HCwF3A" name="&lt;entity> scooter/bike" type="_OP-tMEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_BbMr8EPXEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B1whAEPXEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BbN6EUPXEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__S1boEOyEeuaFZFXgUt_vQ" name="terminarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__S67MEOyEeuaFZFXgUt_vQ" name="lerCodigoQR">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="__S67MUOyEeuaFZFXgUt_vQ" name="veiculo" type="_gxPbQCztEeu44_eVzMNV2w"/>
@@ -2038,6 +2072,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_FJFqEEPDEeuaFZFXgUt_vQ" name="ScooterBike"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Pk7t8EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Entregador">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lZXyMEPREeu59oU5HCwF3A" general="_8cddsEOtEeuaFZFXgUt_vQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fEPNMEOyEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fEZlQEOyEeuaFZFXgUt_vQ" name="classificação" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
@@ -2047,6 +2082,10 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fEivMEOyEeuaFZFXgUt_vQ" name="idEntregador" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Muy1MkPZEeu59oU5HCwF3A" name="&lt;entity> pedido" type="_RuFy0EOvEeuaFZFXgUt_vQ" aggregation="shared" association="_MuyOIEPZEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UeEOAEPZEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Muy1NEPZEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fEFcMEOyEeuaFZFXgUt_vQ" name="confirmarRecolha"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fEJtoEOyEeuaFZFXgUt_vQ" name="aceitarPedido">
@@ -2061,6 +2100,9 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_OMn6YEOzEeuaFZFXgUt_vQ" name="saldo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QZXUYkPXEeu59oU5HCwF3A" name="&lt;entity> utilizador" type="_8cddsEOtEeuaFZFXgUt_vQ" aggregation="composite" association="_QZWtUEPXEeu59oU5HCwF3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sj-x0EPXEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OMrkwEOzEeuaFZFXgUt_vQ" name="adicionarDinheiro">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_OMrkwUOzEeuaFZFXgUt_vQ" name="valor">
@@ -2090,6 +2132,10 @@ Descrição: O utilizador efetua login na app;</body>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_LehVYEOzEeuaFZFXgUt_vQ" name="data" visibility="private" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pPb2EkPXEeu59oU5HCwF3A" name="&lt;entity> voucher" type="_D-M7YEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_pPbPAEPXEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zySJwEPXEeu59oU5HCwF3A"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PVfKokPZEeu59oU5HCwF3A" name="&lt;entity> refeicao" type="_SxyEcEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_PVejkEPZEeu59oU5HCwF3A"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_hySVkEO3EeuaFZFXgUt_vQ" name="getLocalizacao"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_UMxFoEO4EeuaFZFXgUt_vQ" name="entregaConcluida"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_GnKxoEPDEeuaFZFXgUt_vQ" name="Pedido"/>
@@ -2101,6 +2147,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_294IkEPCEeuaFZFXgUt_vQ" name="Refeicao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_TvH2cEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Restaurante">
+    <generalization xmi:type="uml:Generalization" xmi:id="_t0s_wEPREeu59oU5HCwF3A" general="_8cddsEOtEeuaFZFXgUt_vQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5yEMEOzEeuaFZFXgUt_vQ" name="saldo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
@@ -2113,6 +2160,11 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6RMYEOzEeuaFZFXgUt_vQ" name="horaFecho" visibility="private" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6Wr8EOzEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MGLWAkPZEeu59oU5HCwF3A" name="&lt;entity> pedido" type="_RuFy0EOvEeuaFZFXgUt_vQ" aggregation="shared" association="_MGKu8EPZEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WwAbcEPZEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MGL9EEPZEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qL2wIkPZEeu59oU5HCwF3A" name="&lt;entity> menu" type="_UpgbEEOvEeuaFZFXgUt_vQ" aggregation="composite" association="_qLzFwEPZEeu59oU5HCwF3A"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Q52VoEOzEeuaFZFXgUt_vQ" name="aceitarPedido">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_Q52VoUOzEeuaFZFXgUt_vQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w"/>
     </ownedOperation>
@@ -2123,6 +2175,9 @@ Descrição: O utilizador efetua login na app;</body>
   <packagedElement xmi:type="uml:Class" xmi:id="_UpgbEEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Menu">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_GSG64EOzEeuaFZFXgUt_vQ" name="idMenu" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7m8Y40PXEeu59oU5HCwF3A" name="&lt;entity> refeicao" type="_SxyEcEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_7m8Y4EPXEeu59oU5HCwF3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8oPd0EPXEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_165BkEPCEeuaFZFXgUt_vQ" name="Menu"/>
   </packagedElement>
@@ -2148,8 +2203,13 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_xOye0EPCEeuaFZFXgUt_vQ" name="Data"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_XE9w4EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Remetente">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qMJksEPREeu59oU5HCwF3A" general="_8cddsEOtEeuaFZFXgUt_vQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_TI61QEOzEeuaFZFXgUt_vQ" name="idRemetente" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lpQHokPZEeu59oU5HCwF3A" name="&lt;entity> expedicao" type="_YRhDkEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_lpOScEPZEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nNndYEPZEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lpRVwUPZEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_TI_GsEOzEeuaFZFXgUt_vQ" name="seguirCarga">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_TI_GsUOzEeuaFZFXgUt_vQ" name="carga" type="_wYxc4C0FEeuB1a_D3CFulA"/>
@@ -2188,6 +2248,9 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_WldNkEOzEeuaFZFXgUt_vQ" name="data_inicial" visibility="private" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_WllwcEOzEeuaFZFXgUt_vQ" name="origem" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q_Vn4kPaEeu59oU5HCwF3A" name="&lt;entity> carga" type="_aDG9AEOvEeuaFZFXgUt_vQ" aggregation="composite" association="_Q_VA0EPaEeu59oU5HCwF3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_XdEUPaEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_H1acgEO6EeuaFZFXgUt_vQ" name="Expedicao">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_LXD-UEO6EeuaFZFXgUt_vQ" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_NOSlsEO6EeuaFZFXgUt_vQ" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
@@ -2220,6 +2283,16 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_yO_XkEPCEeuaFZFXgUt_vQ" name="Localizacao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_cAjhIEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Transportadora">
+    <generalization xmi:type="uml:Generalization" xmi:id="_sVczgEPREeu59oU5HCwF3A" general="_8cddsEOtEeuaFZFXgUt_vQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kIUD4kPaEeu59oU5HCwF3A" name="&lt;entity> expedicao" type="_YRhDkEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_kITc0EPaEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ltDNEEPaEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kIUq8UPaEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oytWcUPaEeu59oU5HCwF3A" name="&lt;entity> camiao" type="_dKGjIEOvEeuaFZFXgUt_vQ" aggregation="composite" association="_oysvYEPaEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBTZYEPaEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oytWc0PaEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w4bgYkPaEeu59oU5HCwF3A" name="&lt;entity> camionista" type="_eCQTIEOvEeuaFZFXgUt_vQ" aggregation="composite" association="_w4a5UEPaEeu59oU5HCwF3A"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VAgecEOyEeuaFZFXgUt_vQ" name="atribuirCamionista">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_VAgecUOyEeuaFZFXgUt_vQ" name="camionista" type="_huAqsCzbEeu44_eVzMNV2w"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_VAgeckOyEeuaFZFXgUt_vQ" name="camião" type="_gyUfgC9BEeuvx77J0r1sng"/>
@@ -2244,11 +2317,20 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_gGHEcEOzEeuaFZFXgUt_vQ" name="idCamiao" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pvIickPaEeu59oU5HCwF3A" name="&lt;entity> expedicao" type="_YRhDkEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_pvH7YEPaEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q0iEQEPaEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pvIidEPaEeu59oU5HCwF3A" value="*"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_wCC-4EPCEeuaFZFXgUt_vQ" name="Camiao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_eCQTIEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Camionista">
+    <generalization xmi:type="uml:Generalization" xmi:id="_IErToEPSEeu59oU5HCwF3A" general="_8cddsEOtEeuaFZFXgUt_vQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kuQUQEOzEeuaFZFXgUt_vQ" name="idCamionista" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6faowkPaEeu59oU5HCwF3A" name="&lt;entity> expedicao" type="_YRhDkEOvEeuaFZFXgUt_vQ" aggregation="shared" association="_6faBsEPaEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9N9SoEPaEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6fbP0EPaEeu59oU5HCwF3A" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kuT-oEOzEeuaFZFXgUt_vQ" name="classificarInstalação" visibility="public">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_kuT-oUOzEeuaFZFXgUt_vQ" name="instalacao" type="_o88psCzzEeu44_eVzMNV2w"/>
@@ -2394,6 +2476,182 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Y4GyYEPDEeuaFZFXgUt_vQ" name="InterfaceConfirmarEntrega"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLD4UEPTEeu59oU5HCwF3A" memberEnd="_SLJX4EPTEeu59oU5HCwF3A _SLKmAUPTEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SLIJwEPTEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SLIJwUPTEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLKmAUPTEeu59oU5HCwF3A" name="&lt;entity> frota" type="__qiGwEOuEeuaFZFXgUt_vQ" association="_SLD4UEPTEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R9KJwEPUEeu59oU5HCwF3A"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uqS5EEPTEeu59oU5HCwF3A" memberEnd="_uqUHMUPTEeu59oU5HCwF3A _uqUuQUPTEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uqTgIEPTEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uqUHMEPTEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uqUuQUPTEeu59oU5HCwF3A" name="&lt;entity> frota" type="__qiGwEOuEeuaFZFXgUt_vQ" association="_uqS5EEPTEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IRKlkEPUEeu59oU5HCwF3A"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kglosEPUEeu59oU5HCwF3A" memberEnd="_kgmPwkPUEeu59oU5HCwF3A _kgmPxUPUEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kgmPwEPUEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kgmPwUPUEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kgmPxUPUEeu59oU5HCwF3A" name="&lt;entity> condutor" type="_6onsEEOuEeuaFZFXgUt_vQ" association="_kglosEPUEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_f2kUIEPVEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_f2liQkPVEeu59oU5HCwF3A _f2mJUkPVEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f2liQEPVEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f2liQUPVEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f2mJUkPVEeu59oU5HCwF3A" name="&lt;entity> cliente uber" type="_IAxY8EOvEeuaFZFXgUt_vQ" association="_f2kUIEPVEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gnkTQEPVEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_gnlhYEPVEeu59oU5HCwF3A _gnlhY0PVEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gnk6UEPVEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gnk6UUPVEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gnlhY0PVEeu59oU5HCwF3A" name="&lt;entity> condutor" type="_6onsEEOuEeuaFZFXgUt_vQ" association="_gnkTQEPVEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IXvcwEPWEeu59oU5HCwF3A" memberEnd="_IXwq4kPWEeu59oU5HCwF3A _IXwq5UPWEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IXwq4EPWEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IXwq4UPWEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IXwq5UPWEeu59oU5HCwF3A" name="&lt;entity> viagem" type="_C79bQEOvEeuaFZFXgUt_vQ" association="_IXvcwEPWEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Msw8QEPWEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MrwPoEPWEeu59oU5HCwF3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ZurcEPWEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_4ZvSgkPWEeu59oU5HCwF3A _4Zv5kEPWEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4ZvSgEPWEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4ZvSgUPWEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4Zv5kEPWEeu59oU5HCwF3A" name="&lt;entity> cliente uber" type="_IAxY8EOvEeuaFZFXgUt_vQ" association="_4ZurcEPWEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BbMr8EPXEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_BbNTAkPXEeu59oU5HCwF3A _BbN6EkPXEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BbNTAEPXEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BbNTAUPXEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BbN6EkPXEeu59oU5HCwF3A" name="&lt;entity> cliente uber scoot&amp;bike" type="_LyjogEOvEeuaFZFXgUt_vQ" association="_BbMr8EPXEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CLuxAEPXEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CLpRcEPXEeu59oU5HCwF3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QZWtUEPXEeu59oU5HCwF3A" memberEnd="_QZXUYkPXEeu59oU5HCwF3A _QZXUZUPXEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QZXUYEPXEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QZXUYUPXEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QZXUZUPXEeu59oU5HCwF3A" name="&lt;entity> conta bancaria" type="_QhakUEOvEeuaFZFXgUt_vQ" association="_QZWtUEPXEeu59oU5HCwF3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TMnfIEPXEeu59oU5HCwF3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pPbPAEPXEeu59oU5HCwF3A" memberEnd="_pPb2EkPXEeu59oU5HCwF3A _pPb2FUPXEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pPb2EEPXEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pPb2EUPXEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pPb2FUPXEeu59oU5HCwF3A" name="&lt;entity> pedido" type="_RuFy0EOvEeuaFZFXgUt_vQ" association="_pPbPAEPXEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ueWK8EPXEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uci0IEPXEeu59oU5HCwF3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7m8Y4EPXEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_7m8Y40PXEeu59oU5HCwF3A _7m_cMEPXEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7m8Y4UPXEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7m8Y4kPXEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7m_cMEPXEeu59oU5HCwF3A" name="&lt;entity> menu" type="_UpgbEEOvEeuaFZFXgUt_vQ" association="_7m8Y4EPXEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_99I0MEPXEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_98zdAEPXEeu59oU5HCwF3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MGKu8EPZEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_MGLWAkPZEeu59oU5HCwF3A _MGL9EUPZEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MGLWAEPZEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MGLWAUPZEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MGL9EUPZEeu59oU5HCwF3A" name="&lt;entity> restaurante" type="_TvH2cEOvEeuaFZFXgUt_vQ" association="_MGKu8EPZEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MuyOIEPZEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_Muy1MkPZEeu59oU5HCwF3A _Muy1NUPZEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Muy1MEPZEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Muy1MUPZEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Muy1NUPZEeu59oU5HCwF3A" name="&lt;entity> entregador" type="_Pk7t8EOvEeuaFZFXgUt_vQ" association="_MuyOIEPZEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NJ3noEPZEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_NJ3no0PZEeu59oU5HCwF3A _NJ4OskPZEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NJ3noUPZEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NJ3nokPZEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NJ4OskPZEeu59oU5HCwF3A" name="&lt;entity> cliente uber eats" type="_JBZIcEOvEeuaFZFXgUt_vQ" association="_NJ3noEPZEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PVejkEPZEeu59oU5HCwF3A" memberEnd="_PVfKokPZEeu59oU5HCwF3A _PVfKpUPZEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PVfKoEPZEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PVfKoUPZEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PVfKpUPZEeu59oU5HCwF3A" name="&lt;entity> pedido" type="_RuFy0EOvEeuaFZFXgUt_vQ" association="_PVejkEPZEeu59oU5HCwF3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_enU9AEPZEeu59oU5HCwF3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emhrwEPZEeu59oU5HCwF3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lpOScEPZEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_lpQHokPZEeu59oU5HCwF3A _lpRVwkPZEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lpQHoEPZEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lpQHoUPZEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lpRVwkPZEeu59oU5HCwF3A" name="&lt;entity> remetente" type="_XE9w4EOvEeuaFZFXgUt_vQ" association="_lpOScEPZEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qLzFwEPZEeu59oU5HCwF3A" memberEnd="_qL2wIkPZEeu59oU5HCwF3A _qL4lUUPZEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qL2wIEPZEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qL2wIUPZEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qL4lUUPZEeu59oU5HCwF3A" name="&lt;entity> restaurante" type="_TvH2cEOvEeuaFZFXgUt_vQ" association="_qLzFwEPZEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Q_VA0EPaEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_Q_Vn4kPaEeu59oU5HCwF3A _Q_XdEkPaEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q_Vn4EPaEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q_Vn4UPaEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Q_XdEkPaEeu59oU5HCwF3A" name="&lt;entity> expedicao" type="_YRhDkEOvEeuaFZFXgUt_vQ" association="_Q_VA0EPaEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kITc0EPaEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_kIUD4kPaEeu59oU5HCwF3A _kIUq8kPaEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kIUD4EPaEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kIUD4UPaEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kIUq8kPaEeu59oU5HCwF3A" name="&lt;entity> transportadora" type="_cAjhIEOvEeuaFZFXgUt_vQ" association="_kITc0EPaEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oysvYEPaEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_oytWcUPaEeu59oU5HCwF3A _oytWdEPaEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oysvYUPaEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oytWcEPaEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oytWdEPaEeu59oU5HCwF3A" name="&lt;entity> transportadora" type="_cAjhIEOvEeuaFZFXgUt_vQ" association="_oysvYEPaEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pvH7YEPaEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_pvIickPaEeu59oU5HCwF3A _pvJJgEPaEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pvIicEPaEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pvIicUPaEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pvJJgEPaEeu59oU5HCwF3A" name="&lt;entity> camiao" type="_dKGjIEOvEeuaFZFXgUt_vQ" association="_pvH7YEPaEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_w4a5UEPaEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_w4bgYkPaEeu59oU5HCwF3A _w4bgZUPaEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w4bgYEPaEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w4bgYUPaEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w4bgZUPaEeu59oU5HCwF3A" name="&lt;entity> transportadora" type="_cAjhIEOvEeuaFZFXgUt_vQ" association="_w4a5UEPaEeu59oU5HCwF3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2xlFEEPaEeu59oU5HCwF3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6faBsEPaEeu59oU5HCwF3A" name="{Vector}*" memberEnd="_6faowkPaEeu59oU5HCwF3A _6fbP0UPaEeu59oU5HCwF3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6faowEPaEeu59oU5HCwF3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6faowUPaEeu59oU5HCwF3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6fbP0UPaEeu59oU5HCwF3A" name="&lt;entity> camionista" type="_eCQTIEOvEeuaFZFXgUt_vQ" association="_6faBsEPaEeu59oU5HCwF3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_KwkjEEPbEeu59oU5HCwF3A" client="_MKp4EEOyEeuaFZFXgUt_vQ" supplier="_DfhwcEOxEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_N-mlUEPbEeu59oU5HCwF3A" client="_JOXGEEOyEeuaFZFXgUt_vQ" supplier="_faT1wEOwEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_O7iHoEPbEeu59oU5HCwF3A" client="_QWbxcEOxEeuaFZFXgUt_vQ" supplier="_tgpeUEOwEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Pu7TcEPbEeu59oU5HCwF3A" client="_EUsBYEOyEeuaFZFXgUt_vQ" supplier="_wUmzsEOwEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QXOpkEPbEeu59oU5HCwF3A" client="_HGRYMEOyEeuaFZFXgUt_vQ" supplier="_qaSxYEOwEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_kc1F4EPbEeu59oU5HCwF3A" client="_DfhwcEOxEeuaFZFXgUt_vQ" supplier="_a8OWUEOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_oIFPoEPbEeu59oU5HCwF3A" client="_DfhwcEOxEeuaFZFXgUt_vQ" supplier="_RuFy0EOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ovNhEEPbEeu59oU5HCwF3A" client="_DfhwcEOxEeuaFZFXgUt_vQ" supplier="_JBZIcEOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_5xy4UEPbEeu59oU5HCwF3A" client="_faT1wEOwEeuaFZFXgUt_vQ" supplier="_6onsEEOuEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6-fU8EPbEeu59oU5HCwF3A" client="_faT1wEOwEeuaFZFXgUt_vQ" supplier="_C79bQEOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_B2VWgEPcEeu59oU5HCwF3A" client="_tgpeUEOwEeuaFZFXgUt_vQ" supplier="_a8OWUEOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_C-2dwEPcEeu59oU5HCwF3A" client="_tgpeUEOwEeuaFZFXgUt_vQ" supplier="_YRhDkEOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_IHLCcEPcEeu59oU5HCwF3A" client="_wUmzsEOwEeuaFZFXgUt_vQ" supplier="_IAxY8EOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_J7Da4EPcEeu59oU5HCwF3A" client="_wUmzsEOwEeuaFZFXgUt_vQ" supplier="_C79bQEOvEeuaFZFXgUt_vQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ORX64EPcEeu59oU5HCwF3A" client="_qaSxYEOwEeuaFZFXgUt_vQ" supplier="_YRhDkEOvEeuaFZFXgUt_vQ"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cri5wC0EEeuB1a_D3CFulA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_crku8C0EEeuB1a_D3CFulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
