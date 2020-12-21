@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TlGBEA2TEeujq4q3EywG0A" name="collaborator5">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TlGBEA2TEeujq4q3EywG0A" name="collaborator5">
   <packagedElement xmi:type="uml:Activity" xmi:id="_2KfgEA2ZEeujq4q3EywG0A" name="Recolher dinheiro" node="_rHBV0CxJEeuHs4XpJ60bcQ _v-Ub8CxJEeuHs4XpJ60bcQ _duC3oCxLEeuHs4XpJ60bcQ _sWk8YCxNEeuHs4XpJ60bcQ _D6I34CxPEeuHs4XpJ60bcQ _vTGF8CxPEeuHs4XpJ60bcQ __7v6QCxPEeuHs4XpJ60bcQ _J9bIoCxSEeuHs4XpJ60bcQ _NVwWYCxSEeuHs4XpJ60bcQ _T_POkCzQEeuQWYtbwl9T-g _cA1GcCzQEeuQWYtbwl9T-g _qmHU0CzQEeuQWYtbwl9T-g" group="_M3tekCxJEeuHs4XpJ60bcQ _fdH6gCxJEeuHs4XpJ60bcQ">
     <edge xmi:type="uml:ControlFlow" xmi:id="_1NVegCxJEeuHs4XpJ60bcQ" inPartition="_M3tekCxJEeuHs4XpJ60bcQ" target="_v-Ub8CxJEeuHs4XpJ60bcQ" source="_rHBV0CxJEeuHs4XpJ60bcQ"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_00hrACxLEeuHs4XpJ60bcQ" target="_vTGF8CxPEeuHs4XpJ60bcQ" source="_v-Ub8CxJEeuHs4XpJ60bcQ"/>
@@ -94,7 +94,32 @@
     <node xmi:type="uml:MergeNode" xmi:id="_g8C4sCzPEeuQWYtbwl9T-g" name="" incoming="_1nf7sCwtEeuHs4XpJ60bcQ _jZo8gCzPEeuQWYtbwl9T-g" outgoing="_j4nXgCzPEeuQWYtbwl9T-g" inPartition="_6dYM4CwqEeuHs4XpJ60bcQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_DIx7cA2aEeujq4q3EywG0A" name="Interaction3"/>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="StateMachine4">
-    <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="Criar Expedição">
+    <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_98lPEEMdEeuwpcskWYXiXQ" name="Remetente tenta criar expedição" source="_Tgyz4EMdEeuwpcskWYXiXQ" target="_Ub8NgEMdEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FtHMIEMeEeuwpcskWYXiXQ" name="inseriu orçamento válido" source="_Ub8NgEMdEeuwpcskWYXiXQ" target="_uMmIIEMdEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_n7LX8EMeEeuwpcskWYXiXQ" name="insere-se local de recolha" source="_uMmIIEMdEeuwpcskWYXiXQ" target="_dDEl8EMeEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_DshX8EMfEeuwpcskWYXiXQ" name="insere-se local de entrega válido" source="_dDEl8EMeEeuwpcskWYXiXQ" target="_-ph_MEMeEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YAfncEMfEeuwpcskWYXiXQ" name="insere-se data" source="_-ph_MEMeEeuwpcskWYXiXQ" target="_SQkQMEMfEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7NnVIEMiEeuwpcskWYXiXQ" name="inseriu orçamento inválido" source="_Ub8NgEMdEeuwpcskWYXiXQ" target="_Ub8NgEMdEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_K706cEMjEeuwpcskWYXiXQ" source="_dDEl8EMeEeuwpcskWYXiXQ" target="_dDEl8EMeEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_k11EsEMrEeuwpcskWYXiXQ" name="concorda-se" source="_SQkQMEMfEeuwpcskWYXiXQ" target="_l_XxkEMpEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_b1e-MEMuEeuwpcskWYXiXQ" name="não concordou" source="_SQkQMEMfEeuwpcskWYXiXQ" target="_YiSvIEMuEeuwpcskWYXiXQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_rEffAEMuEeuwpcskWYXiXQ" source="_l_XxkEMpEeuwpcskWYXiXQ" target="_YiSvIEMuEeuwpcskWYXiXQ"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Tgyz4EMdEeuwpcskWYXiXQ"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Ub8NgEMdEeuwpcskWYXiXQ" name="Esperar por orçamento"/>
+      <subvertex xmi:type="uml:State" xmi:id="_uMmIIEMdEeuwpcskWYXiXQ" name="Esperar que insira local de recolha"/>
+      <subvertex xmi:type="uml:State" xmi:id="_dDEl8EMeEeuwpcskWYXiXQ" name="Esperar que insira local de entrega"/>
+      <subvertex xmi:type="uml:State" xmi:id="_-ph_MEMeEeuwpcskWYXiXQ" name="Esperar que insira data de recolha"/>
+      <subvertex xmi:type="uml:State" xmi:id="_SQkQMEMfEeuwpcskWYXiXQ" name="Concordar com termos e condições"/>
+      <subvertex xmi:type="uml:State" xmi:id="_l_XxkEMpEeuwpcskWYXiXQ" name="Informação aceite e expedição criada"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_YiSvIEMuEeuwpcskWYXiXQ"/>
+    </region>
   </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lrr3AEMdEeuwpcskWYXiXQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lruTQEMdEeuwpcskWYXiXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
