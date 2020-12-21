@@ -1832,13 +1832,13 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_rqPEQi9BEeuvx77J0r1sng" name="transportadora" type="_jjOf4CzbEeu44_eVzMNV2w" association="_rqOdMC9BEeuvx77J0r1sng"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_8cddsEOtEeuaFZFXgUt_vQ" name="&lt;Entity> Utilizador">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_affPoEOyEeuaFZFXgUt_vQ" name="idUtilizador">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_affPoEOyEeuaFZFXgUt_vQ" name="idUtilizador" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_afjhEEOyEeuaFZFXgUt_vQ" name="email">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_afjhEEOyEeuaFZFXgUt_vQ" name="email" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_afrc4EOyEeuaFZFXgUt_vQ" name="password">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_afrc4EOyEeuaFZFXgUt_vQ" name="password" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_afa-MEOyEeuaFZFXgUt_vQ" name="logIn">
@@ -1861,16 +1861,24 @@ Descrição: O utilizador efetua login na app;</body>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_afwVYUOyEeuaFZFXgUt_vQ" name="contaBancaria" type="_qPCPkCzmEeu44_eVzMNV2w"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_af1N4EOyEeuaFZFXgUt_vQ" name="logOut"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VJQ-kEPCEeuaFZFXgUt_vQ" name="Utilizador">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cBYF4EPCEeuaFZFXgUt_vQ" name="email">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_eZ4OUEPCEeuaFZFXgUt_vQ" name="password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_6onsEEOuEeuaFZFXgUt_vQ" name="&lt;Entity> Condutor">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_rOfjkEOyEeuaFZFXgUt_vQ" name="idCondutor">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rOfjkEOyEeuaFZFXgUt_vQ" name="idCondutor" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_rOnfYEOyEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_rO3XAEOyEeuaFZFXgUt_vQ" name="classificação">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rOnfYEOyEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rO3XAEOyEeuaFZFXgUt_vQ" name="classificação" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_rPHOoEOyEeuaFZFXgUt_vQ" name="saldo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rPHOoEOyEeuaFZFXgUt_vQ" name="saldo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rObSIEOyEeuaFZFXgUt_vQ" name="cancelarViagem"/>
@@ -1885,12 +1893,13 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rO8PgEOyEeuaFZFXgUt_vQ" name="terminarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rPAg8EOyEeuaFZFXgUt_vQ" name="recolherDinheiro"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OFxtsEPCEeuaFZFXgUt_vQ" name="Condutor"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="__qiGwEOuEeuaFZFXgUt_vQ" name="&lt;Entity> Frota">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_twRj0EOyEeuaFZFXgUt_vQ" name="idFrota">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_twRj0EOyEeuaFZFXgUt_vQ" name="idFrota" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_twVOMEOyEeuaFZFXgUt_vQ" name="nomeFrota">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_twVOMEOyEeuaFZFXgUt_vQ" name="nomeFrota" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_twJA8EOyEeuaFZFXgUt_vQ" name="retirarCondutor">
@@ -1905,27 +1914,29 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_tweYIEOyEeuaFZFXgUt_vQ" name="adicionarCondutor">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_tweYIUOyEeuaFZFXgUt_vQ" name="condutor" type="_fApskCzbEeu44_eVzMNV2w"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_89e6kEPCEeuaFZFXgUt_vQ" name="Frota"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_BHbikEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Veiculo">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_wS9jAEOyEeuaFZFXgUt_vQ" name="matricula">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wS9jAEOyEeuaFZFXgUt_vQ" name="matricula" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_wTBNYEOyEeuaFZFXgUt_vQ" name="idVeiculo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wTBNYEOyEeuaFZFXgUt_vQ" name="idVeiculo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_701QcEPCEeuaFZFXgUt_vQ" name="Veiculo"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_C79bQEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Viagem">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sMNEEOyEeuaFZFXgUt_vQ" name="idViagem">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sMNEEOyEeuaFZFXgUt_vQ" name="idViagem" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sRFkEOyEeuaFZFXgUt_vQ" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sUv8EOyEeuaFZFXgUt_vQ" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sYaUEOyEeuaFZFXgUt_vQ" name="hora" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sg9MEOyEeuaFZFXgUt_vQ" name="custo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sRFkEOyEeuaFZFXgUt_vQ" name="destino" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sUv8EOyEeuaFZFXgUt_vQ" name="origem" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sYaUEOyEeuaFZFXgUt_vQ" name="hora" visibility="private" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sg9MEOyEeuaFZFXgUt_vQ" name="custo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0snD0EOyEeuaFZFXgUt_vQ" name="data" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0stKcEOyEeuaFZFXgUt_vQ" name="custo_final">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0snD0EOyEeuaFZFXgUt_vQ" name="data" visibility="private" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0stKcEOyEeuaFZFXgUt_vQ" name="custo_final" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_oCjPMEO2EeuaFZFXgUt_vQ" name="Viagem">
@@ -1934,17 +1945,18 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_D-M7YEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Voucher">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_A9_88EOzEeuaFZFXgUt_vQ" name="dataExpirar" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_A-EOYEOzEeuaFZFXgUt_vQ" name="codigo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_A9_88EOzEeuaFZFXgUt_vQ" name="dataExpirar" visibility="private" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_A-EOYEOzEeuaFZFXgUt_vQ" name="codigo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_A-Jt8EOzEeuaFZFXgUt_vQ" name="desconto">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_A-Jt8EOzEeuaFZFXgUt_vQ" name="desconto" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6osNcEPCEeuaFZFXgUt_vQ" name="Voucher"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_FQ0Z0EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente com sessao iniciada">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_i8WuQEOyEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_i8c04EOyEeuaFZFXgUt_vQ" name="idCliente">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i8WuQEOyEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i8c04EOyEeuaFZFXgUt_vQ" name="idCliente" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_i8Sc0EOyEeuaFZFXgUt_vQ" name="adicionarVoucher">
@@ -1954,12 +1966,13 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_i8htYEOyEeuaFZFXgUt_vQ" name="verHistorico"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_i8l-0EOyEeuaFZFXgUt_vQ" name="bloquearConta"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_SUSVgEPCEeuaFZFXgUt_vQ" name="ClienteComSessaoIniciada"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_IAxY8EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente Uber">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nuFX4EOyEeuaFZFXgUt_vQ" name="classificação">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nuFX4EOyEeuaFZFXgUt_vQ" name="classificação" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_pYLokEO6EeuaFZFXgUt_vQ" name="numCancelamentos">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pYLokEO6EeuaFZFXgUt_vQ" name="numCancelamentos" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_nt5KoEOyEeuaFZFXgUt_vQ" name="verLocalizacaoCondutores"/>
@@ -1981,6 +1994,7 @@ Descrição: O utilizador efetua login na app;</body>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_nuYS00OyEeuaFZFXgUt_vQ" name="hora" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_n7tDgEO6EeuaFZFXgUt_vQ" name="getNumCancelamentos"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_A56T4EPDEeuaFZFXgUt_vQ" name="ClienteUber"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_JBZIcEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente Uber Eats">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kq8-EEOyEeuaFZFXgUt_vQ" name="fazerPedido">
@@ -1997,12 +2011,14 @@ Descrição: O utilizador efetua login na app;</body>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_krE54kOyEeuaFZFXgUt_vQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rF5ZgEO4EeuaFZFXgUt_vQ" name="cobrarEntrega"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__RkdEEPCEeuaFZFXgUt_vQ" name="ClienteUberEats"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_KUtKcEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Favorito">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5QuvQEOyEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5QznwEOyEeuaFZFXgUt_vQ" name="nome">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5QuvQEOyEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5QznwEOyEeuaFZFXgUt_vQ" name="nome" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4TKggEPCEeuaFZFXgUt_vQ" name="Favorito"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_LyjogEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Cliente Uber Scoot&amp;Bike">
     <ownedOperation xmi:type="uml:Operation" xmi:id="__S1boEOyEeuaFZFXgUt_vQ" name="terminarViagem"/>
@@ -2010,24 +2026,26 @@ Descrição: O utilizador efetua login na app;</body>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="__S67MUOyEeuaFZFXgUt_vQ" name="veiculo" type="_gxPbQCztEeu44_eVzMNV2w"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__S_MoEOyEeuaFZFXgUt_vQ" name="verLocalizacaoVeiculos"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CKVZ8EPDEeuaFZFXgUt_vQ" name="ClienteUberScoot"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_OP-tMEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Scooter/Bike">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_DZ8a8EOzEeuaFZFXgUt_vQ" name="idScooter">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DZ8a8EOzEeuaFZFXgUt_vQ" name="idScooter" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_DaEWwEOzEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DaEWwEOzEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_DZ4wkEOzEeuaFZFXgUt_vQ" name="terminarViagem"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_DaAsYEOzEeuaFZFXgUt_vQ" name="comecarViagem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FJFqEEPDEeuaFZFXgUt_vQ" name="ScooterBike"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Pk7t8EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Entregador">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEPNMEOyEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEZlQEOyEeuaFZFXgUt_vQ" name="classificação">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEPNMEOyEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEZlQEOyEeuaFZFXgUt_vQ" name="classificação" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEdPoEOyEeuaFZFXgUt_vQ" name="saldo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEdPoEOyEeuaFZFXgUt_vQ" name="saldo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEivMEOyEeuaFZFXgUt_vQ" name="idEntregador">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEivMEOyEeuaFZFXgUt_vQ" name="idEntregador" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fEFcMEOyEeuaFZFXgUt_vQ" name="confirmarRecolha"/>
@@ -2035,12 +2053,13 @@ Descrição: O utilizador efetua login na app;</body>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_fEJtoUOyEeuaFZFXgUt_vQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fEV64EOyEeuaFZFXgUt_vQ" name="confirmarEntrega"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gV0WkEPCEeuaFZFXgUt_vQ" name="Entregador"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_QhakUEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Conta Bancaria">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_OMhzwEOzEeuaFZFXgUt_vQ" name="iban">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OMhzwEOzEeuaFZFXgUt_vQ" name="iban" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_OMn6YEOzEeuaFZFXgUt_vQ" name="saldo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OMn6YEOzEeuaFZFXgUt_vQ" name="saldo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OMrkwEOzEeuaFZFXgUt_vQ" name="adicionarDinheiro">
@@ -2053,76 +2072,83 @@ Descrição: O utilizador efetua login na app;</body>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedParameter>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ikvFMEPCEeuaFZFXgUt_vQ" name="ContaBancaria"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_RuFy0EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Pedido">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ld4cMEOzEeuaFZFXgUt_vQ" name="hora" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeBmIEOzEeuaFZFXgUt_vQ" name="localDeEntrega" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeHFsEOzEeuaFZFXgUt_vQ" name="custo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ld4cMEOzEeuaFZFXgUt_vQ" name="hora" visibility="private" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeBmIEOzEeuaFZFXgUt_vQ" name="localDeEntrega" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeHFsEOzEeuaFZFXgUt_vQ" name="custo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeMlQEOzEeuaFZFXgUt_vQ" name="idPedido">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeMlQEOzEeuaFZFXgUt_vQ" name="idPedido" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeTS8EOzEeuaFZFXgUt_vQ" name="foiRecolhido">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LeTS8EOzEeuaFZFXgUt_vQ" name="foiRecolhido" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LebOwEOzEeuaFZFXgUt_vQ" name="foiEntregado">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LebOwEOzEeuaFZFXgUt_vQ" name="foiEntregado" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LehVYEOzEeuaFZFXgUt_vQ" name="data" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LehVYEOzEeuaFZFXgUt_vQ" name="data" visibility="private" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_hySVkEO3EeuaFZFXgUt_vQ" name="getLocalizacao"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_UMxFoEO4EeuaFZFXgUt_vQ" name="entregaConcluida"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GnKxoEPDEeuaFZFXgUt_vQ" name="Pedido"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SxyEcEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Refeicao">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_E3JYwEOzEeuaFZFXgUt_vQ" name="refeicao">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_E3JYwEOzEeuaFZFXgUt_vQ" name="refeicao" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_294IkEPCEeuaFZFXgUt_vQ" name="Refeicao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_TvH2cEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Restaurante">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5yEMEOzEeuaFZFXgUt_vQ" name="saldo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5yEMEOzEeuaFZFXgUt_vQ" name="saldo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q56AAEOzEeuaFZFXgUt_vQ" name="horaAbertura" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5-RcEOzEeuaFZFXgUt_vQ" name="classificação">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q56AAEOzEeuaFZFXgUt_vQ" name="horaAbertura" visibility="private" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5-RcEOzEeuaFZFXgUt_vQ" name="classificação" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6DJ8EOzEeuaFZFXgUt_vQ" name="idRestaurante">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6DJ8EOzEeuaFZFXgUt_vQ" name="idRestaurante" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6RMYEOzEeuaFZFXgUt_vQ" name="horaFecho" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6Wr8EOzEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6RMYEOzEeuaFZFXgUt_vQ" name="horaFecho" visibility="private" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6Wr8EOzEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Q52VoEOzEeuaFZFXgUt_vQ" name="aceitarPedido">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_Q52VoUOzEeuaFZFXgUt_vQ" name="pedido" type="_Dv-2ECzuEeu44_eVzMNV2w"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Q6J3oEOzEeuaFZFXgUt_vQ" name="editarMenu"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Q6M68EOzEeuaFZFXgUt_vQ" name="verListaDePedidos"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sAMTAEPCEeuaFZFXgUt_vQ" name="Restaurante"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_UpgbEEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Menu">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_GSG64EOzEeuaFZFXgUt_vQ" name="idMenu">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GSG64EOzEeuaFZFXgUt_vQ" name="idMenu" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_165BkEPCEeuaFZFXgUt_vQ" name="Menu"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_VZpekEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Hora">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_cy_G0EOzEeuaFZFXgUt_vQ" name="hora">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cy_G0EOzEeuaFZFXgUt_vQ" name="hora" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_czIQwEOzEeuaFZFXgUt_vQ" name="minutos">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_czIQwEOzEeuaFZFXgUt_vQ" name="minutos" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ztQFUEPCEeuaFZFXgUt_vQ" name="Hora"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WXQWUEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Data">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_eZE64EOzEeuaFZFXgUt_vQ" name="dia">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eZE64EOzEeuaFZFXgUt_vQ" name="dia" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_eZJzYEOzEeuaFZFXgUt_vQ" name="mês">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eZJzYEOzEeuaFZFXgUt_vQ" name="mês" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_eZNdwEOzEeuaFZFXgUt_vQ" name="ano">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eZNdwEOzEeuaFZFXgUt_vQ" name="ano" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xOye0EPCEeuaFZFXgUt_vQ" name="Data"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_XE9w4EOvEeuaFZFXgUt_vQ" name="&lt;Entity> Remetente">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_TI61QEOzEeuaFZFXgUt_vQ" name="idRemetente">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TI61QEOzEeuaFZFXgUt_vQ" name="idRemetente" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_TI_GsEOzEeuaFZFXgUt_vQ" name="seguirCarga">
@@ -2147,20 +2173,21 @@ Descrição: O utilizador efetua login na app;</body>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_TJHCgUOzEeuaFZFXgUt_vQ" name="expedicao" type="_txO9cC0GEeuB1a_D3CFulA"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_TJHCgkOzEeuaFZFXgUt_vQ" name="horaInicio" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kfapMEPCEeuaFZFXgUt_vQ" name="Remetente"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_YRhDkEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Expedicao">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wkvb4EOzEeuaFZFXgUt_vQ" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wk1igEOzEeuaFZFXgUt_vQ" name="idExpedicao">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wkvb4EOzEeuaFZFXgUt_vQ" name="destino" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wk1igEOzEeuaFZFXgUt_vQ" name="idExpedicao" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wk7pIEOzEeuaFZFXgUt_vQ" name="data_entrega" visibility="public" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WlBvwEOzEeuaFZFXgUt_vQ" name="horas" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WlK5sEOzEeuaFZFXgUt_vQ" name="hora_entrega" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WlTckEOzEeuaFZFXgUt_vQ" name="preço">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wk7pIEOzEeuaFZFXgUt_vQ" name="data_entrega" visibility="private" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WlBvwEOzEeuaFZFXgUt_vQ" name="horas" visibility="private" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WlK5sEOzEeuaFZFXgUt_vQ" name="hora_entrega" visibility="private" type="_nQuA0C5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WlTckEOzEeuaFZFXgUt_vQ" name="preço" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WldNkEOzEeuaFZFXgUt_vQ" name="data_inicial" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WllwcEOzEeuaFZFXgUt_vQ" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WldNkEOzEeuaFZFXgUt_vQ" name="data_inicial" visibility="private" type="_kQr-UC5FEeuqBZ3VvYlkDw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WllwcEOzEeuaFZFXgUt_vQ" name="origem" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_H1acgEO6EeuaFZFXgUt_vQ" name="Expedicao">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_LXD-UEO6EeuaFZFXgUt_vQ" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_NOSlsEO6EeuaFZFXgUt_vQ" name="destino" type="_q9zyYCzsEeu44_eVzMNV2w"/>
@@ -2170,25 +2197,27 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_aDG9AEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Carga">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBekEEOzEeuaFZFXgUt_vQ" name="peso">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBekEEOzEeuaFZFXgUt_vQ" name="peso" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBiOcEOzEeuaFZFXgUt_vQ" name="idCarga">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBiOcEOzEeuaFZFXgUt_vQ" name="idCarga" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBl40EOzEeuaFZFXgUt_vQ" name="tipo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBl40EOzEeuaFZFXgUt_vQ" name="tipo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBubsEOzEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBubsEOzEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uUQnYEPCEeuaFZFXgUt_vQ" name="Carga"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_a8OWUEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Localizacao">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_a8YxkEOzEeuaFZFXgUt_vQ" name="latitude">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_a8YxkEOzEeuaFZFXgUt_vQ" name="latitude" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_a8b04EOzEeuaFZFXgUt_vQ" name="longitude">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_a8b04EOzEeuaFZFXgUt_vQ" name="longitude" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_k-hoEEO3EeuaFZFXgUt_vQ" name="getLocalizacao"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yO_XkEPCEeuaFZFXgUt_vQ" name="Localizacao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_cAjhIEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Transportadora">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VAgecEOyEeuaFZFXgUt_vQ" name="atribuirCamionista">
@@ -2206,17 +2235,19 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VA5gAEOyEeuaFZFXgUt_vQ" name="verDetalhesCarga">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_VA5gAUOyEeuaFZFXgUt_vQ" name="carga" type="_wYxc4C0FEeuB1a_D3CFulA"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lqyQIEPCEeuaFZFXgUt_vQ" name="Transportadora"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_dKGjIEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Camiao">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_gGDaEEOzEeuaFZFXgUt_vQ" name="pesoMaximo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gGDaEEOzEeuaFZFXgUt_vQ" name="pesoMaximo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_gGHEcEOzEeuaFZFXgUt_vQ" name="idCamiao">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gGHEcEOzEeuaFZFXgUt_vQ" name="idCamiao" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wCC-4EPCEeuaFZFXgUt_vQ" name="Camiao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_eCQTIEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Camionista">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_kuQUQEOzEeuaFZFXgUt_vQ" name="idCamionista">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kuQUQEOzEeuaFZFXgUt_vQ" name="idCamionista" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kuT-oEOzEeuaFZFXgUt_vQ" name="classificarInstalação" visibility="public">
@@ -2228,16 +2259,17 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kuY3IEOzEeuaFZFXgUt_vQ" name="verclassificacaoInstalacao">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_kuY3IUOzEeuaFZFXgUt_vQ" name="instalacao" type="_o88psCzzEeu44_eVzMNV2w"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_nKkA0EPCEeuaFZFXgUt_vQ" name="Camionista"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_fI8OYEOvEeuaFZFXgUt_vQ" name="&lt;Entity> Instalacao">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_irhngEOzEeuaFZFXgUt_vQ" name="idInstalacao">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_irhngEOzEeuaFZFXgUt_vQ" name="idInstalacao" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_irlR4EOzEeuaFZFXgUt_vQ" name="nome">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_irlR4EOzEeuaFZFXgUt_vQ" name="nome" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_iro8QEOzEeuaFZFXgUt_vQ" name="localização" type="_q9zyYCzsEeu44_eVzMNV2w"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_irtNsEOzEeuaFZFXgUt_vQ" name="classificação">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iro8QEOzEeuaFZFXgUt_vQ" name="localização" visibility="private" type="_q9zyYCzsEeu44_eVzMNV2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_irtNsEOzEeuaFZFXgUt_vQ" name="classificação" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ircvAEOzEeuaFZFXgUt_vQ" name="adicionarClassificacao">
@@ -2245,9 +2277,10 @@ Descrição: O utilizador efetua login na app;</body>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedParameter>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_omUNIEPCEeuaFZFXgUt_vQ" name="Instalacao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_faT1wEOwEeuaFZFXgUt_vQ" name="&lt;Control> Controlo Pedir Viagem">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_PlZHUEO3EeuaFZFXgUt_vQ" name="condutoresDisp"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PlZHUEO3EeuaFZFXgUt_vQ" name="condutoresDisp" visibility="private"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_R_KicEO0EeuaFZFXgUt_vQ" name="getCondutoresDisponiveis"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_4SAyUEO0EeuaFZFXgUt_vQ" name="ControloPedirViagem">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_IuBRwEO1EeuaFZFXgUt_vQ" name="origem" type="_q9zyYCzsEeu44_eVzMNV2w"/>
@@ -2270,9 +2303,10 @@ Descrição: O utilizador efetua login na app;</body>
       </ownedParameter>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_XL_6EEO8EeuaFZFXgUt_vQ" name="entrega" type="_q9zyYCzsEeu44_eVzMNV2w"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LITagEPDEeuaFZFXgUt_vQ" name="ControloCriarExpedicao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_tgpeUEOwEeuaFZFXgUt_vQ" name="&lt;Control> Controlo Pre Visualizar Recargas">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_lNzvUEO5EeuaFZFXgUt_vQ" name="informacoesDestino"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lNzvUEO5EeuaFZFXgUt_vQ" name="informacoesDestino" visibility="private"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_QmK88EO5EeuaFZFXgUt_vQ" name="verificarExistemRecargas"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_WWeusEO5EeuaFZFXgUt_vQ" name="obterInformacoesDestino">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_iH8xoEO5EeuaFZFXgUt_vQ" name="recarga" type="_wYxc4C0FEeuB1a_D3CFulA"/>
@@ -2284,21 +2318,24 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_DPL4QEO6EeuaFZFXgUt_vQ" name="criarExpedicao">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_F8HYkEO6EeuaFZFXgUt_vQ" name="info"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VNYNEEPDEeuaFZFXgUt_vQ" name="ControloPreVisualizarRecargas"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_wUmzsEOwEeuaFZFXgUt_vQ" name="&lt;Control> Controlo Cancelar Viagem">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_dS88IEO6EeuaFZFXgUt_vQ" name="getViagemIniciada"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ksEewEO6EeuaFZFXgUt_vQ" name="getNumCancelamentos"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_FB7LwEO7EeuaFZFXgUt_vQ" name="guardarOpcao"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_IBJV8EO7EeuaFZFXgUt_vQ" name="apagarViagem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OwuSsEPDEeuaFZFXgUt_vQ" name="ControloCancelarViagem"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_DfhwcEOxEeuaFZFXgUt_vQ" name="&lt;Control> Controlo Confirmar Entrega">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_30M4IEO4EeuaFZFXgUt_vQ" name="pagamentoValido">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_30M4IEO4EeuaFZFXgUt_vQ" name="pagamentoValido" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_8pD1oEO1EeuaFZFXgUt_vQ" name="confirmarEntrega"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-TUtIEO3EeuaFZFXgUt_vQ" name="pedirComprovativo"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_HxCkwEO4EeuaFZFXgUt_vQ" name="guardarComprovativo"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PUo5EEO4EeuaFZFXgUt_vQ" name="entregaConcluida"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XS7kUEPDEeuaFZFXgUt_vQ" name="ControloConfirmarEntrega"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_QWbxcEOxEeuaFZFXgUt_vQ" name="&lt;Boundary> Interface Pre Visualizar Recargas">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Hz-HgEO5EeuaFZFXgUt_vQ" name="confirmarCarga"/>
@@ -2309,6 +2346,7 @@ Descrição: O utilizador efetua login na app;</body>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_30XawEO5EeuaFZFXgUt_vQ" name="mostrarRecargasDisponiveisMapa"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-4ZeMEO5EeuaFZFXgUt_vQ" name="saiMapaRecargas"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Tex9QEPDEeuaFZFXgUt_vQ" name="InterfacePreVisualizarRecargas"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_EUsBYEOyEeuaFZFXgUt_vQ" name="&lt;Boundary> Interface Cancelar Viagem">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_h-8KIEO6EeuaFZFXgUt_vQ" name="mostrarMsg">
@@ -2319,6 +2357,7 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_4w77QEO6EeuaFZFXgUt_vQ" name="escolherOpcao"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_BNtTQEO7EeuaFZFXgUt_vQ" name="mostrarOpcoes"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_DS-9sEO7EeuaFZFXgUt_vQ" name="selecionarOpcao"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RRbU4EPDEeuaFZFXgUt_vQ" name="InterfaceCancelarViagem"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_HGRYMEOyEeuaFZFXgUt_vQ" name="&lt;Boundary> Interface Criar Expedicao">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_2j9Q4EO7EeuaFZFXgUt_vQ" name="mostrarMsg">
@@ -2329,9 +2368,10 @@ Descrição: O utilizador efetua login na app;</body>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_B_uwoEO8EeuaFZFXgUt_vQ" name="escreverLocalEntrega"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ELlkMEO8EeuaFZFXgUt_vQ" name="escreverData"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_FSI8kEO8EeuaFZFXgUt_vQ" name="concordar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_M9_JwEPDEeuaFZFXgUt_vQ" name="InterfaceCriarExpedicao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_JOXGEEOyEeuaFZFXgUt_vQ" name="&lt;Boundary> Interface Pedir Viagem">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_EKdVEEO3EeuaFZFXgUt_vQ" name="confirmar">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EKdVEEO3EeuaFZFXgUt_vQ" name="confirmar" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rctT0EO0EeuaFZFXgUt_vQ" name="InterfacePedirViagem"/>
@@ -2352,6 +2392,7 @@ Descrição: O utilizador efetua login na app;</body>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Y4GyYEPDEeuaFZFXgUt_vQ" name="InterfaceConfirmarEntrega"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cri5wC0EEeuB1a_D3CFulA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_crku8C0EEeuB1a_D3CFulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
