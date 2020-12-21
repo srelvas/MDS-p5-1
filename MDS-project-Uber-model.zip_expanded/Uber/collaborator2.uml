@@ -119,15 +119,17 @@
         <region xmi:type="uml:Region" xmi:id="_Mk_6oEPGEeu9i5rW18hatA" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_llPsAEPGEeu9i5rW18hatA" source="_MlBIwEPGEeu9i5rW18hatA" target="_OLHj4EPGEeu9i5rW18hatA"/>
           <transition xmi:type="uml:Transition" xmi:id="_qOcrwEPGEeu9i5rW18hatA" source="_OLHj4EPGEeu9i5rW18hatA" target="_mIeU4EPGEeu9i5rW18hatA"/>
-          <transition xmi:type="uml:Transition" xmi:id="_5VHv8EPGEeu9i5rW18hatA" source="_vLlUIEPGEeu9i5rW18hatA" target="_wbA7sEPGEeu9i5rW18hatA"/>
-          <transition xmi:type="uml:Transition" xmi:id="_8FTYkEPGEeu9i5rW18hatA" source="_wbA7sEPGEeu9i5rW18hatA" target="_6C3mwEPGEeu9i5rW18hatA"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_MlBIwEPGEeu9i5rW18hatA"/>
-          <subvertex xmi:type="uml:State" xmi:id="_OLHj4EPGEeu9i5rW18hatA">
+          <subvertex xmi:type="uml:State" xmi:id="_OLHj4EPGEeu9i5rW18hatA" name="mostrar_info_entregador">
             <entry xmi:type="uml:Activity" xmi:id="_g98JsEPGEeu9i5rW18hatA" name="mostrar número de portal porta ao entregador"/>
           </subvertex>
           <subvertex xmi:type="uml:FinalState" xmi:id="_mIeU4EPGEeu9i5rW18hatA"/>
+        </region>
+        <region xmi:type="uml:Region" xmi:id="_mvVVAEPQEeu59oU5HCwF3A" name="Region2">
+          <transition xmi:type="uml:Transition" xmi:id="_8FTYkEPGEeu9i5rW18hatA" source="_wbA7sEPGEeu9i5rW18hatA" target="_6C3mwEPGEeu9i5rW18hatA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_5VHv8EPGEeu9i5rW18hatA" source="_vLlUIEPGEeu9i5rW18hatA" target="_wbA7sEPGEeu9i5rW18hatA"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_vLlUIEPGEeu9i5rW18hatA" name=""/>
-          <subvertex xmi:type="uml:State" xmi:id="_wbA7sEPGEeu9i5rW18hatA">
+          <subvertex xmi:type="uml:State" xmi:id="_wbA7sEPGEeu9i5rW18hatA" name="mostrar_info_cliente">
             <entry xmi:type="uml:Activity" xmi:id="_3UfU8EPGEeu9i5rW18hatA" name="avisar o cliente que entregador se encontra à porta"/>
           </subvertex>
           <subvertex xmi:type="uml:FinalState" xmi:id="_6C3mwEPGEeu9i5rW18hatA" name=""/>
@@ -137,14 +139,16 @@
       <subvertex xmi:type="uml:State" xmi:id="_95mnwEPGEeu9i5rW18hatA" name="encontro_presencial">
         <region xmi:type="uml:Region" xmi:id="_cgyzgEPHEeu9i5rW18hatA" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_s0o1cEPHEeu9i5rW18hatA" source="_cg0BoEPHEeu9i5rW18hatA" target="_pZwqAEPHEeu9i5rW18hatA"/>
-          <transition xmi:type="uml:Transition" xmi:id="_dUx_wEPIEeu9i5rW18hatA" source="_y0e4AEPHEeu9i5rW18hatA" target="_2mjbcEPHEeu9i5rW18hatA"/>
-          <transition xmi:type="uml:Transition" xmi:id="_evkiwEPIEeu9i5rW18hatA" source="_2mjbcEPHEeu9i5rW18hatA" target="_cieZEEPIEeu9i5rW18hatA"/>
-          <subvertex xmi:type="uml:State" xmi:id="_cg0BoEPHEeu9i5rW18hatA">
+          <subvertex xmi:type="uml:State" xmi:id="_cg0BoEPHEeu9i5rW18hatA" name="mostrar_info_entregador">
             <entry xmi:type="uml:Activity" xmi:id="_l0w5QEPHEeu9i5rW18hatA" name="mostrar local de entrega ao entregador"/>
           </subvertex>
           <subvertex xmi:type="uml:FinalState" xmi:id="_pZwqAEPHEeu9i5rW18hatA" name=""/>
+        </region>
+        <region xmi:type="uml:Region" xmi:id="_j-HKkEPQEeu59oU5HCwF3A" name="Region2">
+          <transition xmi:type="uml:Transition" xmi:id="_evkiwEPIEeu9i5rW18hatA" source="_2mjbcEPHEeu9i5rW18hatA" target="_cieZEEPIEeu9i5rW18hatA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_dUx_wEPIEeu9i5rW18hatA" source="_y0e4AEPHEeu9i5rW18hatA" target="_2mjbcEPHEeu9i5rW18hatA"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_y0e4AEPHEeu9i5rW18hatA"/>
-          <subvertex xmi:type="uml:State" xmi:id="_2mjbcEPHEeu9i5rW18hatA">
+          <subvertex xmi:type="uml:State" xmi:id="_2mjbcEPHEeu9i5rW18hatA" name="mostrar_info_cliente">
             <entry xmi:type="uml:Activity" xmi:id="_b3ap4EPIEeu9i5rW18hatA" name="avisar o cliente que entregador chegou ao local de entrega e mostra o local de entrega"/>
           </subvertex>
           <subvertex xmi:type="uml:FinalState" xmi:id="_cieZEEPIEeu9i5rW18hatA" name=""/>
@@ -156,7 +160,7 @@
       </subvertex>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_TWFskEPJEeu9i5rW18hatA" kind="junction"/>
       <subvertex xmi:type="uml:State" xmi:id="_cpi08EPJEeu9i5rW18hatA" name="a_espera_de_confirmação_de_entrega">
-        <entry xmi:type="uml:Activity" xmi:id="_qFrC4EPJEeu9i5rW18hatA" name="pedir confirmação ao entregador"/>
+        <doActivity xmi:type="uml:Activity" xmi:id="_MIs_MEPREeu59oU5HCwF3A" name="pedir confirmação ao entregador"/>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_sKQJwEPJEeu9i5rW18hatA" name="cobrar_cliente">
         <entry xmi:type="uml:Activity" xmi:id="_wto1YEPJEeu9i5rW18hatA" name="cobrar o cliente"/>
